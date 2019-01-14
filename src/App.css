@@ -1,5 +1,21 @@
+:root {
+    --header-height: 20px;
+    --footer-heigth: 20px;
+    --footer-and-header-heigth: calc(var(--header-height) + var(--footer-height));
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0px;
+  border: 2px solid red;
+  box-sizing: border-box;
+}
+
 .App {
+  box-sizing: border-box;
   text-align: center;
+  height: 100%;
+  border: 2px solid greenyellow;
 }
 
 .App-logo {
