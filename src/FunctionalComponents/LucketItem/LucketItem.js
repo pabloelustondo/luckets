@@ -1,8 +1,8 @@
 import React from 'react'
 
-const LucketItem = () => (
+const LucketItem = (props) => (
     <div className='LucketItem'>
-        Lucket
+        {props.id}
     </div>
 )
 
