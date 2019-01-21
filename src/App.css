@@ -1,7 +1,7 @@
 :root {
-    --header-height: 20px;
-    --footer-heigth: 20px;
-    --footer-and-header-heigth: calc(var(--header-height) + var(--footer-height));
+    --header-height: 30px;
+    --footer-height: 30px;
+    --header-and-footer-height: calc(var(--header-height) + var(--footer-height));
 }
 
 html, body, #root {
