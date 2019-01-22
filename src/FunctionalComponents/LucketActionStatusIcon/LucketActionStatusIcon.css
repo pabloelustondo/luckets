@@ -1,0 +1,8 @@
+div.LucketActionStatusIcon {
+    height: var(--status-icon-height);
+    width: var(--status-icon-height);
+    margin-top: auto;
+    margin-bottom:auto;
+    margin-left: 5px;
+     
+}

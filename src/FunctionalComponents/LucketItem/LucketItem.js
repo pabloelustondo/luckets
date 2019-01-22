@@ -1,13 +1,19 @@
 import React from 'react'
 import './LucketItem.css'
+import LucketTitle from '../../FunctionalComponents/LucketTitle/LucketTitle';
+import LucketStatusIcon from '../../FunctionalComponents/LucketStatusIcon/LucketStatusIcon';
+import LucketActionStatusIcon from '../../FunctionalComponents/LucketActionStatusIcon/LucketActionStatusIcon';
+import LucketIcon from '../../FunctionalComponents/LucketIcon/LucketIcon';
 
-const imageLocation = (imagename) => `/images/${imagename}.svg`
 
 const LucketItem = (props) => (
     <div className='LucketItem'>
-    <img className='LucketIcon' src={imageLocation(props.id)} alt={props.id + '.svg'} />
-    {props.id}
+    <LucketIcon id={props.id} />
+    <LucketActionStatusIcon status='green' />
+    <LucketActionStatusIcon status='green' />
+    <LucketStatusIcon status='green' />
+    <LucketTitle id={props.id} />
     </div>
 )
-//http://localhost:3000/public/images/accounting.svg
+
 export default LucketItem

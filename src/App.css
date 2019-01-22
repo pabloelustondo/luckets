@@ -1,4 +1,32 @@
+.status-purple {
+  background-color: purple
+}
+.status-blue {
+  background-color: blue
+}
+.status-green {
+  background-color: green
+}
+.status-white {
+  background-color: white
+}
+.status-yellow {
+  background-color: yellow
+}
+.status-orange {
+  background-color: orange
+}
+.status-red {
+  background-color: red
+}
+
+.status- {
+  background-color: 
+}
+
+
 :root {
+    --status-icon-height: 20px;
     --header-height: 30px;
     --footer-height: 30px;
     --header-and-footer-height: calc(var(--header-height) + var(--footer-height));
@@ -16,33 +44,4 @@ html, body, #root {
   text-align: center;
   height: 100%;
   border: 2px solid greenyellow;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
