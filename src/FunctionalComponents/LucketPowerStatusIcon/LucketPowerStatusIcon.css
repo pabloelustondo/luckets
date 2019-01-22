@@ -1,0 +1,14 @@
+div.LucketPowerStatusIcon {
+    width: 0;
+	height: 0;
+	border-left: 11px solid transparent;
+	border-right: 11px solid transparent;
+	border-bottom: 20px solid #555;
+    margin-top: auto;
+    margin-bottom:auto;
+    margin-left: 5px;   
+}
+
+div.LucketPowerStatusIcon.triangle-green {
+    border-bottom-color: green;
+}

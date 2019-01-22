@@ -3,6 +3,7 @@ import './LucketItem.css'
 import LucketTitle from '../../FunctionalComponents/LucketTitle/LucketTitle';
 import LucketStatusIcon from '../../FunctionalComponents/LucketStatusIcon/LucketStatusIcon';
 import LucketActionStatusIcon from '../../FunctionalComponents/LucketActionStatusIcon/LucketActionStatusIcon';
+import LucketPowerStatusIcon from '../../FunctionalComponents/LucketPowerStatusIcon/LucketPowerStatusIcon';
 import LucketIcon from '../../FunctionalComponents/LucketIcon/LucketIcon';
 
 
@@ -11,6 +12,7 @@ const LucketItem = (props) => (
     <LucketIcon id={props.id} />
     <LucketActionStatusIcon status='green' />
     <LucketActionStatusIcon status='green' />
+    <LucketPowerStatusIcon status='green' />
     <LucketStatusIcon status='green' />
     <LucketTitle id={props.id} />
     </div>
