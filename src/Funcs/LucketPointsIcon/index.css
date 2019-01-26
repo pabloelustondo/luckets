@@ -1,0 +1,9 @@
+div.LucketPointsIcon {
+    height: var(--status-icon-height);
+    width: calc(var(--status-icon-height));
+    border: 1px solid grey;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 5px;     
+}

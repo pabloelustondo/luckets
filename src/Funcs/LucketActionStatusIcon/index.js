@@ -1,5 +1,5 @@
 import React from 'react'
-import './LucketActionStatusIcon.css'
+import './index.css'
 
 
 const colorClass = (color) => 'status-'+color;

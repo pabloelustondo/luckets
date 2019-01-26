@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import Header from './FunctionalComponents/Header/Header'
+import Header from './Funcs/Header'
 import LucketsList from './Containers/LucketsList/LucketsList'
-import Footer from './FunctionalComponents/Footer/Footer';
+import Footer from './Funcs/Footer';
 
 class App extends Component {
   render() {

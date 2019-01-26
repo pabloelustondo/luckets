@@ -1,5 +1,5 @@
 import React from 'react'
-import './LucketTitle.css'
+import './index.css'
 
 const LucketStatusIcon = (props) => (
     <div className='LucketTitle'>{props.id}</div>

@@ -3,7 +3,7 @@ import './LucketsList.css';
 
 import axios from 'axios'
 
-import LucketsItem from  '../../FunctionalComponents/LucketItem/LucketItem';
+import LucketsItem from  '../../Funcs/LucketItem';
 
 class LucketsList extends Component {
 
