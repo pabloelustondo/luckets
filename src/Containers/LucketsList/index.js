@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './LucketsList.css';
+import './index.css';
 
 import axios from 'axios'
 
