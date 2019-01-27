@@ -5,7 +5,7 @@ import axios from "axios";
 
 import LucketsItem from "../../Funcs/LucketItem";
 import FocusLucket from "../../Funcs/FocusLucket";
-import { getRootLucket, getChildrenLuckets } from "../../Models/LuketsModel";
+import { getRootLucket } from "../../Models/LuketsModel";
 
 class LucketsList extends Component {
   state = { 
@@ -34,14 +34,13 @@ class LucketsList extends Component {
     );
 
     let focusLucket = getRootLucket(luckets);
-    var childrenLucket = getChildrenLuckets(luckets,focusLucket);
 
     console.log(luckets);
     return (
       <div>
         { focusLucket? <FocusLucket lucket={focusLucket} />:null}
         <div className="LucketsList">
-          {childrenLucket.map(l => (
+          {luckets.map(l => (
             <LucketsItem key={l.name} lucket={l} />
           ))}
         </div>
