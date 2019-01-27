@@ -9,17 +9,17 @@ import LucketActionStatusIcon from '../../Funcs/LucketActionStatusIcon';
 import LucketIcon from '../../Funcs/LucketIcon/LucketIcon';
 
 
-const LucketItem = (props) => (
+const LucketItem = (props) => {
+    console.log(props);
+    return (
     <div className='LucketItem'>
-    <LucketIcon id={props.id} />
-    <LucketStatusIcon status='green' />
-    <LucketActionStatusIcon status='green' />
-    <LucketTitle id={props.id} />
-    <LucketPointsIcon points='1' />
+    <LucketIcon icon={props.lucket.icon} />
+    <LucketStatusIcon status={props.lucket.status} />
+    <LucketActionStatusIcon status={props.lucket.actionStatus} />
+    <LucketTitle id={props.lucket.name} />
+    <LucketPointsIcon points={props.lucket.points} />
     <LucketRelativePointsIcon points='44' totalPoints='77'/>
-
-
     </div>
-)
+)}
 
 export default LucketItem
