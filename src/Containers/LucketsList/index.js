@@ -4,11 +4,11 @@ import "./index.css";
 import axios from "axios";
 
 import LucketsItem from "../../Funcs/LucketItem";
+import FocusLucket from "../../Funcs/FocusLucket";
+import { getRootLucket } from "../../Models/LuketsModel";
 
 class LucketsList extends Component {
-  state = { luckets: {},
-            focusLucket:null
-};
+  state = { luckets: {}, focusLucket: null };
 
   componentDidMount = () => {
     axios
@@ -29,12 +29,17 @@ class LucketsList extends Component {
       key => this.state.luckets[key]
     );
 
+    let focusLucket = getRootLucket(luckets);
+
     console.log(luckets);
     return (
-      <div className="LucketsList">
-        {luckets.map(l => (
-          <LucketsItem key={l.name} lucket={l} />
-        ))}
+      <div>
+        { focusLucket? <FocusLucket lucket={focusLucket} />:null}
+        <div className="LucketsList">
+          {luckets.map(l => (
+            <LucketsItem key={l.name} lucket={l} />
+          ))}
+        </div>
       </div>
     );
   }

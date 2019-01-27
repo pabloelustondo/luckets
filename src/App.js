@@ -10,6 +10,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
+
         <LucketsList />
         <Footer />
       </div>
