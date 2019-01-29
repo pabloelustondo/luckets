@@ -20,7 +20,7 @@ const LucketItem = (props) => {
     <LucketTitle id={props.lucket.name} />
     <LucketPointsIcon points={props.lucket.points} />
     <LucketRelativePointsIcon points='44' totalPoints='77'/>
-    <LucketSetFocusIcon />
+    <LucketSetFocusIcon focus = {props.focus}/>
     </div>
 )}
 
