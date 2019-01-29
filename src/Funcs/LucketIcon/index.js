@@ -1,5 +1,5 @@
 import React from 'react'
-import './LucketIcon.css'
+import './index.css'
 
 const imageLocation = (imagename) => `/images/${imagename}`
 
