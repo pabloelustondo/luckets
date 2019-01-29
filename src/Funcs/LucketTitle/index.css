@@ -4,5 +4,10 @@
     margin-bottom:auto;
     margin-left: 5px;
     font-weight: bold;
+    text-align: center;
 
+}
+
+.FocusLucketColor {
+    background-color: red;
 }

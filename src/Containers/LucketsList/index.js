@@ -38,9 +38,9 @@ class LucketsList extends Component {
 
     console.log(luckets);
     return (
-      <div>
+      <div className="LucketsList">
         { focusLucket? <FocusLucket lucket={focusLucket} />:null}
-        <div className="LucketsList">
+        <div className="LucketsListChildren">
           {childrenLucket.map(l => (
             <LucketsItem key={l.name} lucket={l} />
           ))}

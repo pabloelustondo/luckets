@@ -12,11 +12,15 @@ import LucketSetFocusIcon from '../../Funcs/LucketSetFocusIcon';
 
 const LucketItem = (props) => {
     console.log(props);
+    let classNames = 'LucketItem';
+    if (props.focus === true){
+        classNames += ' FocusBackgroundColor';
+    }
     return (
-    <div className='LucketItem'>
+    <div className={classNames}>
     <LucketIcon icon={props.lucket.icon} />
-    <LucketStatusIcon status={props.lucket.status} />
     <LucketActionStatusIcon status={props.lucket.actionStatus} />
+    <LucketStatusIcon status={props.lucket.status} />
     <LucketTitle id={props.lucket.name} />
     <LucketPointsIcon points={props.lucket.points} />
     <LucketRelativePointsIcon points='44' totalPoints='77'/>

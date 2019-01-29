@@ -7,6 +7,9 @@
     display: flex;
     background-color: darkgrey;
     vertical-align: middle;
-    border-bottom-style: solid;
     text-align: left;
+}
+
+.FocusBackgroundColor {
+    background-color: lightgray;
 }
