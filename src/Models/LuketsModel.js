@@ -4,6 +4,7 @@ export const getRootLucket = (luckets) => {
 }
 
 export const getChildrenLuckets = (luckets, focusLucket) => {
+
     if (focusLucket) return luckets.filter( l => l.parent === focusLucket.name)
     else return []
 }

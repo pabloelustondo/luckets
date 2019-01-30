@@ -24,7 +24,7 @@ const LucketItem = (props) => {
     <LucketTitle id={props.lucket.name} />
     <LucketPointsIcon points={props.lucket.points} />
     <LucketRelativePointsIcon points='44' totalPoints='77'/>
-    <LucketSetFocusIcon focus = {props.focus}/>
+    <LucketSetFocusIcon  backToLife={()=>{props.backToLife()}} setFocus={()=>{props.updateFocus()}} currentLucket={props.lucket} focus = {props.focus}/>
     </div>
 )}
 

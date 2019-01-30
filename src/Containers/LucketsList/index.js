@@ -11,8 +11,21 @@ class LucketsList extends Component {
   state = { 
     luckets: {}, 
     focusLucket: null,
-    editingLucket: null 
+    editingLucket: null,
 };
+
+//this.state.luckets["A1-Mind"]
+
+  setFocus = (lucket) => {
+    console.log(lucket)
+    this.setState({focusLucket: lucket}) 
+  }
+ 
+  backToLife = () => {
+    this.setState({focusLucket: getRootLucket(Object.keys(this.state.luckets).map(
+      key => this.state.luckets[key]
+    ))})
+  }
 
   componentDidMount = () => {
     axios
@@ -32,21 +45,31 @@ class LucketsList extends Component {
     let luckets = Object.keys(this.state.luckets).map(
       key => this.state.luckets[key]
     );
+    var focusLucket;
+    
+    if(this.state.focusLucket == null){
+      focusLucket = getRootLucket(luckets)
+      console.log("hello")
+      console.log(focusLucket)
+    } else {
+       focusLucket = this.state.focusLucket
+    }
+    
 
-    let focusLucket = getRootLucket(luckets);
     var childrenLucket = getChildrenLuckets(luckets,focusLucket);
 
-    console.log(luckets);
-    return (
+   return(
       <div className="LucketsList">
-        { focusLucket? <FocusLucket lucket={focusLucket} />:null}
+        { focusLucket? <FocusLucket lucket={focusLucket} backToLife={()=>{this.backToLife()}} />:null}
         <div className="LucketsListChildren">
           {childrenLucket.map(l => (
-            <LucketsItem key={l.name} lucket={l} />
+            <LucketsItem key={l.name} updateFocus={()=>{this.setFocus(l)}} backToLife={()=>{this.backToLife()}} lucket={l} />
           ))}
         </div>
+
       </div>
-    );
+   )
+  
   }
 }
 
