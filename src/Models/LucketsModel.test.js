@@ -1,5 +1,5 @@
 import assert from "assert";
-import { getRootLucket, getChildrenLuckets } from "./LuketsModel";
+import { getRootLucket, getChildrenLuckets, getParentLucket } from "./LuketsModel";
 
 describe("LucketsModel", function() {
   describe("getRootLucket", function() {
@@ -32,4 +32,23 @@ describe("LucketsModel", function() {
       assert.equal(childrenLuckets.length, 3);
     });
   });
+
+  describe("getParentLucket", function() {
+    it("should return the parebt lucket for a given lucket", function() {
+      let luckets = [
+        { parent: "a", name: "x" },
+        { parent: "", name: "y" },
+        { parent: "", name: "b" },
+        { parent: "b", name: "z" },
+        { parent: "b", name: "q" },
+        { parent: "b", name: "w" }
+      ];
+      let lucket = { parent: "b", name: "q" };
+
+      let parentLucket = getParentLucket(luckets, lucket);
+      assert.equal(parentLucket.name,"b");
+    });
+  });
+
+
 });

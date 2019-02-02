@@ -6,33 +6,35 @@ import axios from "axios";
 import LucketsItem from "../../Funcs/LucketItem";
 import FocusLucket from "../../Funcs/FocusLucket";
 import Header from "../../Funcs/Header";
-import { getRootLucket, getChildrenLuckets } from "../../Models/LuketsModel";
+import Footer from "../../Funcs/Footer";
+
+import { getRootLucket, getChildrenLuckets, getParentLucket} from "../../Models/LuketsModel";
 
 class LucketsList extends Component {
   state = { 
-    luckets: {}, 
+    luckets: [], 
     focusLucket: null,
     editingLucket: null,
 };
-
-//this.state.luckets["A1-Mind"]
 
   setFocus = (lucket) => {
     console.log(lucket)
     this.setState({focusLucket: lucket}) 
   }
  
-  backToLife = () => {
-    this.setState({focusLucket: getRootLucket(Object.keys(this.state.luckets).map(
-      key => this.state.luckets[key]
-    ))})
+  backToParent = () => {
+    let newFocusLucket = getParentLucket(this.state.luckets, this.state.focusLucket);
+    this.setState( { focusLucket: newFocusLucket }  )
   }
 
   componentDidMount = () => {
     axios
       .get("https://luckets-5fbb4.firebaseio.com/luckets.json")
       .then(response => {
-        this.setState({ luckets: response.data });
+        let luckets = Object.keys(response.data).map(
+          key => response.data[key]
+        );
+        this.setState({ luckets: luckets });
       })
       .catch(err => {
         this.setState({
@@ -43,13 +45,11 @@ class LucketsList extends Component {
   };
 
   render() {
-    let luckets = Object.keys(this.state.luckets).map(
-      key => this.state.luckets[key]
-    );
+
     var focusLucket;
     
     if(this.state.focusLucket == null ) {
-      focusLucket = getRootLucket(luckets)
+      focusLucket = getRootLucket(this.state. luckets)
       console.log("hello")
       console.log(focusLucket)
     } else {
@@ -57,17 +57,18 @@ class LucketsList extends Component {
     }
     
 
-    var childrenLucket = getChildrenLuckets(luckets,focusLucket);
+    var childrenLucket = getChildrenLuckets(this.state.luckets, focusLucket);
 
    return(
       <div className="LucketsList">
         <Header />
-        <FocusLucket lucket={focusLucket} backToLife={()=>{this.backToLife()}} />
+        <FocusLucket lucket={focusLucket} backToLife={()=>{this.backToParent()}} />
         <div className="LucketsListChildren">
           {childrenLucket.map(lucket => (
             <LucketsItem key={lucket.name} updateFocus={()=>{this.setFocus(lucket)}} lucket={lucket} />
           ))}
         </div>
+        <Footer />
 
       </div>
    )
