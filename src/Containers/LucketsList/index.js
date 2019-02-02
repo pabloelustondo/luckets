@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import "./index.css";
-import axios from "axios";
 import LucketsItem from "../../Funcs/LucketItem";
 import FocusLucket from "../../Funcs/FocusLucket";
 import Header from "../../Funcs/Header";
 import Footer from "../../Funcs/Footer";
+import { getData } from "../../Data/DataService"
 
 import { getRootLucket, getChildrenLuckets, getParentLucket} from "../../Models/LuketsModel";
 
@@ -25,20 +25,7 @@ class LucketsList extends Component {
   }
 
   componentDidMount = () => {
-    axios
-      .get("https://luckets-5fbb4.firebaseio.com/luckets.json")
-      .then(response => {
-        let luckets = Object.keys(response.data).map(
-          key => response.data[key]
-        );
-        this.setState({ luckets: luckets });
-      })
-      .catch(err => {
-        this.setState({
-          error: err
-        });
-        alert(err);
-      });
+    getData( (luckets) => { this.setState({ luckets: luckets }) } )
   };
 
   render() {
