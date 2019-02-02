@@ -1,5 +1,6 @@
 .LucketsList {
     background-color: gainsboro;
+    border: 1px solid black;
     width: 100%;
     height: calc(100% - var(--header-and-footer-height) - 5px);
     margin: 0px;

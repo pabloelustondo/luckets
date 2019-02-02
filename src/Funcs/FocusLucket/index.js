@@ -4,7 +4,9 @@ import LucketItem from "../LucketItem";
 
 const FocusLucket = props => (
   <div className="FocusLucket">
-    <LucketItem lucket={props.lucket} backToLife={()=>{props.backToLife()}} focus={true} />
+  {(props.lucket )?
+    <LucketItem lucket={props.lucket} backToLife={()=>{props.backToLife()}} focus={true} />:null
+    }
   </div>
 );
 

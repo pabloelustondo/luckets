@@ -17,15 +17,15 @@ const LucketItem = props => {
   }
   return (
     <div className={classNames}>
-      <div className="ItemLeft">
+      <div className="LucketIconLeft">
         <LucketIcon icon={props.lucket.icon} />
         <LucketActionStatusIcon status={props.lucket.actionStatus} />
         <LucketStatusIcon status={props.lucket.status} />
       </div>
-      <div className="ItemCenter">
+      <div className="LucketIconCenter">
         <LucketTitle id={props.lucket.name} />
       </div>
-      <div className="ItemRigth">
+      <div className="LucketIconRigth">
         <LucketPointsIcon points={props.lucket.points} />
         <LucketRelativePointsIcon points="44" totalPoints="77" />
         <LucketSetFocusIcon

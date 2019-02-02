@@ -2,12 +2,57 @@
     vertical-align: middle;
 }
 
+.LucketItemLeft {
+    display: flex;
+    width: 30%;
+    border: 2px solid green;
+    background-color: blue;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.LucketItemCenter {
+    display: flex;
+    width: 40%;
+    border: 2px solid green;
+    background-color: green;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.LucketItemRigth {
+    display: flex;
+    width: 30%;
+    border: 2px soli green;
+    background-color: yellow;
+    vertical-align: middle;
+    text-align: left;
+}
 
 .LucketItem {
+    width: 100%;
     display: flex;
+    border: 2px solid red;
     background-color: darkgrey;
     vertical-align: middle;
     text-align: left;
+}
+
+.ItemLeft {
+    background-color: blue;
+    display: flex;
+    width: 30%;
+}
+.ItemCenter {
+    background-color: green;
+    display: flex;
+    width: 40%;
+}
+.ItemRigth {
+    background-color: yellow;
+    justify-content: flex-end;
+    display: flex;
+    width: 30%;
 }
 
 .FocusBackgroundColor {

@@ -5,6 +5,7 @@ import axios from "axios";
 
 import LucketsItem from "../../Funcs/LucketItem";
 import FocusLucket from "../../Funcs/FocusLucket";
+import Header from "../../Funcs/Header";
 import { getRootLucket, getChildrenLuckets } from "../../Models/LuketsModel";
 
 class LucketsList extends Component {
@@ -47,7 +48,7 @@ class LucketsList extends Component {
     );
     var focusLucket;
     
-    if(this.state.focusLucket == null){
+    if(this.state.focusLucket == null ) {
       focusLucket = getRootLucket(luckets)
       console.log("hello")
       console.log(focusLucket)
@@ -60,10 +61,11 @@ class LucketsList extends Component {
 
    return(
       <div className="LucketsList">
-        { focusLucket? <FocusLucket lucket={focusLucket} backToLife={()=>{this.backToLife()}} />:null}
+        <Header />
+        <FocusLucket lucket={focusLucket} backToLife={()=>{this.backToLife()}} />
         <div className="LucketsListChildren">
-          {childrenLucket.map(l => (
-            <LucketsItem key={l.name} updateFocus={()=>{this.setFocus(l)}} backToLife={()=>{this.backToLife()}} lucket={l} />
+          {childrenLucket.map(lucket => (
+            <LucketsItem key={lucket.name} updateFocus={()=>{this.setFocus(lucket)}} lucket={lucket} />
           ))}
         </div>
 
