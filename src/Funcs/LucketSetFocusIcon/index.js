@@ -8,7 +8,7 @@ const LucketSetFocusIcon = props => {
   return (
     <img
       onClick={()=>{
-        if (props.focus === true) props.backToLife() 
+        if (props.focus === true) props.backToParent() 
         else props.setFocus();
         }}
       className="LucketSetFocusIcon"
