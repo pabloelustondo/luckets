@@ -49,7 +49,7 @@ class LucketsList extends Component {
     var focusLucket;
     
     if(this.state.focusLucket == null ) {
-      focusLucket = getRootLucket(this.state. luckets)
+      focusLucket = getRootLucket(this.state.luckets)
       console.log("hello")
       console.log(focusLucket)
     } else {
@@ -62,7 +62,7 @@ class LucketsList extends Component {
    return(
       <div className="LucketsList">
         <Header />
-        <FocusLucket lucket={focusLucket} backToLife={()=>{this.backToParent()}} />
+        <FocusLucket lucket={focusLucket} backToParent={this.backToParent} />
         <div className="LucketsListChildren">
           {childrenLucket.map(lucket => (
             <LucketsItem key={lucket.name} updateFocus={()=>{this.setFocus(lucket)}} lucket={lucket} />
