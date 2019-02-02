@@ -5,7 +5,6 @@ import LucketStatusIcon from "../../Funcs/LucketStatusIcon";
 import LucketPointsIcon from "../../Funcs/LucketPointsIcon";
 import LucketRelativePointsIcon from "../../Funcs/LucketRelativePointsIcon";
 import LucketActionStatusIcon from "../../Funcs/LucketActionStatusIcon";
-//import LucketPowerStatusIcon from '../../Funcs/LucketPowerStatusIcon';
 import LucketIcon from "../../Funcs/LucketIcon";
 import LucketSetFocusIcon from "../../Funcs/LucketSetFocusIcon";
 
@@ -33,7 +32,7 @@ const LucketItem = props => {
             props.backToLife();
           }}
           setFocus={() => {
-            props.updateFocus();
+            props.setFocus(props.lucket);
           }}
           currentLucket={props.lucket}
           focus={props.focus}
