@@ -7,6 +7,7 @@ import LucketRelativePointsIcon from "../../Funcs/LucketRelativePointsIcon";
 import LucketActionStatusIcon from "../../Funcs/LucketActionStatusIcon";
 import LucketIcon from "../../Funcs/LucketIcon";
 import LucketSetFocusIcon from "../../Funcs/LucketSetFocusIcon";
+import LucketSetParentIcon from "../../Funcs/LucketSetParentIcon";
 
 const LucketItem = props => {
   console.log(props);
@@ -27,14 +28,15 @@ const LucketItem = props => {
       <div className="ItemRigth">
         <LucketPointsIcon points={props.lucket.points} />
         <LucketRelativePointsIcon points="44" totalPoints="77" />
-        <LucketSetFocusIcon
-          backToParent={props.backToParent}
-          setFocus={() => {
-            props.setFocus(props.lucket);
-          }}
-          currentLucket={props.lucket}
-          focus={props.focus}
-        />
+        {props.focus === true ? (
+          <LucketSetParentIcon backToParent={props.backToParent} />
+        ) : (
+          <LucketSetFocusIcon
+            setFocus={() => {
+              props.setFocus(props.lucket);
+            }}
+          />
+        )}
       </div>
     </div>
   );
