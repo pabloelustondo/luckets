@@ -6,13 +6,13 @@ import Header from "../../Funcs/Header";
 import Footer from "../../Funcs/Footer";
 import { getData } from "../../Data/DataService"
 
-import { getRootLucket, getChildrenLuckets, getParentLucket} from "../../Models/LuketsModel";
+import { getRootLucket, getChildrenLuckets, getParentLucket, getNewLucket}  from "../../Models/LuketsModel";
 
 class LucketsList extends Component {
   state = { 
     luckets: [], 
     focusLucket: null,
-    editingLucket: null,
+    editing:false
 };
 
   setFocus = (lucket) => {
@@ -20,12 +20,19 @@ class LucketsList extends Component {
   }
  
   backToParent = () => {
+    debugger;
     let newFocusLucket = getParentLucket(this.state.luckets, this.state.focusLucket);
     this.setState( { focusLucket: newFocusLucket }  )
   }
 
+  addLucket = () => {
+    debugger;
+    const newLucket = getNewLucket( this.state.focusLucket );
+    this.setState( { focusLucket: newLucket }  )
+  }
+
   componentDidMount = () => {
-    getData( (luckets) => { this.setState({ luckets: luckets }) } )
+    getData( (luckets, focusLucket) => { this.setState({ luckets, focusLucket }) } )
   };
 
   render() {
@@ -34,8 +41,8 @@ class LucketsList extends Component {
     var childrenLucket = getChildrenLuckets(this.state.luckets, focusLucket);
 
    return(
-      <div className="LucketsList">
-        <Header />
+      <div className="LucketsList" >
+        <Header addLucket={this.addLucket} />
         <FocusLucket lucket={focusLucket} backToParent={this.backToParent} />
         <div className="LucketsListChildren">
           {childrenLucket.map(lucket => (

@@ -1,7 +1,7 @@
 import React from "react";
 import "./index.css";
 
-const imageLocation = '/images/focus-icon.svg';
+const imageLocation = '/images/down-arrow.svg';
 
 const LucketSetFocusIcon = props => {
 

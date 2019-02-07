@@ -1,5 +1,5 @@
 import assert from "assert";
-import { getRootLucket, getChildrenLuckets, getParentLucket } from "./LuketsModel";
+import { getRootLucket, getChildrenLuckets, getParentLucket, getNewLucket } from "./LuketsModel";
 
 describe("LucketsModel", function() {
   describe("getRootLucket", function() {
@@ -34,7 +34,7 @@ describe("LucketsModel", function() {
   });
 
   describe("getParentLucket", function() {
-    it("should return the parebt lucket for a given lucket", function() {
+    it("should return the parent lucket for a given lucket", function() {
       let luckets = [
         { parent: "a", name: "x" },
         { parent: "", name: "y" },
@@ -51,4 +51,14 @@ describe("LucketsModel", function() {
   });
 
 
+  describe("getNewLucket", function() {
+    it("should return a new lucket for a given a parent lucket", function() {
+      let parentLucket = { parent: "b", name: "q" };
+
+      let newLucket = getNewLucket(parentLucket);
+      assert.equal(newLucket.name,"NEW");
+      assert.equal(newLucket.parent,"q");
+      assert.equal(newLucket.status,"white");
+    });
+  });
 });

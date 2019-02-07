@@ -1,11 +1,12 @@
 import React from 'react'
 import './index.css'
 
-const imagename = 'add-lucket-icon.svg';
-const imageLocation = `/images/${imagename}`
+const imageLocation = '/images/add-lucket-icon.svg'
 
-const AddLucketIcon = () => (
-    <img className='AddLucketIcon' src={imageLocation} alt={imageLocation} />
+const AddLucketIcon = (props) => (
+    <img className='AddLucketIcon' 
+    onClick = {props.addLucket}
+    src={imageLocation} alt={imageLocation} />
 )
 
 export default AddLucketIcon
