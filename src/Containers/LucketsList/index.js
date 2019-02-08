@@ -19,7 +19,12 @@ class LucketsList extends Component {
     this.setState({focusLucket: lucket}) 
   }
   setEditing = (lucket) => {
-    this.setState({editing: lucket}) 
+    let editingObj = this.state.editing;
+    debugger;
+    if( editingObj != null && editingObj.name == lucket.name){
+      this.setState({editing: null}) 
+    }
+    else{this.setState({editing: lucket}) }
   }
  
   backToParent = () => {
