@@ -8,34 +8,43 @@ import LucketActionStatusIcon from "../../Funcs/LucketActionStatusIcon";
 import LucketIcon from "../../Funcs/LucketIcon";
 import LucketSetFocusIcon from "../../Funcs/LucketSetFocusIcon";
 import LucketSetParentIcon from "../../Funcs/LucketSetParentIcon";
+import { AST_PropAccess } from "terser";
+import LucketForm from './LucketForm'
+import LucketEditingItem from '../LucketEditingIcon'
 
 const LucketItem = props => {
 
-  let className= (props.focus === true) ? "FocusLucketItem" : "LucketItem" ; 
-
+  let className = (props.focus === true) ? "FocusLucketItem" : "LucketItem";
+  let isEditing = (props.editingLucket !== null && props.editingLucket.name === props.lucket.name);
+  console.log("PROPS IN LUCKETS ITEM:" + JSON.stringify(props,null,2));
+  debugger;
   return (
-    <div className={className}>
-      <div className="ItemLeft">
-        <LucketIcon icon={props.lucket.icon} />
-        <LucketActionStatusIcon status={props.lucket.actionStatus} />
-        <LucketStatusIcon status={props.lucket.status} />
+    <div>
+      <div className={className}>
+        <div className="ItemLeft">
+          <LucketIcon icon={props.lucket.icon} />
+          <LucketActionStatusIcon status={props.lucket.actionStatus} />
+          <LucketStatusIcon status={props.lucket.status} />
+        </div>
+        <div className="ItemCenter">
+          <LucketTitle id={props.lucket.name} />
+        </div>
+        <div className="ItemRigth">
+          <LucketEditingItem lucket={props.lucket} setEditing={props.setEditing}/>
+          <LucketPointsIcon points={props.lucket.points} />
+          <LucketRelativePointsIcon points="44" totalPoints="77" />
+          {props.focus === true ? (
+            <LucketSetParentIcon backToParent={props.backToParent} lucket={props.lucket} />
+          ) : (
+              <LucketSetFocusIcon
+                setFocus={() => {
+                  props.setFocus(props.lucket);
+                }}
+              />
+            )}
+        </div>
       </div>
-      <div className="ItemCenter">
-        <LucketTitle id={props.lucket.name} />
-      </div>
-      <div className="ItemRigth">
-        <LucketPointsIcon points={props.lucket.points} />
-        <LucketRelativePointsIcon points="44" totalPoints="77" />
-        {props.focus === true ? (
-          <LucketSetParentIcon backToParent={props.backToParent} />
-        ) : (
-          <LucketSetFocusIcon
-            setFocus={() => {
-              props.setFocus(props.lucket);
-            }}
-          />
-        )}
-      </div>
+      <LucketForm isEditing={isEditing} lucket={props.lucket}/>
     </div>
   );
 };

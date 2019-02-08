@@ -13,3 +13,15 @@ export const getData = handler => {
       alert(err);
     });
 };
+
+
+export const postData = (lucket, handler) => {
+  axios
+    .post("https://luckets-5fbb4.firebaseio.com/luckets.json/" + lucket.name, lucket)
+    .then(response => {
+      alert("OK");
+    })
+    .catch(err => {
+      alert("ERROR"+err);
+    });
+};

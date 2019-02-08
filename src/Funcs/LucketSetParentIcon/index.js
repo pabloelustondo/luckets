@@ -1,15 +1,16 @@
 import React from "react";
 import "./index.css";
 
-const imageLocation = '/images/up-arrow.svg';
+const imageLocation =  (hasParent) => (hasParent)?'/images/up-arrow.svg':'/images/line.svg';
 
-const LucketSetParentIcon = props => {
+const LucketSetParentIcon = props => { 
+
   return (
     <img
-      onClick={props.backToParent}
+      onClick={() => (props.lucket.parent != "")?props.backToParent():null}
       className="LucketSetParentIcon"
-      src={imageLocation}
-      alt={imageLocation}
+      src={imageLocation(props.lucket.parent != "")}
+      alt={imageLocation(props.lucket.parent != "")}
     />
   );
 };

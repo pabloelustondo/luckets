@@ -12,11 +12,14 @@ class LucketsList extends Component {
   state = { 
     luckets: [], 
     focusLucket: null,
-    editing:false
+    editing: null
 };
 
   setFocus = (lucket) => {
     this.setState({focusLucket: lucket}) 
+  }
+  setEditing = (lucket) => {
+    this.setState({editing: lucket}) 
   }
  
   backToParent = () => {
@@ -39,14 +42,14 @@ class LucketsList extends Component {
 
     var focusLucket = (this.state.focusLucket == null )?getRootLucket(this.state.luckets): this.state.focusLucket
     var childrenLucket = getChildrenLuckets(this.state.luckets, focusLucket);
-
+    debugger;
    return(
       <div className="LucketsList" >
         <Header addLucket={this.addLucket} />
-        <FocusLucket lucket={focusLucket} backToParent={this.backToParent} />
+        <FocusLucket editingLucket={this.state.editing}  lucket={focusLucket} backToParent={this.backToParent} setEditing={this.setEditing} />
         <div className="LucketsListChildren">
           {childrenLucket.map(lucket => (
-            <LucketsItem lucket={lucket} key={lucket.name} setFocus={this.setFocus}  />
+            <LucketsItem editingLucket={this.state.editing} lucket={lucket} key={lucket.name} setEditing={this.setEditing} setFocus={this.setFocus}  />
           ))}
         </div>
         <Footer />
