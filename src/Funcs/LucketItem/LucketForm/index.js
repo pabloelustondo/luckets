@@ -7,7 +7,7 @@ const LucketForm = (props) => {
     (props.isEditing) ?
     <div>
     <div className='LucketForm'> Adaption:</div>
-      <label>Status</label> <input type="text" defaultValue={props.lucket.status}/>
+      <label>Status</label> <input type="text" defaultValue={props.lucket.status}/> <br/><button>Submit</button>
     </div>
 
       : null)
