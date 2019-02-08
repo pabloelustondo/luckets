@@ -31,7 +31,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".LucketsList {\n    background-color: gainsboro;\n    border: 1px solid black;\n    width: 100%;\n    height: calc(100% - var(--header-and-footer-height) - 5px);\n    margin: 0px;\n    box-sizing: border-box;\n}\n\n.LucketsListChildren {\n    width: 100%;\n    height: 100%;\n    overflow: scroll;\n    margin: 0px;\n    overflow-x: hidden;\n    overflow-y: auto;\n    box-sizing: border-box;\n}\n\n", ""]);
+exports.push([module.i, ".LucketsList {\n    background-color: gainsboro;\n    border: 1px solid black;\n    width: 100%;\n    height: calc(100% - var(--header-and-footer-height) - 100px);\n    margin: 0px;\n    box-sizing: border-box;\n}\n\n.LucketsListChildren {\n    width: 100%;\n    height: 100%;\n    overflow: scroll;\n    margin: 0px;\n    overflow-x: hidden;\n    overflow-y: auto;\n    box-sizing: border-box;\n}\n\n", ""]);
 
 // exports
 
