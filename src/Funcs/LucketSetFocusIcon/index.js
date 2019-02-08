@@ -4,11 +4,11 @@ import "./index.css";
 const imageLocation = '/images/down-arrow.svg';
 
 const LucketSetFocusIcon = props => {
-
+  let classname = (props.focus === true) ? "LucketSetFocusIcon" : "LucketSetFocusIconLight";
   return (
     <img
       onClick={props.setFocus}
-      className="LucketSetFocusIcon"
+      className={classname}
       src={imageLocation}
       alt={imageLocation}
     />

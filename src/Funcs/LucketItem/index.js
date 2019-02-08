@@ -30,13 +30,14 @@ const LucketItem = props => {
           <LucketTitle id={props.lucket.name} />
         </div>
         <div className="ItemRigth">
-          <LucketEditingItem lucket={props.lucket} setEditing={props.setEditing}/>
+          <LucketEditingItem focus={props.focus} lucket={props.lucket} setEditing={props.setEditing}/>
           <LucketPointsIcon points={props.lucket.points} />
           <LucketRelativePointsIcon points="44" totalPoints="77" />
           {props.focus === true ? (
             <LucketSetParentIcon backToParent={props.backToParent} lucket={props.lucket} />
           ) : (
               <LucketSetFocusIcon
+                focus={props.focus}
                 setFocus={() => {
                   props.setFocus(props.lucket);
                 }}
