@@ -5,6 +5,11 @@ const LucketForm = (props) => {
   debugger;
   return (
     (props.isEditing) ?
-      <div className='LucketForm'>hello FROM LUCKERT FOMR</div> : null)
+    <div>
+    <div className='LucketForm'> Adaption:</div>
+      <label>Status</label> <input type="text" defaultValue={props.lucket.status}/>
+    </div>
+
+      : null)
 }
 export default LucketForm
