@@ -1,7 +1,7 @@
 import React from "react";
 import "./index.css";
 
-const imageLocation =  (hasParent) => (hasParent)?'/images/up-arrow.svg':'/images/line.svg';
+const imageLocation =  (hasParent) => (hasParent)?'/images/up-arrow.svg':'/images/lineThick.svg';
 
 const LucketSetParentIcon = props => { 
 
