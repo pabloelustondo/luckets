@@ -4,6 +4,7 @@ import LucketStatusIcon from "../../LucketStatusIcon";
 import PlusIcon from "../../PlusIcon";
 import MinusIcon from "../../MinusIcon";
 import IconSpacer from "../../IconSpacer";
+import LucketPointsIcon from "../../LucketPointsIcon";
 
 const LucketForm = props => {
   debugger;
@@ -15,7 +16,10 @@ const LucketForm = props => {
         <MinusIcon />
         <LucketStatusIcon status="yellow"/>
         <PlusIcon />
-        <LucketStatusIcon status="yellow"/>
+        <IconSpacer />
+        <MinusIcon />
+        <input className="FormInputPoints" type="text"  placeholder="1"/>
+        <PlusIcon />
       </div>
       <div className="FormItem">
         <textarea className="FormTextArea"

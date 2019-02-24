@@ -12,6 +12,16 @@
     margin-top: 5px;
 }
 
+.FormInputPoints {
+    box-sizing: border-box;
+    border: 1px solid black;
+    height: var(--status-icon-height);
+    width: var(--status-icon-height);
+    text-align: center;
+    margin-left: 5px;
+}
+
+
 
 .FormInputText {
     box-sizing: border-box;
