@@ -1,5 +1,28 @@
-.Footer {
-    background-color:white;
+.LucketForm {     
+}
+
+.ItemLeft {
+    display: flex;
+    width: 30%;
+}
+
+.FormItem {
+    box-sizing: border-box;
     width: 100%;
-    height: var(--footer-height);
+    margin-top: 5px;
+}
+
+
+.FormInputText {
+    box-sizing: border-box;
+    border: 1px solid black;
+    height: var(--status-icon-height);
+    width: 150px;
+}
+
+.FormTextArea {
+    box-sizing: border-box;
+    border: 1px solid black;
+    height: 100%;
+    width: 100%;
 }

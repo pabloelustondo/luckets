@@ -16,7 +16,6 @@ const LucketItem = props => {
 
   let className = (props.focus === true) ? "FocusLucketItem" : "LucketItem";
   let isEditing = (props.editingLucket !== null && props.editingLucket.name === props.lucket.name);
-  console.log("PROPS IN LUCKETS ITEM:" + JSON.stringify(props,null,2));
   debugger;
   return (
     <div>
