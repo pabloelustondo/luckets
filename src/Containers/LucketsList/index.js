@@ -6,7 +6,7 @@ import Header from "../../Funcs/Header";
 import Footer from "../../Funcs/Footer";
 import { getData } from "../../Data/DataService"
 
-import { getRootLucket, getChildrenLuckets, getParentLucket, getNewLucket}  from "../../Models/LuketsModel";
+import { getRootLucket, getChildrenLuckets, getParentLucket, getNewLucket, updateLucket}  from "../../Models/LuketsModel";
 
 class LucketsList extends Component {
   state = { 
@@ -18,6 +18,11 @@ class LucketsList extends Component {
   setFocus = (lucket) => {
     this.setState({focusLucket: lucket}) 
   }
+
+  updateLucket = (lucket) => {
+    this.setState({ luckets: lucket}) 
+  }
+
   setEditing = (lucket) => {
     let editingObj = this.state.editing;
     debugger;

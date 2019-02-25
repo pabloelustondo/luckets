@@ -1,5 +1,5 @@
 import assert from "assert";
-import { getRootLucket, getChildrenLuckets, getParentLucket, getNewLucket } from "./LuketsModel";
+import { getRootLucket, getChildrenLuckets, getParentLucket, getNewLucket, getLucketById, updateLucket } from "./LuketsModel";
 
 describe("LucketsModel", function() {
   describe("getRootLucket", function() {
@@ -59,6 +59,36 @@ describe("LucketsModel", function() {
       assert.equal(newLucket.name,"NEW");
       assert.equal(newLucket.parent,"q");
       assert.equal(newLucket.status,"white");
+    });
+  });
+
+
+  describe("updateLucket", function() {
+    it("should return a the list of luckets with the updated lucket", function() {
+
+      let luckets = [
+        { id:"x", parent: "a", name: "x" },
+        { id:"y", parent: "", name: "y" },
+        { id:"b", parent: "", name: "b" },
+        { id:"z", parent: "b", name: "z" },
+        { id:"q", parent: "b", name: "q" },
+        { id:"w", parent: "b", name: "w" }
+      ];
+
+      let expectedLuckets = [
+        { id:"x", parent: "a", name: "x" },
+        { id:"y", parent: "", name: "y" },
+        { id:"b", parent: "", name: "b" },
+        { id:"z", parent: "b", name: "z" },
+        { id:"q", parent: "b", name: "q" },
+        { id:"w", parent: "b", name: "w" }
+      ];
+
+      let updatedLucket =   { id:"z", parent: "b", name: "zz" };
+      let newLuckets = updateLucket(luckets, updatedLucket);
+      let foundLucket = getLucketById(newLuckets, updateLucket.id);
+      assert.equal(luckets,expectedLuckets);
+
     });
   });
 });

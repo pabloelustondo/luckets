@@ -4,21 +4,17 @@ import LucketStatusIcon from "../../LucketStatusIcon";
 import PlusIcon from "../../PlusIcon";
 import MinusIcon from "../../MinusIcon";
 import IconSpacer from "../../IconSpacer";
-import LucketPointsIcon from "../../LucketPointsIcon";
+import LucketActionStatusIcon from "../../LucketActionStatusIcon";
 
 const LucketForm = props => {
   debugger;
   return props.isEditing ? (
 <div class="LucketForm">
       <div className="FormItem ItemLeft">
-        <input className="FormInputText" type="text"  placeholder="Name"/>
+        <input className="FormInputText" type="text"  placeholder="Name" onChange={() => alert('name changed')}/>
         <IconSpacer />
         <MinusIcon />
         <LucketStatusIcon status="yellow"/>
-        <PlusIcon />
-        <IconSpacer />
-        <MinusIcon />
-        <input className="FormInputPoints" type="text"  placeholder="1"/>
         <PlusIcon />
       </div>
       <div className="FormItem">
@@ -27,8 +23,18 @@ const LucketForm = props => {
                   ></textarea>
       </div>
       <div className="FormItem ItemLeft">
-        <LucketStatusIcon status="yellow"/>
-        <LucketStatusIcon status="yellow"/>
+        <MinusIcon />
+        <LucketActionStatusIcon status="yellow"/>
+        <PlusIcon />
+        <IconSpacer />
+        <MinusIcon />
+        <input className="FormInputPoints" type="text"  placeholder="1"/>
+        <PlusIcon />
+      </div>
+      <div className="FormItem">
+        <textarea className="FormTextArea"
+        placeholder="Day Action Plan"       
+                  ></textarea>
       </div>
       <div>
         <button>Save</button>

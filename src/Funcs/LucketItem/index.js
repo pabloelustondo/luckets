@@ -43,7 +43,7 @@ const LucketItem = props => {
             )}
         </div>
       </div>
-      <LucketForm isEditing={isEditing} lucket={props.lucket}/>
+      <LucketForm isEditing={isEditing} lucket={props.lucket} />
     </div>
   );
 };
