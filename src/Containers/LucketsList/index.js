@@ -20,12 +20,18 @@ class LucketsList extends Component {
   }
 
   updateLucket = (lucket) => {
-    this.setState({ luckets: lucket}) 
+    let newLuckets = this.state.luckets.map( l => {
+      if (l.id === lucket.id) {
+        return lucket
+      } else {
+        return l
+      }
+    })
+    this.setState({ luckets: newLuckets}) 
   }
 
   setEditing = (lucket) => {
     let editingObj = this.state.editing;
-    debugger;
     if( editingObj != null && editingObj.name == lucket.name){
       this.setState({editing: null}) 
     }
@@ -33,13 +39,13 @@ class LucketsList extends Component {
   }
  
   backToParent = () => {
-    debugger;
+    ;
     let newFocusLucket = getParentLucket(this.state.luckets, this.state.focusLucket);
     this.setState( { focusLucket: newFocusLucket }  )
   }
 
   addLucket = () => {
-    debugger;
+    ;
     const newLucket = getNewLucket( this.state.focusLucket );
     this.setState( { focusLucket: newLucket }  )
   }
@@ -52,14 +58,18 @@ class LucketsList extends Component {
 
     var focusLucket = (this.state.focusLucket == null )?getRootLucket(this.state.luckets): this.state.focusLucket
     var childrenLucket = getChildrenLuckets(this.state.luckets, focusLucket);
-    debugger;
+    ;
    return(
       <div className="LucketsList" >
         <Header addLucket={this.addLucket} />
-        <FocusLucket editingLucket={this.state.editing}  lucket={focusLucket} backToParent={this.backToParent} setEditing={this.setEditing} />
+        <FocusLucket editingLucket={this.state.editing}  lucket={focusLucket} 
+        backToParent={this.backToParent} setEditing={this.setEditing}   updateLucket={this.updateLucket}/>
         <div className="LucketsListChildren">
           {childrenLucket.map(lucket => (
-            <LucketsItem editingLucket={this.state.editing} lucket={lucket} key={lucket.name} setEditing={this.setEditing} setFocus={this.setFocus}  />
+            <LucketsItem editingLucket={this.state.editing} lucket={lucket} key={lucket.name} 
+            setEditing={this.setEditing} setFocus={this.setFocus}  
+            updateLucket={this.updateLucket}
+            />
           ))}
         </div>
         <Footer />

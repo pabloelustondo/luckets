@@ -8,7 +8,6 @@ import LucketActionStatusIcon from "../../Funcs/LucketActionStatusIcon";
 import LucketIcon from "../../Funcs/LucketIcon";
 import LucketSetFocusIcon from "../../Funcs/LucketSetFocusIcon";
 import LucketSetParentIcon from "../../Funcs/LucketSetParentIcon";
-import { AST_PropAccess } from "terser";
 import LucketForm from './LucketForm'
 import LucketEditingItem from '../LucketEditingIcon'
 
@@ -16,7 +15,7 @@ const LucketItem = props => {
 
   let className = (props.focus === true) ? "FocusLucketItem" : "LucketItem";
   let isEditing = (props.editingLucket !== null && props.editingLucket.name === props.lucket.name);
-  debugger;
+  ;
   return (
     <div>
       <div className={className}>
@@ -43,7 +42,7 @@ const LucketItem = props => {
             )}
         </div>
       </div>
-      <LucketForm isEditing={isEditing} lucket={props.lucket} />
+      <LucketForm isEditing={isEditing} lucket={props.lucket} updateLucket={props.updateLucket} />
     </div>
   );
 };

@@ -7,11 +7,16 @@ import IconSpacer from "../../IconSpacer";
 import LucketActionStatusIcon from "../../LucketActionStatusIcon";
 
 const LucketForm = props => {
-  debugger;
+  ;
   return props.isEditing ? (
-<div class="LucketForm">
+<div className="LucketForm">
       <div className="FormItem ItemLeft">
-        <input className="FormInputText" type="text"  placeholder="Name" onChange={() => alert('name changed')}/>
+        <input className="FormInputText" type="text"  placeholder="Name" 
+        onChange={(event) => {
+          let lucket = props.lucket;
+          lucket.name = event.target.value;
+          props.updateLucket(props.lucket)
+          }}/>
         <IconSpacer />
         <MinusIcon />
         <LucketStatusIcon status="yellow"/>

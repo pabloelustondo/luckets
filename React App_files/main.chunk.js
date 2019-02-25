@@ -552,7 +552,7 @@ function (_Component) {
     };
 
     _this.backToParent = function () {
-      debugger;
+      ;
       var newFocusLucket = Object(_Models_LuketsModel__WEBPACK_IMPORTED_MODULE_12__["getParentLucket"])(_this.state.luckets, _this.state.focusLucket);
 
       _this.setState({
@@ -561,7 +561,7 @@ function (_Component) {
     };
 
     _this.addLucket = function () {
-      debugger;
+      ;
       var newLucket = Object(_Models_LuketsModel__WEBPACK_IMPORTED_MODULE_12__["getNewLucket"])(_this.state.focusLucket);
 
       _this.setState({
