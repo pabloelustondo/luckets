@@ -20,7 +20,7 @@ class LucketsList extends Component {
   }
 
   updateLucket = (lucket) => {
-    debugger;
+    ;
     let newLuckets = this.state.luckets.map( l => {
       if (l.id === lucket.id) {
         return lucket
