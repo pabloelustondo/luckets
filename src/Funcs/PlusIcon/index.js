@@ -5,7 +5,7 @@ const imageLocation = '/images/add.svg'
 
 const PlusIcon = (props) => (
     <img className='PlusIcon' 
-    onClick = {props.plusHandler}
+    onClick = {props.onClick}
     src={imageLocation} alt={imageLocation} />
 )
 
