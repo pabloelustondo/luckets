@@ -4,6 +4,7 @@ import "./App.css";
 import LucketsList from "./Containers/LucketsList";
 import firebase from "firebase";
 import { StyledFirebaseAuth } from "react-firebaseui";
+import {getUserData,postUserData, postDefaultLucketSet,checkUser} from './Data/DataService'
 
 firebase.initializeApp({
   apiKey : "AIzaSyAu-HXBAYHQOxksCHplaz9JbbvJdrgVOGY",
@@ -13,7 +14,6 @@ firebase.initializeApp({
 class App extends Component {
   state = { signedIn: false ,
             user: null};
-
 
   signOut = () => {
     debugger;
@@ -35,16 +35,18 @@ class App extends Component {
   };
 
   componentDidMount = () => {
+    debugger;
     firebase.auth().onAuthStateChanged(user => {
-      debugger;
       if (user !== null){
+        // HERE IS WHEN WE HAVE THE USER 
         this.setState({ signedIn: user.I, user: user });
+        // CALL GET DATA
+        checkUser(user)
+        
       } else {
         this.setState({ signedIn: false, user: null });
       }
-
     });
-
   };
 
   render() {

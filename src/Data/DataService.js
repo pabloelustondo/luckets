@@ -1,15 +1,16 @@
 import axios from "axios";
-import {getRootLucket} from '../Models/LuketsModel'
+import { getRootLucket } from '../Models/LuketsModel'
 
 export const getData = handler => {
   axios
     .get("https://luckets-5fbb4.firebaseio.com/luckets.json")
     .then(response => {
-      let luckets = Object.keys(response.data).map(key => 
-        { let obj = response.data[key];
-          obj.id = key;
-          return obj }
-        );
+      let luckets = Object.keys(response.data).map(key => {
+        let obj = response.data[key];
+        obj.id = key;
+        return obj
+      }
+      );
       let focusLucket = getRootLucket(luckets);
       handler(luckets, focusLucket);
     })
@@ -18,14 +19,109 @@ export const getData = handler => {
     });
 };
 
+export const getUserData = (handler, user) => {
+  axios
+    .get("https://luckets-5fbb4.firebaseio.com/" + user.uid + ".json")
+    .then(response => {
+      if (response.data === null) { postUserData(user) }
+      else {
+        let luckets = Object.keys(response.data).map(key => {
+          let obj = response.data[key];
+          obj.id = key;
+          return obj
+        }
+        );
+      }
+    })
+    .catch(err => {
+      postUserData(user)
+    })
+};
+
 
 export const postData = (lucket, handler) => {
   axios
     .post("https://luckets-5fbb4.firebaseio.com/luckets.json/" + lucket.name, lucket)
     .then(response => {
+
       alert("OK");
     })
     .catch(err => {
-      alert("ERROR"+err);
+      alert("ERROR" + err);
     });
 };
+
+export const postUserData = (user, data) => {
+  debugger;
+  axios
+    .post("https://luckets-5fbb4.firebaseio.com/users/" + user.uid + ".json" , data)
+    .then(response => {
+      debugger;
+      alert("OK");
+    })
+    .catch(err => {
+      debugger;
+      alert("ERROR" + err);
+    });
+};
+
+export const postDefaultLucketSet = (user) => {
+  //axios 1
+  // grab luckets
+  axios
+    .get("https://luckets-5fbb4.firebaseio.com/luckets.json")
+    .then(response => {
+     
+      debugger;
+      // post into user
+      postUserData(user,response.data)
+    })
+    .catch(err => {
+      postUserData(user)
+    })
+}
+
+export const checkUser = (user) =>{
+  //if luckes is null  post default
+  axios
+    .get("https://luckets-5fbb4.firebaseio.com/users/" + user.uid + "/luckets" + ".json")
+    .then(response => {
+      
+      if(response.data === null){postDefaultLucketSet(user);}
+      else{alert("user allready has defaul lucket set")}
+      
+    })
+    .catch(err => {
+      postUserData(user)
+    })
+}
+
+/// find user and output his luckets.
+
+export const getuserData = handler => {
+  axios
+    .get("https://luckets-5fbb4.firebaseio.com/luckets.json")
+    .then(response => {
+      let luckets = Object.keys(response.data).map(key => {
+        let obj = response.data[key];
+        obj.id = key;
+        return obj
+      }
+      );
+      let focusLucket = getRootLucket(luckets);
+      handler(luckets, focusLucket);
+    })
+    .catch(err => {
+      alert(err);
+    });
+};
+
+/// if user = null then make his spot in the database
+
+
+
+
+
+
+
+

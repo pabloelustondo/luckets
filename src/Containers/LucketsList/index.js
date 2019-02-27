@@ -15,6 +15,7 @@ class LucketsList extends Component {
     editing: null
 };
 
+
   setFocus = (lucket) => {
     this.setState({focusLucket: lucket}) 
   }
@@ -46,20 +47,22 @@ class LucketsList extends Component {
   }
 
   addLucket = () => {
-    ;
     const newLucket = getNewLucket( this.state.focusLucket );
     this.setState( { focusLucket: newLucket }  )
   }
-
+/*
   componentDidMount = () => {
-    getData( (luckets, focusLucket) => { this.setState({ luckets, focusLucket }) } )
+    getData(
+      (luckets, focusLucket) => 
+      { this.setState({ luckets, focusLucket }) } 
+      )
   };
+  */
 
   render() {
 
     var focusLucket = (this.state.focusLucket == null )?getRootLucket(this.state.luckets): this.state.focusLucket
     var childrenLucket = getChildrenLuckets(this.state.luckets, focusLucket);
-    ;
    return(
       <div className="LucketsList" >
         <Header addLucket={this.addLucket} user={this.props.user} signOut={this.props.signOut} />
