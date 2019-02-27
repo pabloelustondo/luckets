@@ -23,7 +23,10 @@ export const getUserData = (handler, user) => {
   axios
     .get("https://luckets-5fbb4.firebaseio.com/" + user.uid + ".json")
     .then(response => {
-      if (response.data === null) { postUserData(user) }
+      if (response.data === null) { 
+        ;
+        postUserData(user) 
+      }
       else {
         let luckets = Object.keys(response.data).map(key => {
           let obj = response.data[key];
@@ -52,15 +55,17 @@ export const postData = (lucket, handler) => {
 };
 
 export const postUserData = (user, data) => {
-  debugger;
+  ;
+  let lucketsCollection = {};
+  lucketsCollection[user.uid] = {luckets:data};
   axios
-    .post("https://luckets-5fbb4.firebaseio.com/users/" + user.uid + ".json" , data)
+    .patch("https://luckets-5fbb4.firebaseio.com/users/"+user.uid+".json",{luckets:data})
     .then(response => {
-      debugger;
+      ;
       alert("OK");
     })
     .catch(err => {
-      debugger;
+      ;
       alert("ERROR" + err);
     });
 };
@@ -72,7 +77,7 @@ export const postDefaultLucketSet = (user) => {
     .get("https://luckets-5fbb4.firebaseio.com/luckets.json")
     .then(response => {
      
-      debugger;
+      ;
       // post into user
       postUserData(user,response.data)
     })
@@ -81,14 +86,24 @@ export const postDefaultLucketSet = (user) => {
     })
 }
 
-export const checkUser = (user) =>{
+export const checkUser = (user, handler) =>{
   //if luckes is null  post default
   axios
-    .get("https://luckets-5fbb4.firebaseio.com/users/" + user.uid + "/luckets" + ".json")
+    .get("https://luckets-5fbb4.firebaseio.com/users/" + user.uid + "/luckets.json")
     .then(response => {
-      
-      if(response.data === null){postDefaultLucketSet(user);}
-      else{alert("user allready has defaul lucket set")}
+      if(response.data === null){    
+        alert("user does not have data, will post default lucket set")
+        postDefaultLucketSet(user);
+      }
+      else{
+        let luckets = Object.keys(response.data).map(key => {
+          let obj = response.data[key];
+          obj.id = key;
+          return obj});
+
+        handler(luckets);
+        alert("user allready has defaul lucket set")
+      }
       
     })
     .catch(err => {

@@ -13,10 +13,11 @@ firebase.initializeApp({
 
 class App extends Component {
   state = { signedIn: false ,
+            luckets: null,
             user: null};
 
   signOut = () => {
-    debugger;
+    ;
     this.setState({ signedIn: false, user: null });
     firebase.auth().signOut().then(function() {
       alert("Signed out")
@@ -34,16 +35,22 @@ class App extends Component {
     }
   };
 
+  setLuckets = (luckets) => {
+    this.setState({ luckets: luckets });
+  }
+
   componentDidMount = () => {
-    debugger;
+    ;
     firebase.auth().onAuthStateChanged(user => {
       if (user !== null){
         // HERE IS WHEN WE HAVE THE USER 
+        alert("Signed in")
         this.setState({ signedIn: user.I, user: user });
         // CALL GET DATA
-        checkUser(user)
+        checkUser(user, this.setLuckets)
         
       } else {
+        alert("no user need to signin")
         this.setState({ signedIn: false, user: null });
       }
     });
@@ -53,11 +60,16 @@ class App extends Component {
     return (
       <div className="App">
         {this.state.signedIn ? (
-          <LucketsList user={this.state.user} signOut={this.signOut}/>
-        ) : (<StyledFirebaseAuth
+          <LucketsList user={this.state.user}
+          luckets={this.state.luckets}
+          setLuckets={this.setLuckets}
+          signOut={this.signOut}/>
+        ) : (
+          <StyledFirebaseAuth
             uiConfig={this.uiConfig}
             firebaseAuth={firebase.auth()}
-          />)}
+          />
+          )}
       </div>
     );
   }

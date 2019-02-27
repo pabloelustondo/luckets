@@ -4,13 +4,11 @@ import LucketsItem from "../../Funcs/LucketItem";
 import FocusLucket from "../../Funcs/FocusLucket";
 import Header from "../../Funcs/Header";
 import Footer from "../../Funcs/Footer";
-import { getData } from "../../Data/DataService"
 
 import { getRootLucket, getChildrenLuckets, getParentLucket, getNewLucket, updateLucket}  from "../../Models/LuketsModel";
 
 class LucketsList extends Component {
   state = { 
-    luckets: [], 
     focusLucket: null,
     editing: null
 };
@@ -22,27 +20,26 @@ class LucketsList extends Component {
 
   updateLucket = (lucket) => {
     ;
-    let newLuckets = this.state.luckets.map( l => {
+    let newLuckets = this.props.luckets.map( l => {
       if (l.id === lucket.id) {
         return lucket
       } else {
         return l
       }
     })
-    this.setState({ luckets: newLuckets}) 
+    this.props.setLuckets(newLuckets);
   }
 
   setEditing = (lucket) => {
     let editingObj = this.state.editing;
-    if( editingObj != null && editingObj.name == lucket.name){
+    if( editingObj != null && editingObj.name === lucket.name){
       this.setState({editing: null}) 
     }
     else{this.setState({editing: lucket}) }
   }
  
   backToParent = () => {
-    ;
-    let newFocusLucket = getParentLucket(this.state.luckets, this.state.focusLucket);
+    let newFocusLucket = getParentLucket(this.props.luckets, this.state.focusLucket);
     this.setState( { focusLucket: newFocusLucket }  )
   }
 
@@ -50,20 +47,19 @@ class LucketsList extends Component {
     const newLucket = getNewLucket( this.state.focusLucket );
     this.setState( { focusLucket: newLucket }  )
   }
-/*
-  componentDidMount = () => {
-    getData(
-      (luckets, focusLucket) => 
-      { this.setState({ luckets, focusLucket }) } 
-      )
-  };
-  */
 
   render() {
 
-    var focusLucket = (this.state.focusLucket == null )?getRootLucket(this.state.luckets): this.state.focusLucket
-    var childrenLucket = getChildrenLuckets(this.state.luckets, focusLucket);
-   return(
+    let focusLucket=null;
+    let childrenLucket=[];
+      
+    if (this.props.luckets){
+      debugger;
+    focusLucket= (this.state.focusLucket == null )?getRootLucket(this.props.luckets): this.state.focusLucket
+    childrenLucket= getChildrenLuckets(this.props.luckets, focusLucket);
+    }
+  
+    return(
       <div className="LucketsList" >
         <Header addLucket={this.addLucket} user={this.props.user} signOut={this.props.signOut} />
         <FocusLucket editingLucket={this.state.editing}  lucket={focusLucket} 
