@@ -54,7 +54,7 @@ class LucketsList extends Component {
     let childrenLucket=[];
       
     if (this.props.luckets){
-      debugger;
+      ;
     focusLucket= (this.state.focusLucket == null )?getRootLucket(this.props.luckets): this.state.focusLucket
     childrenLucket= getChildrenLuckets(this.props.luckets, focusLucket);
     }

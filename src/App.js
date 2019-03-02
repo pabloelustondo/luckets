@@ -20,9 +20,8 @@ class App extends Component {
     ;
     this.setState({ signedIn: false, user: null });
     firebase.auth().signOut().then(function() {
-      alert("Signed out")
     }).catch(function(error) {
-      alert("Signing out ERROR "+ error);
+      alert(error)
     });
 
   }          
@@ -44,13 +43,11 @@ class App extends Component {
     firebase.auth().onAuthStateChanged(user => {
       if (user !== null){
         // HERE IS WHEN WE HAVE THE USER 
-        alert("Signed in")
         this.setState({ signedIn: user.I, user: user });
         // CALL GET DATA
         checkUser(user, this.setLuckets)
-        
+      
       } else {
-        alert("no user need to signin")
         this.setState({ signedIn: false, user: null });
       }
     });

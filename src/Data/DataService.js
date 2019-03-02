@@ -46,8 +46,6 @@ export const postData = (lucket, handler) => {
   axios
     .post("https://luckets-5fbb4.firebaseio.com/luckets.json/" + lucket.name, lucket)
     .then(response => {
-
-      alert("OK");
     })
     .catch(err => {
       alert("ERROR" + err);
@@ -61,8 +59,6 @@ export const postUserData = (user, data) => {
   axios
     .patch("https://luckets-5fbb4.firebaseio.com/users/"+user.uid+".json",{luckets:data})
     .then(response => {
-      ;
-      alert("OK");
     })
     .catch(err => {
       ;
@@ -102,7 +98,6 @@ export const checkUser = (user, handler) =>{
           return obj});
 
         handler(luckets);
-        alert("user allready has defaul lucket set")
       }
       
     })

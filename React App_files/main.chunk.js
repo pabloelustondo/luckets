@@ -674,7 +674,6 @@ var getData = function getData(handler) {
 };
 var postData = function postData(lucket, handler) {
   axios__WEBPACK_IMPORTED_MODULE_0___default.a.post("https://luckets-5fbb4.firebaseio.com/luckets.json/" + lucket.name, lucket).then(function (response) {
-    alert("OK");
   }).catch(function (err) {
     alert("ERROR" + err);
   });
