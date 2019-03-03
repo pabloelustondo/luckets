@@ -66,7 +66,7 @@ class LucketsList extends Component {
         backToParent={this.backToParent} setEditing={this.setEditing}   updateLucket={this.updateLucket}/>
         <div className="LucketsListChildren">
           {childrenLucket.map(lucket => (
-            <LucketsItem editingLucket={this.state.editing} lucket={lucket} key={lucket.name} 
+            <LucketsItem editingLucket={this.state.editing} lucket={lucket} key={lucket.id} 
             setEditing={this.setEditing} setFocus={this.setFocus}  
             updateLucket={this.updateLucket}
             />
