@@ -26,9 +26,9 @@
 
 
 :root {
-    --status-icon-height: 20px;
-    --header-height: 35px;
-    --footer-height: 35px;
+    --status-icon-height: 25px;
+    --header-height: 40px;
+    --footer-height: 40px;
     --lucket-title-width: 150px;
     --header-and-footer-height: calc(var(--header-height) + var(--footer-height));
 }

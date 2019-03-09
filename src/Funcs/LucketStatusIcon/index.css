@@ -3,6 +3,17 @@ div.LucketStatusIcon {
     width: var(--status-icon-height);
     margin-top: auto;
     margin-bottom:auto;
-    margin-left: 5px;
+    margin-left: 10px;
     border-radius: 50%;
+
     }
+
+.Menu {
+    position: relative;
+    left: 20px;
+    flex-direction: row;
+    display: flex;
+    width:calc(var(--status-icon-height) * 10);
+    }
+         
+      
