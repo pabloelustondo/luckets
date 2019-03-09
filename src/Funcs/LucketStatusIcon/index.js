@@ -29,11 +29,13 @@ render() {
 
     let options = ['blue','green','white','yellow','red','purple','black'];
 
-    return (<div className={'LucketStatusIcon ' + colorClass(this.props.status)} 
+    return (
+    <div className={'LucketStatusIcon ' + colorClass(this.props.status)} 
     style={{ backgroundColor: this.props.status }} 
-    onClick={this.edit}
-     >
+    onClick={this.edit}> 
     { (this.state.edit === true)?
+         <div>
+         <div className="Callout"/>
          <div id="menu" className="Menu">
          {options.filter(
              o => o!==this.props.status
@@ -41,7 +43,7 @@ render() {
             <div className={'LucketStatusIconShort ' + colorFloatClass(o)} 
             onClick={(e) => this.set(e,o)} />
          )}
-         </div>:null }
+         </div></div>:null }
     </div>)
 }
     

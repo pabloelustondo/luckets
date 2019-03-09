@@ -20,10 +20,23 @@ div.LucketStatusIconShort {
 
 .Menu {
     position: relative;
-    left: 20px;
+    background-color: beige;
+    left: -80px;
+    top:-3px;
     flex-direction: row;
     display: flex;
-    width:calc(var(--status-icon-height) * 10);
+    width:calc(35px * 6 + 10px);
+    height: 40px;
+    border-radius: 10%;
     }
          
-      
+.Callout {
+        position: relative;
+        background-color: beige;
+        left: -5px;
+        top:30px;
+        width: 35px;
+        height: 35px;
+        transform: rotate(45deg);
+        }
+            
