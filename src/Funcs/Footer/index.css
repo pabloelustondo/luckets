@@ -1,5 +1,5 @@
 .Footer {
-    background-color:white;
+    background-color:gray;
     width: 100%;
     height: var(--footer-height);
 }
