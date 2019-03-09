@@ -72,7 +72,7 @@ class LucketsList extends Component {
             />
           ))}
         </div>
-        <Footer />
+        <Footer user={this.props.user} signOut={this.props.signOut}/>
       </div>
    )
   }
