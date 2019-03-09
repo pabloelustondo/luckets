@@ -8,7 +8,7 @@
   background-color: green
 }
 .status-white {
-  background-color: white
+  background-color: #ffffff
 }
 .status-yellow {
   background-color: yellow
@@ -19,6 +19,47 @@
 .status-red {
   background-color: red
 }
+.status-black {
+  background-color: red
+}
+
+
+.statusfloat-blue {
+  background-color: blue;
+  position:relative;
+  top:10px
+}
+.statusfloat-green {
+  background-color: green;
+  position:relative;
+  top:25px
+}
+.statusfloat-white {
+  background-color: white;
+  position:relative;
+  top:37px
+}
+.statusfloat-yellow {
+  background-color: yellow;
+  position:relative;
+  top:37px
+}
+.statusfloat-red {
+  background-color: red;
+  position:relative;
+  top:37px
+}
+.statusfloat-purple {
+  background-color: purple;
+  position:relative;
+  top:37px
+}
+.statusfloat-black {
+  background-color: black;
+  position:relative;
+  top:37px
+}
+
 
 .status- {
   background-color: 

@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import './index.css'
 
 const colorClass = (color) => "LucketStatusIcon status-"+ color;
+const colorFloatClass = (color) => "LucketStatusIcon statusfloat-"+ color;
 class LucketStatusIcon extends Component {
 
 state = {
@@ -37,7 +38,7 @@ render() {
          {options.filter(
              o => o!==this.props.status
          ).map( o => 
-            <div className={'LucketStatusIcon ' + colorClass(o)} 
+            <div className={'LucketStatusIconShort ' + colorFloatClass(o)} 
             onClick={(e) => this.set(e,o)} />
          )}
          </div>:null }
