@@ -26,7 +26,7 @@ class SettingsIcon extends Component {
       <div className="SettingsPanel">
       {this.props.user ? <div>{this.props.user.displayName}</div> : null}
       <button onClick={this.props.signOut}> SignOut </button>
-      <button onClick={this.props.signOut}> Refresh </button>
+      <button onClick={this.props.refresh}> Refresh </button>
       </div>:null}
       </div>
     );
