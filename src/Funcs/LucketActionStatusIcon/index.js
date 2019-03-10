@@ -26,6 +26,15 @@ class LucketActionStatusIcon extends Component {
         this.setState({edit:false}) 
     }
 
+    setPoints = (event, v) => {
+        event.stopPropagation();
+        if (v==="plus"){
+            let lucket = this.props.lucket;
+            lucket.points += 1;
+            this.props.updateLucket(lucket)
+        }
+    }
+
     render() {    
 
 
@@ -35,6 +44,7 @@ class LucketActionStatusIcon extends Component {
     return (
     <div className={ 'LucketActionStatusIcon ' + colorClass(this.props.status)} 
     onClick={this.edit}>
+        {this.props.lucket.points}
         
         { (this.state.edit === true)?
          <div>
@@ -48,12 +58,12 @@ class LucketActionStatusIcon extends Component {
          )}
 
          <div key={"minus"} className={'LucketActionStatusIcon ' + colorFloatClass("minus")} 
-            onClick={(e) => this.set(e,"minus")} >
+            onClick={(e) => this.setPoints(e,"minus")} >
             <img src="/images/minus.svg" className="ActionStatusImage" alt="minus.svg" />
             </div>
 
         <div key={"plus"} className={'LucketActionStatusIcon ' + colorFloatClass("plus")} 
-            onClick={(e) => this.set(e,"plus")} >
+            onClick={(e) => this.setPoints(e,"plus")} >
             <img src="/images/add.svg" className="ActionStatusImage" alt="add.svg" />
             </div>
 

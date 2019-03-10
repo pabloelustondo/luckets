@@ -1,0 +1,12 @@
+div.ChildrenStatusIcon {
+    height: var(--status-icon-height);
+    width: var(--status-icon-height);
+    margin-top: auto;
+    margin-bottom:auto;
+    margin-left: 10px;
+    border-radius: 50%;
+    margin-right: 5px;
+
+    }
+
+            

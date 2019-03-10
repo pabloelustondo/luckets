@@ -4,6 +4,8 @@ div.LucketActionStatusIcon {
     margin-top: auto;
     margin-bottom:auto;
     margin-left: 10px;
+    text-align: center;
+    font-weight: bold;
      
 }
 

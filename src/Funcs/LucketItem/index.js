@@ -10,6 +10,7 @@ import LucketSetFocusIcon from "../../Funcs/LucketSetFocusIcon";
 import LucketSetParentIcon from "../../Funcs/LucketSetParentIcon";
 import LucketForm from './LucketForm'
 import LucketEditingItem from '../LucketEditingIcon'
+import ChildrenStatusIcon from "../ChildrenStatusIcon"
 
 const LucketItem = props => {
 
@@ -21,20 +22,22 @@ const LucketItem = props => {
       <div className={className}>
         <div className="ItemLeft">
           <LucketIcon icon={props.lucket.icon} />
-          <LucketActionStatusIcon status={props.lucket.actionStatus} />
-          <LucketStatusIcon status={props.lucket.status} />
+          <LucketActionStatusIcon status={props.lucket.actionStatus} 
+          lucket={props.lucket}  updateLucket={props.updateLucket} />
+          <LucketStatusIcon status={props.lucket.status} 
+          lucket={props.lucket} updateLucket={props.updateLucket} />
         </div>
         <div className="ItemCenter">
           <LucketTitle id={props.lucket.name}  lucket={props.lucket} setEditing={props.setEditing}/>
         </div>
         <div className="ItemRigth">
-          <LucketPointsIcon points={props.lucket.points} />
           <LucketRelativePointsIcon
               backToParent={props.backToParent} lucket={props.lucket} 
               focus={props.focus}
               setFocus={() => {props.setFocus(props.lucket);}}
               points="44" totalPoints="77" 
           />
+          <ChildrenStatusIcon status="yellow"/>
         </div>
       </div>
       <LucketForm isEditing={isEditing} lucket={props.lucket} updateLucket={props.updateLucket} />
