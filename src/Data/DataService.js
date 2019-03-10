@@ -1,5 +1,6 @@
 import axios from "axios";
-import { getRootLucket } from '../Models/LuketsModel'
+import { getRootLucket } from '../Models/LuketsModel';
+import masterData from "./master-data.json";
 
 export const getData = handler => {
   axios
@@ -15,11 +16,13 @@ export const getData = handler => {
       handler(luckets, focusLucket);
     })
     .catch(err => {
-      alert(err);
+      alert("Off Line:  " + err);
+      handler(masterData, masterData[0]);
     });
 };
 
 export const getUserData = (handler, user) => {
+  debugger;
   axios
     .get("https://luckets-5fbb4.firebaseio.com/" + user.uid + ".json")
     .then(response => {
