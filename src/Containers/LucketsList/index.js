@@ -4,7 +4,7 @@ import LucketsItem from "../../Funcs/LucketItem";
 import FocusLucket from "../../Funcs/FocusLucket";
 import Header from "../../Funcs/Header";
 import Footer from "../../Funcs/Footer";
-import {postData} from "../../Data/DataService"
+import {postData, getData} from "../../Data/DataService"
 
 import { getRootLucket, getChildrenLuckets, getParentLucket, getNewLucket, updateLucket}  from "../../Models/LuketsModel";
 
@@ -74,7 +74,10 @@ class LucketsList extends Component {
             />
           ))}
         </div>
-        <Footer user={this.props.user} signOut={this.props.signOut}/>
+        <Footer user={this.props.user} 
+          signOut={this.props.signOut}
+          refresh={getData}
+        />
       </div>
    )
   }
