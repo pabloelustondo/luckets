@@ -10,7 +10,6 @@ state = {
 }
 
 edit = () => {
-    debugger;
     if (this.state.edit === false){
         this.setState({edit:true})
     } else {
@@ -20,7 +19,6 @@ edit = () => {
 }
 
 set = (event, v) => {
-    debugger;
     event.stopPropagation();
     this.setState({edit:false}) 
 }
