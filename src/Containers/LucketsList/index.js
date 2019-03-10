@@ -76,7 +76,6 @@ class LucketsList extends Component {
         </div>
         <Footer user={this.props.user} 
           signOut={this.props.signOut}
-          refresh={getData}
         />
       </div>
    )

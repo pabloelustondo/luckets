@@ -17,7 +17,6 @@ class App extends Component {
             user: null};
 
   signOut = () => {
-    ;
     this.setState({ signedIn: false, user: null });
     firebase.auth().signOut().then(function() {
     }).catch(function(error) {
