@@ -4,7 +4,7 @@ export const getRootLucket = (luckets) => {
 }
 
 export const getParentLucket = (luckets, lucket) => {
-    return luckets.find( l => l.name === lucket.parent)
+    return luckets.find( l => l.id === lucket.parent)
 }
 
 export const increaseStatus = (lucket) => {
@@ -37,7 +37,7 @@ export const decreaseActionStatus = (lucket) => {
 
 export const getNewLucket = (parentLucket) => {
     return {
-        parent: parentLucket.name,
+        parent: parentLucket.id,
         name: "NEW",
         actionStatus: "white",
         icon: 'reading.svg' ,
@@ -57,6 +57,6 @@ export const getLucketById = (luckets, id) => {
 }
 
 export const getChildrenLuckets = (luckets, focusLucket) => {
-    if (focusLucket) return luckets.filter( l => l.parent === focusLucket.name)
+    if (focusLucket) return luckets.filter( l => l.parent === focusLucket.id)
     else return []
 }
