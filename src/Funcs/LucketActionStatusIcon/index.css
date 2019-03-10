@@ -14,7 +14,7 @@ div.LucketActionStatusIcon {
     top:-3px;
     flex-direction: row;
     display: flex;
-    width:calc(35px * 6 + 10px);
+    width:calc(35px * 8 + 10px);
     height: 40px;
     border-radius: 10%;
     }
@@ -28,3 +28,10 @@ div.LucketActionStatusIcon {
         height: 35px;
         transform: rotate(45deg);
         }
+
+.ActionStatusImage {
+    vertical-align: middle;
+    width: 25px;
+    height: 25px;
+    margin:0px;
+}

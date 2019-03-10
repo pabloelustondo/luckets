@@ -20,8 +20,18 @@
   background-color: red
 }
 .status-black {
-  background-color: red
+  background-color: black
 }
+.status-minus {
+  background-color: beige;
+}
+.status-plus {
+  background-color: beige
+}
+.status-close {
+  background-color: beige
+}
+
 
 
 .statusfloat-blue {
@@ -60,10 +70,20 @@
   top:0px
 }
 
-
-.status- {
-  background-color: 
+.statusfloat-minus {
+  position:relative;
+  top:0px
 }
+.statusfloat-plus {
+  position:relative;
+  top:0px
+}
+.statusfloat-close {
+  position:relative;
+  top:0px
+}
+
+
 
 
 :root {

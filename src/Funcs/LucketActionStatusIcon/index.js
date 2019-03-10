@@ -10,6 +10,7 @@ class LucketActionStatusIcon extends Component {
     state = {
         edit : false
     }
+
     
     edit = () => {
         if (this.state.edit === false){
@@ -42,9 +43,20 @@ class LucketActionStatusIcon extends Component {
          {options.filter(
              o => o!==this.props.status
          ).map( o => 
-            <div className={'LucketActionStatusIcon ' + colorFloatClass(o)} 
+            <div key={o} className={'LucketActionStatusIcon ' + colorFloatClass(o)} 
             onClick={(e) => this.set(e,o)} />
          )}
+
+         <div key={"minus"} className={'LucketActionStatusIcon ' + colorFloatClass("minus")} 
+            onClick={(e) => this.set(e,"minus")} >
+            <img src="/images/minus.svg" className="ActionStatusImage" alt="minus.svg" />
+            </div>
+
+        <div key={"plus"} className={'LucketActionStatusIcon ' + colorFloatClass("plus")} 
+            onClick={(e) => this.set(e,"plus")} >
+            <img src="/images/add.svg" className="ActionStatusImage" alt="add.svg" />
+            </div>
+
          </div></div>:null }
 
 
