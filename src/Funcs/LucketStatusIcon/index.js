@@ -21,6 +21,9 @@ edit = () => {
 set = (event, v) => {
     event.stopPropagation();
     this.setState({edit:false}) 
+    let lucket = this.props.lucket;
+    lucket.status = v;
+    this.props.updateLucket(lucket);
 }
     
 render() {
