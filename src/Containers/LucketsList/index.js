@@ -39,8 +39,9 @@ class LucketsList extends Component {
   }
  
   backToParent = () => {
+    if (this.state.focusLucket && this.state.focusLucket.parent !== null ){
     let newFocusLucket = getParentLucket(this.props.luckets, this.state.focusLucket);
-    this.setState( { focusLucket: newFocusLucket }  )
+    this.setState( { focusLucket: newFocusLucket }  )}
   }
 
   addLucket = () => {
