@@ -4,6 +4,7 @@ import LucketsItem from "../../Funcs/LucketItem";
 import FocusLucket from "../../Funcs/FocusLucket";
 import Header from "../../Funcs/Header";
 import Footer from "../../Funcs/Footer";
+import {postData} from "../../Data/DataService"
 
 import { getRootLucket, getChildrenLuckets, getParentLucket, getNewLucket, updateLucket}  from "../../Models/LuketsModel";
 
@@ -19,7 +20,6 @@ class LucketsList extends Component {
   }
 
   updateLucket = (lucket) => {
-    ;
     let newLuckets = this.props.luckets.map( l => {
       if (l.id === lucket.id) {
         return lucket
@@ -28,6 +28,7 @@ class LucketsList extends Component {
       }
     })
     this.props.setLuckets(newLuckets);
+    postData(this.props.user, lucket, () => {})
   }
 
   setEditing = (lucket) => {

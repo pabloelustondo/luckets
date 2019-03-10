@@ -45,9 +45,9 @@ export const getUserData = (handler, user) => {
 };
 
 
-export const postData = (lucket, handler) => {
+export const postData = (user, lucket, handler) => {
   axios
-    .post("https://luckets-5fbb4.firebaseio.com/luckets.json/" + lucket.name, lucket)
+    .patch("https://luckets-5fbb4.firebaseio.com//users/"+user.uid+"/luckets/" + lucket.id +".json", lucket)
     .then(response => {
     })
     .catch(err => {
@@ -56,15 +56,13 @@ export const postData = (lucket, handler) => {
 };
 
 export const postUserData = (user, data) => {
-  ;
   let lucketsCollection = {};
   lucketsCollection[user.uid] = {luckets:data};
   axios
     .patch("https://luckets-5fbb4.firebaseio.com/users/"+user.uid+".json",{luckets:data})
     .then(response => {
     })
-    .catch(err => {
-      ;
+    .catch(err => {  
       alert("ERROR" + err);
     });
 };
@@ -75,8 +73,6 @@ export const postDefaultLucketSet = (user) => {
   axios
     .get("https://luckets-5fbb4.firebaseio.com/luckets.json")
     .then(response => {
-     
-      ;
       // post into user
       postUserData(user,response.data)
     })

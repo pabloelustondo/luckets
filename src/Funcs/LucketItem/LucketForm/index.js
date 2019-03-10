@@ -13,6 +13,16 @@ const LucketForm = props => {
       <div className="FormItem ItemLeft">
       </div>
       <div className="FormItem">
+        <textarea className="FormTextAreaSmall"
+        placeholder="Name"
+        value={props.lucket.name}       
+        onChange={(event) => {
+          let lucket = props.lucket;
+          lucket.name = event.target.value;
+          props.updateLucket(props.lucket)
+          }}/>
+      </div>
+      <div className="FormItem">
         <textarea className="FormTextArea"
         placeholder="Action Plan"
         value={props.lucket.actionPlan}       
