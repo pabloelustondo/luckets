@@ -1,3 +1,4 @@
+import uuidv1 from "uuid/v1"
 
 export const getRootLucket = (luckets) => {
     return luckets.find( l => l.parent === "")
@@ -36,8 +37,11 @@ export const decreaseActionStatus = (lucket) => {
 }
 
 export const getNewLucket = (parentLucket) => {
+    const id = uuidv1();
+    const parentId = (parentLucket)?parentLucket.id:null;
     return {
-        parent: parentLucket.id,
+        id: id,
+        parent: parentId,
         name: "NEW",
         actionStatus: "white",
         icon: 'reading.svg' ,
@@ -57,6 +61,8 @@ export const getLucketById = (luckets, id) => {
 }
 
 export const getChildrenLuckets = (luckets, focusLucket) => {
-    if (focusLucket) return luckets.filter( l => l.parent === focusLucket.id)
+    if (focusLucket) return luckets
+    .filter( l => l.parent === focusLucket.id && !l.deleted) 
+    .sort( (a,b) => (a.name > b.name) ? 1 : ((b.name > a.name) ? -1 : 0)  );  
     else return []
 }

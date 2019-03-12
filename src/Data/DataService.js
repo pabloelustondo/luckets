@@ -59,6 +59,7 @@ export const postData = (user, lucket, handler) => {
   axios
     .patch("https://luckets-5fbb4.firebaseio.com//users/"+user.uid+"/luckets/" + lucket.id +".json", lucket)
     .then(response => {
+      alert("POsted ok")
     })
     .catch(err => {
       alert("ERROR" + err);
