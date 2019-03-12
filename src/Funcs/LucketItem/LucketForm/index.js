@@ -42,6 +42,15 @@ const LucketForm = props => {
           props.updateLucket(props.lucket)
           }}/>
       </div>
+      <div className="FormItem">
+        <button className="FormButton"
+        value='Delete'
+        onClick={() => {
+          let lucket = props.lucket;
+          lucket.deleted = true;
+          props.updateLucket(props.lucket)
+          }}>Delete</button>
+      </div>
       <div>
       </div>
 </div>

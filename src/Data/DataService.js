@@ -45,6 +45,16 @@ export const getUserData = (handler, user) => {
 };
 
 
+export const patchData = (user, lucket, handler) => {
+  axios
+    .patch("https://luckets-5fbb4.firebaseio.com//users/"+user.uid+"/luckets/" + lucket.id +".json", lucket)
+    .then(response => {
+    })
+    .catch(err => {
+      alert("ERROR" + err);
+    });
+};
+
 export const postData = (user, lucket, handler) => {
   axios
     .patch("https://luckets-5fbb4.firebaseio.com//users/"+user.uid+"/luckets/" + lucket.id +".json", lucket)
@@ -54,6 +64,7 @@ export const postData = (user, lucket, handler) => {
       alert("ERROR" + err);
     });
 };
+
 
 export const postUserData = (user, data) => {
   let lucketsCollection = {};
@@ -96,7 +107,7 @@ export const checkUser = (user, handler) =>{
           obj.id = key;
           return obj});
 
-        handler(luckets);
+        handler(luckets.filter( l => !l.deleted===true) );
       }
       
     })
