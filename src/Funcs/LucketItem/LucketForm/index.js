@@ -81,7 +81,9 @@ debugger;
 
 {(props.feature === "icon" )?<div>
 
-      <LucketIcons />
+      <LucketIcons updateLucket={ props.updateLucket }  
+        lucket = { props.lucket }
+      />
       
       </div>:null}
 

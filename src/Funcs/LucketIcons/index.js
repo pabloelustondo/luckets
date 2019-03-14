@@ -9,15 +9,13 @@ const imageLocation = imagename => `/images/${imagename}.svg`;
           setEditing={props.setEditing}
 */
 
-const LucketIcons = () => {
+const LucketIcons = (props) => {
     return iconsList.map(o => (
     <img
       className="LucketIcon"
       src={imageLocation(o)}
       alt={o}
-      onClick={() => {
-        alert("selected: " + o);
-      }}
+      onClick={() =>  props.updateLucket( {...props.lucket, icon:o + ".svg" } )  }     
     />
   ));
 };
