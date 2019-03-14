@@ -15,20 +15,27 @@ import ChildrenStatusIcon from "../ChildrenStatusIcon"
 const LucketItem = props => {
 
   let className = (props.focus === true) ? "FocusLucketItem" : "LucketItem";
-  let isEditing = (props.editingLucket !== null && props.editingLucket.name === props.lucket.name);
-  ;
+  let isEditing = (props.editingLucket !== null && props.editingLucket.id === props.lucket.id);
+  let feature = (props.editingLucket !== null)?props.editingLucket.feature: null;
+  debugger;
   return (
     <div>
       <div className={className}>
         <div className="ItemLeft">
-          <LucketIcon icon={props.lucket.icon} />
+          <LucketIcon icon={props.lucket.icon} 
+          lucket={props.lucket} 
+          setEditing={props.setEditing}
+          />
           <LucketActionStatusIcon status={props.lucket.actionStatus} 
           lucket={props.lucket}  updateLucket={props.updateLucket} />
           <LucketStatusIcon status={props.lucket.status} 
           lucket={props.lucket} updateLucket={props.updateLucket} />
         </div>
         <div className="ItemCenter">
-          <LucketTitle id={props.lucket.name}  lucket={props.lucket} setEditing={props.setEditing}/>
+          <LucketTitle 
+          id={props.lucket.name}  
+          lucket={props.lucket} 
+          setEditing={props.setEditing}/>
         </div>
         <div className="ItemRigth">
           <LucketRelativePointsIcon
@@ -40,7 +47,10 @@ const LucketItem = props => {
           <ChildrenStatusIcon status="yellow"/>
         </div>
       </div>
-      <LucketForm isEditing={isEditing} lucket={props.lucket} updateLucket={props.updateLucket} />
+      <LucketForm isEditing={isEditing} 
+      feature = {feature}
+      lucket={props.lucket} 
+      updateLucket={props.updateLucket} />
     </div>
   );
 };
