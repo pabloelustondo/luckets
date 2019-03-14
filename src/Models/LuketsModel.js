@@ -38,7 +38,7 @@ export const decreaseActionStatus = (lucket) => {
 
 export const getNewLucket = (parentLucket) => {
     const id = uuidv1();
-    const parentId = (parentLucket)?parentLucket.id:null;
+    const parentId = (parentLucket)?parentLucket.id:"Life-Lucket";
     return {
         id: id,
         parent: parentId,
