@@ -7,6 +7,7 @@ import IconSpacer from "../../IconSpacer";
 import LucketActionStatusIcon from "../../LucketActionStatusIcon";
 import {increaseStatus, decreaseStatus, increaseActionStatus, decreaseActionStatus} from '../../../Models/LuketsModel'
 
+import LucketIcons from "../../LucketIcons"
 const LucketForm = props => {
 
 
@@ -77,6 +78,12 @@ debugger;
       {actionPlanEditor}
       {descriptionEditor}
       {deleteButton}</div>:null}
+
+{(props.feature === "icon" )?<div>
+
+      <LucketIcons />
+      
+      </div>:null}
 
 
       <div>
