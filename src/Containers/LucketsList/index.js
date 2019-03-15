@@ -27,6 +27,7 @@ class LucketsList extends Component {
         return l
       }
     })
+    this.setFocus(lucket)
     this.props.setLuckets(newLuckets);
     patchData(this.props.user, lucket, () => {})
   }
