@@ -5,27 +5,27 @@ describe("LucketsModel", function() {
   describe("getRootLucket", function() {
     it("should return the lucket that has not parent", function() {
       let luckets = [
-        { parent: "a", name: "x" },
-        { parent: "", name: "y" },
-        { parent: "b", name: "z" }
+        { parent: "a", id: "x" },
+        { parent: "", id: "y" },
+        { parent: "b", id: "z" }
       ];
       let rootLucket = getRootLucket(luckets);
 
-      assert.equal(rootLucket.name, "y");
+      assert.equal(rootLucket.id, "y");
     });
   });
 
   describe("getRootLucket", function() {
     it("should return the children luckets for a give n focus luckrt", function() {
       let luckets = [
-        { parent: "a", name: "x" },
-        { parent: "", name: "y" },
-        { parent: "", name: "b" },
-        { parent: "b", name: "z" },
-        { parent: "b", name: "q" },
-        { parent: "b", name: "w" }
+        { parent: "a", id: "x" },
+        { parent: "", id: "y" },
+        { parent: "", id: "b" },
+        { parent: "b", id: "z" },
+        { parent: "b", id: "q" },
+        { parent: "b", id: "w" }
       ];
-      let focusLucket = { parent: "", name: "b" };
+      let focusLucket = { parent: "", id: "b" };
 
       let childrenLuckets = getChildrenLuckets(luckets, focusLucket);
       console.log('childrenLuckets', childrenLuckets)
@@ -36,24 +36,24 @@ describe("LucketsModel", function() {
   describe("getParentLucket", function() {
     it("should return the parent lucket for a given lucket", function() {
       let luckets = [
-        { parent: "a", name: "x" },
-        { parent: "", name: "y" },
-        { parent: "", name: "b" },
-        { parent: "b", name: "z" },
-        { parent: "b", name: "q" },
-        { parent: "b", name: "w" }
+        { parent: "a", id: "x" },
+        { parent: "", id: "y" },
+        { parent: "", id: "b" },
+        { parent: "b", id: "z" },
+        { parent: "b", id: "q" },
+        { parent: "b", id: "w" }
       ];
-      let lucket = { parent: "b", name: "q" };
+      let lucket = { parent: "b", id: "q" };
 
       let parentLucket = getParentLucket(luckets, lucket);
-      assert.equal(parentLucket.name,"b");
+      assert.equal(parentLucket.id,"b");
     });
   });
 
 
   describe("getNewLucket", function() {
     it("should return a new lucket for a given a parent lucket", function() {
-      let parentLucket = { parent: "b", name: "q" };
+      let parentLucket = { parent: "b", id: "q" };
 
       let newLucket = getNewLucket(parentLucket);
       assert.equal(newLucket.name,"NEW");
@@ -79,7 +79,7 @@ describe("LucketsModel", function() {
         { id:"x", parent: "a", name: "x" },
         { id:"y", parent: "", name: "y" },
         { id:"b", parent: "", name: "b" },
-        { id:"z", parent: "b", name: "z" },
+        { id:"z", parent: "b", name: "zz" },
         { id:"q", parent: "b", name: "q" },
         { id:"w", parent: "b", name: "w" }
       ];
@@ -87,7 +87,10 @@ describe("LucketsModel", function() {
       let updatedLucket =   { id:"z", parent: "b", name: "zz" };
       let newLuckets = updateLucket(luckets, updatedLucket);
       let foundLucket = getLucketById(newLuckets, updateLucket.id);
-      assert.equal(luckets,expectedLuckets);
+
+
+      assert.equal(JSON.stringify(newLuckets),JSON.stringify(expectedLuckets));
+      assert.equal(JSON.stringify(updateLucket),JSON.stringify(foundLucket));
 
     });
   });
