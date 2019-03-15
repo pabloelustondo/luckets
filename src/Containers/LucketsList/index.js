@@ -70,7 +70,7 @@ class LucketsList extends Component {
   
     return(
       <div className="LucketsList" >
-        <Header addLucket={this.addLucket} user={this.props.user} signOut={this.props.signOut} />
+        <Header luckets={this.props.luckets}addLucket={this.addLucket} user={this.props.user} signOut={this.props.signOut} />
         <FocusLucket editingLucket={this.state.editing}  lucket={focusLucket} 
         backToParent={this.backToParent} setEditing={this.setEditing}   updateLucket={this.updateLucket}/>
         <div className="LucketsListChildren">
