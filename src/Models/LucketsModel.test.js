@@ -1,5 +1,5 @@
 import assert from "assert";
-import { getRootLucket, getChildrenLuckets, getParentLucket, getNewLucket, getLucketById, updateLucket } from "./LuketsModel";
+import { getPath, getRootLucket, getChildrenLuckets, getParentLucket, getNewLucket, getLucketById, updateLucket } from "./LuketsModel";
 
 describe("LucketsModel", function() {
   describe("getRootLucket", function() {
@@ -94,4 +94,23 @@ describe("LucketsModel", function() {
 
     });
   });
+
+  describe("getPath", function() {
+    it("should return the ancestry of the focusLucket ", function() {
+      let luckets = [
+        { parent: "", id: "a" },
+        { parent: "a", id: "b" },
+        { parent: "b", id: "c" },
+        { parent: "c", id: "d" },
+        { parent: "d", id: "e" },
+        { parent: "e", id: "f" }
+      ];
+      let focusLucket = { parent: "c", id: "d" };
+
+     let path = getPath(luckets, focusLucket);
+      assert.equal(path.length, 3);
+    });
+  });
+
+
 });

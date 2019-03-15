@@ -27,7 +27,8 @@ class LucketsList extends Component {
         return l
       }
     })
-    this.setFocus(lucket)
+    if (this.state.focusLucket && this.state.focusLucket.id === lucket.id)
+      { this.setFocus(lucket) }   //this is a hack... need to refactor an use an ID for focius lucket
     this.props.setLuckets(newLuckets);
     patchData(this.props.user, lucket, () => {})
   }
@@ -70,7 +71,11 @@ class LucketsList extends Component {
   
     return(
       <div className="LucketsList" >
-        <Header luckets={this.props.luckets}addLucket={this.addLucket} user={this.props.user} signOut={this.props.signOut} />
+        <Header luckets={this.props.luckets} 
+        addLucket={this.addLucket} 
+        user={this.props.user} 
+        focusLucket = {this.state.focusLucket}
+        signOut={this.props.signOut} />
         <FocusLucket editingLucket={this.state.editing}  lucket={focusLucket} 
         backToParent={this.backToParent} setEditing={this.setEditing}   updateLucket={this.updateLucket}/>
         <div className="LucketsListChildren">

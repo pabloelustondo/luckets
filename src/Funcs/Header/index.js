@@ -7,7 +7,7 @@ import Path from "./Path"
 //signOut={this.singOut}
 const Header = props => (
   <div className="Header">
-    <Path luckets={props.luckets}/>
+    <Path luckets={props.luckets} focusLucket={props.focusLucket}/>
     <AddLucketIcon addLucket={props.addLucket} />
   </div>
 );

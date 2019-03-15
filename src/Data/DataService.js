@@ -22,7 +22,7 @@ export const getData = handler => {
 };
 
 export const getUserData = (handler, user) => {
-  debugger;
+   
   axios
     .get("https://luckets-5fbb4.firebaseio.com/" + user.uid + ".json")
     .then(response => {

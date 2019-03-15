@@ -9,7 +9,7 @@ class SettingsIcon extends Component {
   };
 
   show = () => {
-      debugger;
+       
       this.setState({show:!this.state.show})
   }
 

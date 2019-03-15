@@ -17,7 +17,7 @@ const LucketItem = props => {
   let className = (props.focus === true) ? "FocusLucketItem" : "LucketItem";
   let isEditing = (props.editingLucket !== null && props.editingLucket.id === props.lucket.id);
   let feature = (props.editingLucket !== null)?props.editingLucket.feature: null;
-  debugger;
+   
   return (
     <div>
       <div className={className}>
