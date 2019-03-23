@@ -49,12 +49,8 @@ class LucketsList extends Component {
 
   addLucket = () => {
     const newLucket = getNewLucket( this.state.focusLucket );
-    this.setState( { focusLucket: newLucket }  )
-
     let newLuckets = [ ...this.props.luckets, newLucket];
-
     this.props.setLuckets(newLuckets);
-
     postData(this.props.user, newLucket, () => {})
   }
 

@@ -94,7 +94,7 @@ export const getNewLucket = parentLucket => {
   return {
     id: id,
     parent: parentId,
-    name: "NEW",
+    name: "00000000",
     actionStatus: "white",
     icon: "reading.svg",
     points: 1,
