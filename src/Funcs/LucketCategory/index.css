@@ -1,0 +1,39 @@
+div.LucketCategoryIcon {
+    height: var(--status-icon-height);
+    width: var(--status-icon-height);
+    margin-top: auto;
+    margin-bottom:auto;
+    margin-left: 10px;
+    text-align: center;
+    font-weight: bold;
+     
+}
+
+.CategoryMenu {
+    position: relative;
+    background-color: beige;
+    left: -50px;
+    top:-21px;
+    flex-direction: row;
+    display: flex;
+    width:calc(35px * 8 + 10px);
+    height: 40px;
+    border-radius: 10%;
+    }
+         
+.CategoryCallout {
+        position: relative;
+        background-color: beige;
+        left: -6px;
+        top: 11px;
+        width: 35px;
+        height: 35px;
+        transform: rotate(45deg);
+        }
+
+.CategoryImage {
+    vertical-align: middle;
+    width: 25px;
+    height: 25px;
+    margin:0px;
+}

@@ -5,6 +5,7 @@ import LucketStatusIcon from "../../Funcs/LucketStatusIcon";
 import LucketPointsIcon from "../../Funcs/LucketPointsIcon";
 import LucketRelativePointsIcon from "../../Funcs/LucketRelativePointsIcon";
 import LucketActionStatusIcon from "../../Funcs/LucketActionStatusIcon";
+import LucketCategory from "../../Funcs/LucketCategory";
 import LucketIcon from "../../Funcs/LucketIcon";
 import LucketSetFocusIcon from "../../Funcs/LucketSetFocusIcon";
 import LucketSetParentIcon from "../../Funcs/LucketSetParentIcon";
@@ -30,6 +31,8 @@ const LucketItem = props => {
           lucket={props.lucket}  updateLucket={props.updateLucket} />
           <LucketStatusIcon status={props.lucket.status} 
           lucket={props.lucket} updateLucket={props.updateLucket} />
+          <LucketCategory status={props.lucket.actionStatus} 
+          lucket={props.lucket}  updateLucket={props.updateLucket} />
         </div>
         <div className="ItemCenter">
           <LucketTitle 
