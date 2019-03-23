@@ -94,7 +94,7 @@ export const getNewLucket = parentLucket => {
   return {
     id: id,
     parent: parentId,
-    name: "00000000",
+    name: "NEW",
     actionStatus: "white",
     icon: "reading.svg",
     points: 1,
@@ -113,10 +113,12 @@ export const getLucketById = (luckets, id) => {
 };
 
 export const getChildrenLuckets = (luckets, focusLucket) => {
+
+  const rank = (l) => l.category + l.order;
   if (focusLucket)
     return luckets
       .filter(l => l.parent === focusLucket.id && !l.deleted)
-      .sort((a, b) => (a.name > b.name ? 1 : b.name > a.name ? -1 : 0));
+      .sort((a, b) => (rank(a) > rank(b) ? 1 : rank(a) < rank(b) ? -1 : 0));
   else return [];
 };
 
