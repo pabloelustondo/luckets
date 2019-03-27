@@ -51,6 +51,7 @@ const LucketItem = props => {
         </div>
       </div>
       <LucketForm isEditing={isEditing} 
+      setEditing = {props.setEditing}
       feature = {feature}
       lucket={props.lucket} 
       updateLucket={props.updateLucket} />

@@ -1,8 +1,12 @@
 const iconsList = [
+    "world",
     "A1-Mind",
     "A2-Body-Yoga",
     "A2-Body",
     "A3-We",
+    "delete",
+    "work1",
+    "college-graduation",
     "A4-Context",
     "A5-Ready",
     "accounting",

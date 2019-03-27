@@ -83,6 +83,7 @@ const LucketForm = props => {
 
       <LucketIcons updateLucket={ props.updateLucket }  
         lucket = { props.lucket }
+        setEditing = {props.setEditing}
       />
       
       </div>:null}

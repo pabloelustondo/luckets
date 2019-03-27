@@ -15,7 +15,10 @@ const LucketIcons = (props) => {
       className="LucketIcon"
       src={imageLocation(o)}
       alt={o}
-      onClick={() =>  props.updateLucket( {...props.lucket, icon:o + ".svg" } )  }     
+      onClick={() =>  {
+        props.updateLucket( {...props.lucket, icon:o + ".svg" } );
+        props.setEditing(false); 
+        } }     
     />
   ));
 };
