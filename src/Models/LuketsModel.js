@@ -94,6 +94,8 @@ export const getNewLucket = parentLucket => {
   return {
     id: id,
     parent: parentId,
+    category:"A",
+    order:0,
     name: "NEW",
     actionStatus: "white",
     icon: "reading.svg",
