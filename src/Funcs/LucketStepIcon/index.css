@@ -1,0 +1,42 @@
+div.LucketStatusIcon {
+    height: var(--status-icon-height);
+    width: var(--status-icon-height);
+    margin-top: auto;
+    margin-bottom:auto;
+    margin-left: 10px;
+    border-radius: 50%;
+
+    }
+
+div.LucketStatusIconShort {
+        height: var(--status-icon-height);
+        width: var(--status-icon-height);
+        margin-top: auto;
+        margin-bottom:auto;
+        margin-left: 10px;
+        border-radius: 50%;
+    
+        }
+
+.Menu {
+    position: relative;
+    background-color: beige;
+    left: -80px;
+    top:-3px;
+    flex-direction: row;
+    display: flex;
+    width:calc(35px * 6 + 10px);
+    height: 40px;
+    border-radius: 10%;
+    }
+         
+.Callout {
+        position: relative;
+        background-color: beige;
+        left: -5px;
+        top:30px;
+        width: 35px;
+        height: 35px;
+        transform: rotate(45deg);
+        }
+            

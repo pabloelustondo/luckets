@@ -1,5 +1,22 @@
 .Header {
+    display: flex;
     background-color:white;
     width: 100%;
     height: var(--header-height);
+    vertical-align: middle;
+    text-align: left;
+}
+
+.HeaderItemLeft {
+    display: flex;
+    width: 30%;
+}
+.HeaderItemCenter {
+    display: flex;
+    width: 40%;
+}
+.HeaderItemRigth {
+    justify-content: flex-end;
+    display: flex;
+    width: 30%;
 }
