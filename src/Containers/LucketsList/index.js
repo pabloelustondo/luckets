@@ -67,7 +67,12 @@ class LucketsList extends Component {
   
     return(
       <div className="LucketsList" >
-        <Header luckets={this.props.luckets} 
+        <Header 
+        setStep={this.props.setStep}
+        setTimeFrame={this.props.setTimeFrame}
+        step={this.props.step}
+        timeFrame={this.props.timeFrame}
+        luckets={this.props.luckets} 
         addLucket={this.addLucket} 
         user={this.props.user} 
         focusLucket = {this.state.focusLucket}

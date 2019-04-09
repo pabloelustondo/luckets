@@ -4,26 +4,37 @@ import "./App.css";
 import LucketsList from "./Containers/LucketsList";
 import firebase from "firebase";
 import { StyledFirebaseAuth } from "react-firebaseui";
-import {getUserData,postUserData, postDefaultLucketSet,checkUser} from './Data/DataService'
+import {
+  getUserData,
+  postUserData,
+  postDefaultLucketSet,
+  checkUser
+} from "./Data/DataService";
 
 firebase.initializeApp({
-  apiKey : "AIzaSyAu-HXBAYHQOxksCHplaz9JbbvJdrgVOGY",
+  apiKey: "AIzaSyAu-HXBAYHQOxksCHplaz9JbbvJdrgVOGY",
   authDomain: "luckets-5fbb4.firebaseapp.com"
 });
 
 class App extends Component {
-  state = { signedIn: false ,
-            luckets: null,
-            user: null};
+  state = {
+    signedIn: false,
+    luckets: null,
+    step: "Do",
+    timeFrame: "Day",
+    user: null
+  };
 
   signOut = () => {
     this.setState({ signedIn: false, user: null });
-    firebase.auth().signOut().then(function() {
-    }).catch(function(error) {
-      alert(error)
-    });
-
-  }          
+    firebase
+      .auth()
+      .signOut()
+      .then(function() {})
+      .catch(function(error) {
+        alert(error);
+      });
+  };
 
   uiConfig = {
     signInFlow: "popup",
@@ -33,39 +44,51 @@ class App extends Component {
     }
   };
 
-  setLuckets = (luckets) => {
+  setLuckets = luckets => {
     this.setState({ luckets: luckets });
-  }
+  };
 
   componentDidMount = () => {
-    ;
     firebase.auth().onAuthStateChanged(user => {
-      if (user !== null){
-        // HERE IS WHEN WE HAVE THE USER 
+      if (user !== null) {
+        // HERE IS WHEN WE HAVE THE USER
         this.setState({ signedIn: user.I, user: user });
         // CALL GET DATA
-        checkUser(user, this.setLuckets)
-      
+        checkUser(user, this.setLuckets);
       } else {
         this.setState({ signedIn: false, user: null });
       }
     });
   };
 
+  setStep = newStep => {
+    this.setState({ step: newStep });
+  };
+
+  setTimeFrame = newTimeFrame => {
+    this.setState({ timeFrame: newTimeFrame });
+  };
+
   render() {
     return (
       <div className="App">
         {this.state.signedIn ? (
-          <LucketsList user={this.state.user}
-          luckets={this.state.luckets}
-          setLuckets={this.setLuckets}
-          signOut={this.signOut}/>
+          <LucketsList
+            setStep={this.setStep}
+            setTimeFrame={this.setTimeFrame}
+            step={this.state.step}
+            timeFrame={this.state.timeFrame}
+            user={this.state.user}
+            luckets={this.state.luckets}
+            setLuckets={this.setLuckets}
+            signOut={this.signOut}
+          />
         ) : (
           <StyledFirebaseAuth
             uiConfig={this.uiConfig}
             firebaseAuth={firebase.auth()}
           />
-          )}
+        )}
       </div>
     );
   }

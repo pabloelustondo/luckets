@@ -1,15 +1,16 @@
 import React from "react";
 import "./index.css";
 import AddLucketIcon from "../AddLucketIcon";
-import SettingsIcon from "../SettingsIcon";
 import LucketStepIcon from "../LucketStepIcon";
+import LucketTimeFrameIcon from "../LucketTimeFrameIcon";
 import Path from "./Path";
 
-//signOut={this.singOut}
+
 const Header = props => (
   <div className="Header">
     <div className="HeaderItemLeft">
-      <LucketStepIcon status="green" />
+      <LucketStepIcon step={props.step} setStep={props.setStep} />
+      <LucketTimeFrameIcon timeFrame={props.timeFrame} setTimeFrame={props.setTimeFrame} />
     </div>
 
     <div className="HeaderItemCenter">

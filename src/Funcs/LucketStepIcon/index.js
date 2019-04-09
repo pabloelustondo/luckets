@@ -1,9 +1,7 @@
 import React, {Component} from 'react'
 import './index.css'
 
-const colorClass = (color) => "LucketStatusIcon status-"+ color;
-const colorFloatClass = (color) => "LucketStatusIcon statusfloat-"+ color;
-class LucketStatusIcon extends Component {
+class LucketStepIcon extends Component {
 
 state = {
     edit : false
@@ -21,28 +19,26 @@ edit = () => {
 set = (event, v) => {
     event.stopPropagation();
     this.setState({edit:false}) 
-    let lucket = this.props.lucket;
-    lucket.status = v;
-    this.props.updateLucket(lucket);
+    this.props.setStep(v);
 }
     
 render() {
 
-    let options = ['blue','green','white','yellow','red','purple','black'];
+    let options = ['Feel','Plan','Do','Close','Reflect'];
 
     return (
-    <div className={'LucketStatusIcon ' + colorClass(this.props.status)} 
-    style={{ backgroundColor: this.props.status }} 
+    <div className="LucketStepIcon" 
     onClick={this.edit}> 
+    {this.props.step}
     { (this.state.edit === true)?
          <div>
-         <div className="Callout"/>
-         <div id="menu" className="Menu">
+         <div className="StepCallout"/>
+         <div id="menu" className="StepMenu">
          {options.filter(
              o => o!==this.props.status
          ).map( o => 
-            <div className={'LucketStatusIconShort ' + colorFloatClass(o)} 
-            onClick={(e) => this.set(e,o)} />
+            <div className="LucketStepIconShort" 
+            onClick={(e) => this.set(e,o)}>{o}</div>
          )}
          </div></div>:null }
     </div>)
@@ -50,4 +46,4 @@ render() {
     
 }
 
-export default LucketStatusIcon
+export default LucketStepIcon

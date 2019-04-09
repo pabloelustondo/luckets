@@ -1,40 +1,36 @@
-div.LucketStatusIcon {
+div.LucketStepIcon {
     height: var(--status-icon-height);
-    width: var(--status-icon-height);
+    width: 100px;
     margin-top: auto;
     margin-bottom:auto;
     margin-left: 10px;
-    border-radius: 50%;
-
     }
 
-div.LucketStatusIconShort {
+div.LucketStepIconShort {
         height: var(--status-icon-height);
-        width: var(--status-icon-height);
         margin-top: auto;
         margin-bottom:auto;
         margin-left: 10px;
-        border-radius: 50%;
-    
+
         }
 
-.Menu {
+.StepMenu {
     position: relative;
     background-color: beige;
-    left: -80px;
-    top:-3px;
+    left: -10px;
+    top:-30px;
     flex-direction: row;
     display: flex;
-    width:calc(35px * 6 + 10px);
+    width:270px;
     height: 40px;
     border-radius: 10%;
     }
          
-.Callout {
+.StepCallout {
         position: relative;
         background-color: beige;
         left: -5px;
-        top:30px;
+        top:2px;
         width: 35px;
         height: 35px;
         transform: rotate(45deg);
