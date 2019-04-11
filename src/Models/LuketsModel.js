@@ -139,3 +139,39 @@ export const getPath = (luckets, focusLucket) => {
 
   return path;
 };
+
+export const filterForDo = (lucketsIn) => {
+
+  const luckets = lucketsIn.filter( l => l.actionStatus!=="white")
+
+  const A = -1;
+  const B = 1;
+  const compare = (a,b)=> {
+
+    // black
+    if (a.actionStatus==="black" && b.actionStatus!=="black") return A;
+    if (a.actionStatus!=="black" && b.actionStatus==="black") return B;
+
+    // red
+    if (a.actionStatus==="red" && b.actionStatus!=="red") return A;
+    if (a.actionStatus!=="red" && b.actionStatus==="red") return B;
+
+    // green
+    if (a.actionStatus==="green" && b.actionStatus!=="green") return A;
+    if (a.actionStatus!=="green" && b.actionStatus==="green") return B;
+
+    // yellow
+    if (a.actionStatus==="yellow" && b.actionStatus!=="yellow") return A;
+    if (a.actionStatus!=="yellow" && b.actionStatus==="yellow") return B;
+
+    // blue
+    if (a.actionStatus==="blue" && b.actionStatus!=="blue") return A;
+    if (a.actionStatus!=="blue" && b.actionStatus==="blue") return B;
+
+    return 0;
+
+  }
+
+  return luckets.sort(compare);
+
+}
