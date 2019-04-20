@@ -19,7 +19,8 @@ import {
 class LucketsList extends Component {
   state = {
     focusLucket: null,
-    editing: null
+    editing: null,
+    infoLevel: "normall"
   };
 
   postHistory = () => {
@@ -105,6 +106,7 @@ class LucketsList extends Component {
           signOut={this.props.signOut}
         />
         <FocusLucket
+          infoLevel = {this.state.infoLevel}
           editingLucket={this.state.editing}
           lucket={focusLucket}
           backToParent={this.backToParent}
@@ -114,6 +116,7 @@ class LucketsList extends Component {
         <div className="LucketsListChildren">
           {childrenLucket.map(lucket => (
             <LucketsItem
+              infoLevel = {this.state.infoLevel}
               editingLucket={this.state.editing}
               lucket={lucket}
               key={lucket.id}

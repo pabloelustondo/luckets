@@ -21,6 +21,7 @@
 .ItemLeft {
     display: flex;
     width: 30%;
+    min-width: 140px;
 }
 .ItemCenter {
     display: flex;
@@ -30,4 +31,5 @@
     justify-content: flex-end;
     display: flex;
     width: 30%;
+    margin-right: 5px;
 }

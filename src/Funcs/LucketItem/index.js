@@ -2,7 +2,7 @@ import React from "react";
 import "./index.css";
 import LucketTitle from "../../Funcs/LucketTitle";
 import LucketStatusIcon from "../../Funcs/LucketStatusIcon";
-import LucketPointsIcon from "../../Funcs/LucketPointsIcon";
+import LucketInfo from "../../Funcs/LucketInfo";
 import LucketRelativePointsIcon from "../../Funcs/LucketRelativePointsIcon";
 import LucketActionStatusIcon from "../../Funcs/LucketActionStatusIcon";
 import LucketCategory from "../../Funcs/LucketCategory";
@@ -50,6 +50,9 @@ const LucketItem = props => {
           <ChildrenStatusIcon status="yellow"/>
         </div>
       </div>
+      <LucketInfo infoLevel={props.infoLevel} 
+      lucket={props.lucket} />
+
       <LucketForm isEditing={isEditing} 
       setEditing = {props.setEditing}
       feature = {feature}

@@ -1,6 +1,6 @@
 div.LucketRelativePointsIcon {
     height: var(--status-icon-height);
-    width: calc(var(--status-icon-height) * 3);
+    width: calc(var(--status-icon-height) * 2.2);
     border: 1px solid grey;
     text-align: center;
     margin-top: auto;
