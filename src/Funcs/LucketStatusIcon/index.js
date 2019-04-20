@@ -36,8 +36,8 @@ render() {
     onClick={this.edit}> 
     { (this.state.edit === true)?
          <div>
-         <div className="Callout"/>
-         <div id="menu" className="Menu">
+         <div className="StatusIconCallout"/>
+         <div id="menu" className="StatusIconMenu">
          {options.filter(
              o => o!==this.props.status
          ).map( o => 

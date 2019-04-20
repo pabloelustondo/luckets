@@ -1,5 +1,6 @@
 .LucketOpenDay {
     width: var(--lucket-title-width);
+    min-width: 100px;
     margin-top: auto;
     margin-bottom:auto;
     margin-left: 5px;
