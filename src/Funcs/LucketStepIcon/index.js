@@ -24,7 +24,7 @@ set = (event, v) => {
     
 render() {
 
-    let options = ['Feel','Plan','Do','Close','Reflect'];
+    let options = ['Feel','Plan','Do','Close','Think'];
 
     return (
     <div className="LucketStepIcon" 

@@ -32,8 +32,8 @@ render() {
     {this.props.timeFrame}
     { (this.state.edit === true)?
          <div>
-         <div className="Callout"/>
-         <div id="menu" className="Menu">
+         <div className="TimeFrameCallout"/>
+         <div id="menu" className="TimeFrameMenu">
          {options.filter(
              o => o!==this.props.timeFrame
          ).map( o => 

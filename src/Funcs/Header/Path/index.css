@@ -1,8 +1,19 @@
-.LucketIcon {
+.LucketPathIcon {
     vertical-align: middle;
     width: 30px;
     height: 30px;
     margin-top: 5px;
     margin-bottom: 5px;
     margin-left: 5px;
+    
+}
+
+.LucketPath {
+    vertical-align: middle;
+    min-width: 150px;
+    height: 150px;
+    margin-top: auto;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    
 }

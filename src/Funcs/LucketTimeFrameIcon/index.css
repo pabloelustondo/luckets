@@ -1,11 +1,14 @@
 div.LucketTimeFrameIcon {
     height: var(--status-icon-height);
-    width: 40px;
-    max-width: 40px;
-    min-width: 40px;
+    width: 65px;
+    max-width: 65px;
+    min-width: 65px;
     margin-top: auto;
     margin-bottom:auto;
-    margin-left: 10px;
+    margin-left: 3px;
+    border-style: solid;
+    text-align: center;
+    border-color: lightgray;
     }
 
 div.LucketTimeFrameIconShort {
@@ -18,7 +21,7 @@ div.LucketTimeFrameIconShort {
     
         }
 
-.Menu {
+.TimeFrameMenu {
     position: relative;
     background-color: beige;
     left: -80px;
@@ -29,7 +32,7 @@ div.LucketTimeFrameIconShort {
     height: 40px;
     }
          
-.Callout {
+.TimeFrameCallout {
         position: relative;
         background-color: beige;
         left: -5px;

@@ -8,7 +8,7 @@
 
 .LucketsListChildren {
     width: 100%;
-    height: calc(100% - 120px);
+    height: calc(100% - 150px);
     overflow: scroll;
     margin: 0px;
     overflow-x: hidden;

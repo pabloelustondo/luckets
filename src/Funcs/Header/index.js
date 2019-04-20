@@ -10,18 +10,13 @@ import Path from "./Path";
 
 const Header = props => (
   <div className="Header">
-    <div className="HeaderItemLeft">
       <LucketStepIcon step={props.step} setStep={props.setStep} />
       <LucketTimeFrameIcon
         timeFrame={props.timeFrame}
         setTimeFrame={props.setTimeFrame}
       />
       <LucketOpenDay userInfo={props.userInfo} />
-    </div>
-
-    <div className="HeaderItemCenter">
       <Path luckets={props.luckets} focusLucket={props.focusLucket} />
-    </div>
 
     <div className="HeaderItemRigth">
       {props.step === "Close" ? <LucketDoneButton 

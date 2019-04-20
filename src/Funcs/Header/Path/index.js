@@ -14,17 +14,17 @@ const Path = (props) => {
 
     if (!props.luckets || !props.focusLucket) return null;
 
-    const path = getPath(props.luckets, props.focusLucket);
+    const path = getPath(props.luckets, props.focusLucket).reverse();
 
     const view = path.map( l =>
-        <img className='LucketIcon' 
+        <img className='LucketPathIcon' 
         src={imageLocation(l.icon)} 
         alt={l.icon}
         onClick={()=>{props.setFocus(l) }}
         />  
     )
 
-    return view;
+    return <div className='LucketPath'>{view}</div>;
 }
 
 export default Path
