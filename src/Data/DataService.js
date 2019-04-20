@@ -65,12 +65,34 @@ export const postData = (user, lucket, handler) => {
     });
 };
 
+export const postHistory = (user, closedDay, handler) => {
+  const id=closedDay.userInfo.openDay;
+  alert("post history data searvice: id: " + id);
+  axios
+    .put("https://luckets-5fbb4.firebaseio.com//users/"+user.uid+"/history/"+ id +".json/", closedDay)
+    .then(response => {
+    })
+    .catch(err => {
+      alert("ERROR" + err);
+    });
+};
+
 
 export const postUserData = (user, data) => {
   let lucketsCollection = {};
   lucketsCollection[user.uid] = {luckets:data};
   axios
     .patch("https://luckets-5fbb4.firebaseio.com/users/"+user.uid+".json",{luckets:data})
+    .then(response => {
+    })
+    .catch(err => {  
+      alert("ERROR" + err);
+    });
+};
+
+export const postUserInfo = (user, data) => {
+  axios
+    .patch("https://luckets-5fbb4.firebaseio.com/users/"+user.uid+".json",{userInfo:data})
     .then(response => {
     })
     .catch(err => {  
@@ -115,6 +137,16 @@ export const checkUser = (user, handler) =>{
       postUserData(user)
     })
 }
+
+export const getUserInfo = (user, handler) =>{
+  //if luserinfo is null  post default
+  axios
+    .get("https://luckets-5fbb4.firebaseio.com/users/" + user.uid + "/userinfo.json")
+    .then(response => {
+        handler(  response.data );
+      })   
+}
+
 
 /// find user and output his luckets.
 

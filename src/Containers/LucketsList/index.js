@@ -4,7 +4,7 @@ import LucketsItem from "../../Funcs/LucketItem";
 import FocusLucket from "../../Funcs/FocusLucket";
 import Header from "../../Funcs/Header";
 import Footer from "../../Funcs/Footer";
-import { patchData, postData } from "../../Data/DataService";
+import { patchData, postData , postHistory } from "../../Data/DataService";
 
 import {
   getRootLucket,
@@ -21,6 +21,12 @@ class LucketsList extends Component {
     focusLucket: null,
     editing: null
   };
+
+  postHistory = () => {
+    alert("Luckets list post history");
+    const openDay = { luckets: this.props.luckets, userInfo:this.props.userInfo }
+    postHistory(this.props.user, openDay)
+  }
 
   setFocus = lucket => {
     this.setState({ focusLucket: lucket });
@@ -85,10 +91,12 @@ class LucketsList extends Component {
     return (
       <div className="LucketsList">
         <Header
+          postHistory = {this.postHistory}
           setStep={this.props.setStep}
           setTimeFrame={this.props.setTimeFrame}
           step={this.props.step}
           timeFrame={this.props.timeFrame}
+          userInfo={this.props.userInfo}
           luckets={this.props.luckets}
           addLucket={this.addLucket}
           user={this.props.user}
@@ -114,7 +122,10 @@ class LucketsList extends Component {
             />
           ))}
         </div>
-        <Footer user={this.props.user} signOut={this.props.signOut} />
+        <Footer user={this.props.user} 
+        signOut={this.props.signOut} 
+        setDayToToday={this.props.setDayToToday}  
+        />
       </div>
     );
   }

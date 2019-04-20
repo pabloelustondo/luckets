@@ -5,10 +5,9 @@ import LucketsList from "./Containers/LucketsList";
 import firebase from "firebase";
 import { StyledFirebaseAuth } from "react-firebaseui";
 import {
-  getUserData,
-  postUserData,
-  postDefaultLucketSet,
-  checkUser
+  checkUser,
+  getUserInfo,
+  postUserInfo
 } from "./Data/DataService";
 
 firebase.initializeApp({
@@ -22,7 +21,8 @@ class App extends Component {
     luckets: null,
     step: "Do",
     timeFrame: "Day",
-    user: null
+    user: null,
+    openDay: null
   };
 
   signOut = () => {
@@ -34,6 +34,12 @@ class App extends Component {
       .catch(function(error) {
         alert(error);
       });
+  };
+
+  setDayToToday = () => {
+    const day = new Date();
+    const openDay =  {day: day, location: "Toronto"};
+    this.setState({ openDay: openDay});
   };
 
   uiConfig = {
@@ -48,6 +54,18 @@ class App extends Component {
     this.setState({ luckets: luckets });
   };
 
+  setUserInfo = userInfo => {
+    if (userInfo === null) {
+      userInfo = {openDay: new Date()};
+      postUserInfo(this.state.user, userInfo)
+    }
+    this.setState( { userInfo:userInfo  } )
+  }
+
+  setOpenDay = openDay => {
+    this.setState({ openDay: openDay});
+  };
+
   componentDidMount = () => {
     firebase.auth().onAuthStateChanged(user => {
       if (user !== null) {
@@ -55,6 +73,7 @@ class App extends Component {
         this.setState({ signedIn: user.I, user: user });
         // CALL GET DATA
         checkUser(user, this.setLuckets);
+        getUserInfo(user,this.setUserInfo);
       } else {
         this.setState({ signedIn: false, user: null });
       }
@@ -78,10 +97,13 @@ class App extends Component {
             setTimeFrame={this.setTimeFrame}
             step={this.state.step}
             timeFrame={this.state.timeFrame}
+            userInfo={this.state.userInfo}
             user={this.state.user}
             luckets={this.state.luckets}
             setLuckets={this.setLuckets}
+            setOpenDay={this.setOpenDay}
             signOut={this.signOut}
+            setDayToToday={this.setDayToToday}
           />
         ) : (
           <StyledFirebaseAuth
