@@ -59,6 +59,8 @@ class App extends Component {
       userInfo = {openDay: new Date()};
       postUserInfo(this.state.user, userInfo)
     }
+    const openDay = new Date(userInfo.openDay);
+    userInfo.openDay = openDay;
     this.setState( { userInfo:userInfo  } )
   }
 

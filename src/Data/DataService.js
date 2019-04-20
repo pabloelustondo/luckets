@@ -67,10 +67,10 @@ export const postData = (user, lucket, handler) => {
 
 export const postHistory = (user, closedDay, handler) => {
   const id=closedDay.userInfo.openDay;
-  alert("post history data searvice: id: " + id);
   axios
     .put("https://luckets-5fbb4.firebaseio.com//users/"+user.uid+"/history/"+ id +".json/", closedDay)
-    .then(response => {
+    .then((response) => {
+        handler(response);
     })
     .catch(err => {
       alert("ERROR" + err);
@@ -141,10 +141,12 @@ export const checkUser = (user, handler) =>{
 export const getUserInfo = (user, handler) =>{
   //if luserinfo is null  post default
   axios
-    .get("https://luckets-5fbb4.firebaseio.com/users/" + user.uid + "/userinfo.json")
+    .get("https://luckets-5fbb4.firebaseio.com/users/" + user.uid + "/userInfo.json")
     .then(response => {
         handler(  response.data );
-      })   
+      }).catch( err => {
+        alert("ERROR GETTING USER INFO:   " + err);
+      })  
 }
 
 

@@ -23,9 +23,10 @@ class LucketsList extends Component {
   };
 
   postHistory = () => {
-    alert("Luckets list post history");
     const openDay = { luckets: this.props.luckets, userInfo:this.props.userInfo }
-    postHistory(this.props.user, openDay)
+    postHistory(this.props.user, openDay, () => {
+    this.props.setDayToToday();
+    })
   }
 
   setFocus = lucket => {
