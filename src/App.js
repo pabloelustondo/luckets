@@ -37,9 +37,10 @@ class App extends Component {
   };
 
   setDayToToday = () => {
-    const day = new Date();
-    const openDay =  {day: day, location: "Toronto"};
-    this.setState({ openDay: openDay});
+    const userInfo = this.state.userInfo;
+    userInfo.openDay = new Date();
+    this.setState({ userInfo: userInfo });
+    postUserInfo(this.state.user, userInfo);
   };
 
   uiConfig = {
