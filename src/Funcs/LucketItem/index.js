@@ -23,32 +23,33 @@ const LucketItem = props => {
     <div>
       <div className={className}>
         <div className="ItemLeft">
+
+        <LucketCategory status={props.lucket.actionStatus} 
+          lucket={props.lucket}  updateLucket={props.updateLucket} />
+
           <LucketIcon icon={props.lucket.icon} 
           lucket={props.lucket} 
           setEditing={props.setEditing}
           />
-          <LucketActionStatusIcon status={props.lucket.actionStatus} 
-          lucket={props.lucket}  updateLucket={props.updateLucket} />
           <LucketStatusIcon status={props.lucket.status} 
           lucket={props.lucket} updateLucket={props.updateLucket} />
-          <LucketCategory status={props.lucket.actionStatus} 
+          <ChildrenStatusIcon status="yellow"/>
+
+          <LucketActionStatusIcon status={props.lucket.actionStatus} 
           lucket={props.lucket}  updateLucket={props.updateLucket} />
-        </div>
-        <div className="ItemCenter">
-          <LucketTitle 
-          id={props.lucket.name}  
-          lucket={props.lucket} 
-          setEditing={props.setEditing}/>
-        </div>
-        <div className="ItemRigth">
+    
           <LucketRelativePointsIcon
               backToParent={props.backToParent} lucket={props.lucket} 
               focus={props.focus}
               setFocus={() => {props.setFocus(props.lucket);}}
               points="44" totalPoints="77" 
           />
-          <ChildrenStatusIcon status="yellow"/>
+
         </div>
+        <LucketTitle 
+          id={props.lucket.name}  
+          lucket={props.lucket} 
+          setEditing={props.setEditing}/>
       </div>
       <LucketInfo infoLevel={props.infoLevel} 
       lucket={props.lucket} />
