@@ -126,13 +126,9 @@ export const getChildrenLuckets = (luckets, focusLucket) => {
 
 export const getPath = (luckets, focusLucket) => {
   let path = [];
-
-  console.log(JSON.stringify(luckets));
-  console.log(JSON.stringify(focusLucket));
   let parent = getParentLucket(luckets, focusLucket);
 
   while (parent) {
-    console.log(JSON.stringify(parent));
     path.push(parent);
     parent = getParentLucket(luckets, parent);
   }
