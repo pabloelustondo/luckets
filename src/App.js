@@ -7,6 +7,7 @@ import { StyledFirebaseAuth } from "react-firebaseui";
 import {
   checkUser,
   getUserInfo,
+  getHistory,
   postUserInfo
 } from "./Data/DataService";
 
@@ -65,6 +66,11 @@ class App extends Component {
     this.setState( { userInfo:userInfo  } )
   }
 
+
+  setHistory = history => {
+    this.setState( { history:history } )
+  }
+
   setOpenDay = openDay => {
     this.setState({ openDay: openDay});
   };
@@ -77,6 +83,7 @@ class App extends Component {
         // CALL GET DATA
         checkUser(user, this.setLuckets);
         getUserInfo(user,this.setUserInfo);
+        getHistory(user,this.setHistory);
       } else {
         this.setState({ signedIn: false, user: null });
       }

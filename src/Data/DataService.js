@@ -139,10 +139,20 @@ export const checkUser = (user, handler) =>{
 }
 
 export const getUserInfo = (user, handler) =>{
-  //if luserinfo is null  post default
   axios
     .get("https://luckets-5fbb4.firebaseio.com/users/" + user.uid + "/userInfo.json")
     .then(response => {
+        handler(  response.data );
+      }).catch( err => {
+        alert("ERROR GETTING USER INFO:   " + err);
+      })  
+}
+
+export const getHistory = (user, handler) =>{
+  axios
+    .get("https://luckets-5fbb4.firebaseio.com/users/" + user.uid + "/history.json")
+    .then(response => {
+        alert("WE GOT THE HISTORY");
         handler(  response.data );
       }).catch( err => {
         alert("ERROR GETTING USER INFO:   " + err);
