@@ -136,6 +136,9 @@ export const getPath = (luckets, focusLucket) => {
   return path;
 };
 
+export const isSameDay = (d1,d2) => (d1.getDate() === d2.getDate());
+
+
 export const filterForDo = (lucketsIn) => {
 
   const luckets = lucketsIn.filter( l => l.actionStatus!=="white")

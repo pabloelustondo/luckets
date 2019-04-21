@@ -4,7 +4,7 @@ import LucketsItem from "../../Funcs/LucketItem";
 import FocusLucket from "../../Funcs/FocusLucket";
 import Header from "../../Funcs/Header";
 import Footer from "../../Funcs/Footer";
-import { patchData, postData , postHistory } from "../../Data/DataService";
+import { patchData, postData, postHistory } from "../../Data/DataService";
 
 import {
   getRootLucket,
@@ -12,8 +12,8 @@ import {
   getParentLucket,
   getNewLucket,
   updateLucket,
-  filterForDo
-
+  filterForDo,
+  isSameDay
 } from "../../Models/LuketsModel";
 
 class LucketsList extends Component {
@@ -24,12 +24,29 @@ class LucketsList extends Component {
   };
 
   postHistory = () => {
+    if (isSameDay(this.props.userInfo.openDay, new Date())) {
+      alert("Sorry, cannot archive the day your are on, wait until tomorrow");
+      return;
+    } else {
+      const openDay = {
+        luckets: this.props.luckets,
+        userInfo: this.props.userInfo
+      };
+      postHistory(this.props.user, openDay, () => {
+        this.props.setDayToToday();
+      });
+    }
+  };
+
+  /*
+  postHistory = () => {
     const openDay = { luckets: this.props.luckets, userInfo:this.props.userInfo }
     postHistory(this.props.user, openDay, () => {
     this.props.setDayToToday();
     })
   }
 
+  */
   setFocus = lucket => {
     this.setState({ focusLucket: lucket });
   };
@@ -93,7 +110,7 @@ class LucketsList extends Component {
     return (
       <div className="LucketsList">
         <Header
-          postHistory = {this.postHistory}
+          postHistory={this.postHistory}
           setStep={this.props.setStep}
           setTimeFrame={this.props.setTimeFrame}
           step={this.props.step}
@@ -106,7 +123,7 @@ class LucketsList extends Component {
           signOut={this.props.signOut}
         />
         <FocusLucket
-          infoLevel = {this.state.infoLevel}
+          infoLevel={this.state.infoLevel}
           editingLucket={this.state.editing}
           lucket={focusLucket}
           backToParent={this.backToParent}
@@ -116,7 +133,7 @@ class LucketsList extends Component {
         <div className="LucketsListChildren">
           {childrenLucket.map(lucket => (
             <LucketsItem
-              infoLevel = {this.state.infoLevel}
+              infoLevel={this.state.infoLevel}
               editingLucket={this.state.editing}
               lucket={lucket}
               key={lucket.id}
@@ -126,9 +143,18 @@ class LucketsList extends Component {
             />
           ))}
         </div>
-        <Footer user={this.props.user} 
-        signOut={this.props.signOut} 
-        setDayToToday={this.props.setDayToToday}  
+        <Footer
+          postHistory={this.postHistory}
+          setStep={this.props.setStep}
+          setTimeFrame={this.props.setTimeFrame}
+          step={this.props.step}
+          timeFrame={this.props.timeFrame}
+          userInfo={this.props.userInfo}
+          luckets={this.props.luckets}
+          addLucket={this.addLucket}
+          user={this.props.user}
+          focusLucket={this.state.focusLucket}
+          signOut={this.props.signOut}
         />
       </div>
     );

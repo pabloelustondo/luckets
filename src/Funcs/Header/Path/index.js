@@ -14,7 +14,7 @@ const Path = (props) => {
 
     if (!props.luckets || !props.focusLucket) return null;
 
-    const path = getPath(props.luckets, props.focusLucket);
+    const path = getPath(props.luckets, props.focusLucket).reverse();
 
 
     const view = path.map( l =>

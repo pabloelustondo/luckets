@@ -1,6 +1,7 @@
 .LucketDoneButton {
     height: var(--status-icon-height);
     width: calc(3*var(--status-icon-height));
-    margin-top: auto;
-    margin-bottom: 7px;
+    margin-top: 7px;
+    margin-bottom: auto;
+    margin-left: 5px;
 }  

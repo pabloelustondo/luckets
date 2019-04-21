@@ -18,15 +18,6 @@ const Header = props => (
       <LucketOpenDay userInfo={props.userInfo} />
       <Path luckets={props.luckets} focusLucket={props.focusLucket} />
 
-    <div className="HeaderItemRigth">
-      {props.step === "Close" ? <LucketDoneButton 
-        user={props.user} 
-        postHistory={props.postHistory}
-      /> : null}
-      {props.step === "Plan" ? (
-        <AddLucketIcon addLucket={props.addLucket} />
-      ) : null}
-    </div>
   </div>
 );
 
