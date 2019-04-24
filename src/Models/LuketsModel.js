@@ -141,35 +141,10 @@ export const isSameDay = (d1,d2) => (d1.getDate() === d2.getDate());
 
 export const filterForDo = (lucketsIn) => {
 
+  const order = { "blue":0, "green":1, "yellow":2, "red":3, "black":4};
   const luckets = lucketsIn.filter( l => l.actionStatus!=="white")
 
-  const A = -1;
-  const B = 1;
-  const compare = (a,b)=> {
-
-    // black
-    if (a.actionStatus==="black" && b.actionStatus!=="black") return A;
-    if (a.actionStatus!=="black" && b.actionStatus==="black") return B;
-
-    // red
-    if (a.actionStatus==="red" && b.actionStatus!=="red") return A;
-    if (a.actionStatus!=="red" && b.actionStatus==="red") return B;
-
-    // green
-    if (a.actionStatus==="green" && b.actionStatus!=="green") return A;
-    if (a.actionStatus!=="green" && b.actionStatus==="green") return B;
-
-    // yellow
-    if (a.actionStatus==="yellow" && b.actionStatus!=="yellow") return A;
-    if (a.actionStatus!=="yellow" && b.actionStatus==="yellow") return B;
-
-    // blue
-    if (a.actionStatus==="blue" && b.actionStatus!=="blue") return A;
-    if (a.actionStatus!=="blue" && b.actionStatus==="blue") return B;
-
-    return 0;
-
-  }
+  const compare = (a,b) => order[a] - order[b];
 
   return luckets.sort(compare);
 
