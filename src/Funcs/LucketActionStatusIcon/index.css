@@ -5,14 +5,13 @@ div.LucketActionStatusIcon {
     margin-bottom:auto;
     margin-left: 10px;
     text-align: center;
-    font-weight: bold;
-     
+    font-weight: bold;   
 }
 
 .ActionStatusMenu {
     position: relative;
     background-color: beige;
-    left: -50px;
+    left: -100px;
     top:-21px;
     flex-direction: row;
     display: flex;

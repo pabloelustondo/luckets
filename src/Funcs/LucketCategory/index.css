@@ -12,7 +12,7 @@ div.LucketCategoryIcon {
 .CategoryMenu {
     position: relative;
     background-color: beige;
-    left: -50px;
+    left: -5px;
     top:-21px;
     flex-direction: row;
     display: flex;
