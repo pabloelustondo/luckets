@@ -8,6 +8,8 @@ export const getParentLucket = (luckets, lucket) => {
   return luckets.find(l => l.id === lucket.parent);
 };
 
+export const LUCKET_COLOR_RANK = { "purple":3, "blue":2, "green":1, "white":0,"yellow":-1, "red":-2, "black":-3};
+
 export const increaseStatus = lucket => {
   let newStatus;
   newStatus =
@@ -141,11 +143,14 @@ export const isSameDay = (d1,d2) => (d1.getDate() === d2.getDate());
 
 export const filterForDo = (lucketsIn) => {
 
-  const order = { "blue":0, "green":1, "yellow":2, "red":3, "black":4};
-  const luckets = lucketsIn.filter( l => l.actionStatus!=="white")
 
-  const compare = (a,b) => order[a] - order[b];
+  const luckets = lucketsIn.filter( l => l.actionStatus!=="white");
 
-  return luckets.sort(compare);
+  const lucketActionOrder = (lucket) => LUCKET_COLOR_RANK[lucket.actionStatus];
+
+  const compare = (a,b) => lucketActionOrder(a) - lucketActionOrder(b);
+
+  const doLuckets = luckets.sort(compare);
+  return doLuckets;
 
 }

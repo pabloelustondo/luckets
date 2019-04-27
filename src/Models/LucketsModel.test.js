@@ -146,9 +146,8 @@ describe("LucketsModel", function() {
       assert.equal(result[0].actionStatus, "red");
     });
 
-    it("should out the green first if no black and red", function() {
+    it("should out the green first if no black and red and yellow", function() {
       let luckets = [
-        { actionStatus: "yellow" },
         { actionStatus: "purple" },
         { actionStatus: "white" },
         { actionStatus: "green" },
@@ -194,8 +193,6 @@ describe("LucketsModel", function() {
 
       let result = filterForDo(luckets);
       const whitesInResult = result.filter( l => l.actionStatus==="white");
-
-      assert.equal(result[0].actionStatus, "red");
       assert.equal(result.length, 5);
       assert.equal(whitesInResult.length,0);
 
