@@ -1,5 +1,5 @@
 import axios from "axios";
-import { getRootLucket } from '../Models/LuketsModel';
+import { getRootLucket, LucketsList2Object } from '../Models/LuketsModel';
 import masterData from "./master-data.json";
 
 export const getData = handler => {
@@ -44,6 +44,14 @@ export const getUserData = (handler, user) => {
     })
 };
 
+
+export const patchAllLuckets = (user, luckets, handler) => {
+
+ luckets.forEach( lucket => {
+     patchData(user, lucket, () => {});
+ })
+
+};
 
 export const patchData = (user, lucket, handler) => {
   axios

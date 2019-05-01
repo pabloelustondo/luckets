@@ -154,3 +154,21 @@ export const filterForDo = (lucketsIn) => {
   return doLuckets;
 
 }
+
+export const cleanActionStatus = (luckets) =>{
+
+  const newLuckets = luckets.map(
+    l => { return {...l, actionStatus:"white"} }
+  );
+
+  return newLuckets;
+}
+
+export const LucketsList2Object = (luckets) =>{
+
+  luckets.reduce( (acc,lucket)=> {
+    return {...acc, [lucket.id]:lucket}
+  },{})
+
+  return LucketsList2Object;
+}

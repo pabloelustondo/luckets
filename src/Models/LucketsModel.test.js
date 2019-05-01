@@ -7,7 +7,9 @@ import {
   getNewLucket,
   getLucketById,
   updateLucket,
-  filterForDo
+  filterForDo,
+    cleanActionStatus,
+  LucketsList2Object
 } from "./LuketsModel";
 
 describe("LucketsModel", function() {
@@ -199,4 +201,46 @@ describe("LucketsModel", function() {
     });
 
   });
+
+  describe("Clean DAction Status ", function() {
+    it("should out all the action status in white", function() {
+      let luckets = [
+        { actionStatus: "green" },
+        { actionStatus: "blue" },
+        { actionStatus: "red" },
+        { actionStatus: "yellow" },
+        { actionStatus: "black" },
+        { actionStatus: "purple" },
+        { actionStatus: "white" }
+      ];
+
+      let result = cleanActionStatus(luckets);
+      result.forEach((l) => {
+        assert.equal(l.actionStatus, "white");
+      })
+    });
+  });
+
+
+  describe("LucketsList2Object ", function() {
+    it("should return an object with all the elements of the array by id", function() {
+      let luckets = [
+        { id: "green" },
+        { id: "blue" },
+        { id: "red" },
+        { id: "yellow" },
+        { id: "black" },
+        { id: "purple" },
+        { id: "white" }
+      ];
+
+      let result = LucketsList2Object(luckets);
+
+      for (l in result) {
+        assert.equal(result[l.id].id, l.id);
+      }
+
+    });
+  });
+
 });

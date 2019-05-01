@@ -11,6 +11,10 @@ import {
   postUserInfo
 } from "./Data/DataService";
 
+import {
+cleanActionStatus
+} from "./Models/LuketsModel";
+
 firebase.initializeApp({
   apiKey: "AIzaSyAu-HXBAYHQOxksCHplaz9JbbvJdrgVOGY",
   authDomain: "luckets-5fbb4.firebaseapp.com"
@@ -35,6 +39,13 @@ class App extends Component {
       .catch(function(error) {
         alert(error);
       });
+  };
+
+  setCleanToDoList = () => {
+
+    const cleanLuckets = cleanActionStatus(this.state.luckets);
+    this.setState( {luckets: cleanLuckets});
+
   };
 
   setDayToToday = () => {
@@ -114,6 +125,7 @@ class App extends Component {
             setOpenDay={this.setOpenDay}
             signOut={this.signOut}
             setDayToToday={this.setDayToToday}
+            setCleanToDoList={this.setCleanToDoList}
           />
         ) : (
           <StyledFirebaseAuth

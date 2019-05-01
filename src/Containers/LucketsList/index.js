@@ -4,7 +4,7 @@ import LucketsItem from "../../Funcs/LucketItem";
 import FocusLucket from "../../Funcs/FocusLucket";
 import Header from "../../Funcs/Header";
 import Footer from "../../Funcs/Footer";
-import { patchData, postData, postHistory } from "../../Data/DataService";
+import { patchData, postData, postHistory, patchAllLuckets } from "../../Data/DataService";
 
 import {
   getRootLucket,
@@ -13,7 +13,8 @@ import {
   getNewLucket,
   updateLucket,
   filterForDo,
-  isSameDay
+  isSameDay,
+    cleanActionStatus
 } from "../../Models/LuketsModel";
 
 class LucketsList extends Component {
@@ -33,7 +34,9 @@ class LucketsList extends Component {
         userInfo: this.props.userInfo
       };
       postHistory(this.props.user, openDay, () => {
+        patchAllLuckets(this.props.user, cleanActionStatus(this.props.luckets));
         this.props.setDayToToday();
+        this.props.setCleanToDoList();
       });
     }
   };
