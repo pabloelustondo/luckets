@@ -109,6 +109,10 @@ class App extends Component {
     this.setState({ timeFrame: newTimeFrame });
   };
 
+  componentWillMount(){
+    document.title = "Luckets"
+  }
+
   render() {
     return (
       <div className="App">
