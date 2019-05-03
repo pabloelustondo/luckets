@@ -360,6 +360,52 @@ describe("LucketsModel", function() {
 
     });
 
+    it("1 white, 2 blues, should return total and actions points based oon two children two levesl", function() {
+      let luckets = [
+        { id: "A11" , parent:"A1", points: 1 , actionStatus: "blue"},  //0
+        { id: "A12" , parent: "A1",points: 1 , actionStatus: "white"},  //1
+        { id: "Root" , parent:"",points: 1}, //2
+        { id: "A" , parent:"Root",points: 1}, //3
+        { id: "B" , parent:"Root",points: 1}, //4
+        { id: "A1", parent:"A",points: 1, actionStatus: "blue" }, //5
+        { id: "A2", parent:"A" ,points: 1}, //6
+        { id: "B1", parent:"B" ,points: 1}, //7
+        { id: "B2", parent:"B" ,points: 1}, //8
+      ];
+
+      const lucket =  getLucketById(luckets,"A");  //A11
+
+      const result = calculatePoints(luckets, lucket);
+
+      assert.equal(result.id, "A");
+      assert.equal(result.totalActionPoints, 4);
+      assert.equal(result.doneActionPoints, 2);
+
+    });
+
+    it("1 white, 2 blues, should return total and actions points based oon two children two levesl", function() {
+      let luckets = [
+        { id: "A11" , parent:"A1", points: 1 , actionStatus: "blue"},  //0
+        { id: "A12" , parent: "A1",points: 1 , actionStatus: "white"},  //1
+        { id: "Root" , parent:"",points: 1}, //2
+        { id: "A" , parent:"Root",points: 1}, //3
+        { id: "B" , parent:"Root",points: 1}, //4
+        { id: "A1", parent:"A",points: 1, actionStatus: "blue" }, //5
+        { id: "A2", parent:"A" ,points: 1}, //6
+        { id: "B1", parent:"B" ,points: 1}, //7
+        { id: "B2", parent:"B" ,points: 1}, //8
+      ];
+
+      const lucket =  getLucketById(luckets,"A12");  //A11
+
+      const result = calculatePoints(luckets, lucket);
+
+      assert.equal(result.id, "A12");
+      assert.equal(result.totalActionPoints, 0);
+      assert.equal(result.doneActionPoints, 0);
+
+    });
+
   });
 
 });

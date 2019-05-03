@@ -4,8 +4,6 @@
     <list default="true" id="733e01b6-86ea-4cf6-9d41-dedce811f2df" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Containers/LucketsList/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/LucketsList/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcs/LucketItem/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Funcs/LucketItem/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcs/LucketRelativePointsIcon/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Funcs/LucketRelativePointsIcon/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Models/LucketsModel.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/LucketsModel.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Models/LuketsModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/LuketsModel.js" afterDir="false" />
     </list>
@@ -23,8 +21,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Models/LucketsModel.test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="362" column="5" lean-forward="true" selection-start-line="362" selection-start-column="5" selection-end-line="362" selection-end-column="5" />
+            <state relative-caret-position="295">
+              <caret line="402" column="34" selection-start-line="402" selection-start-column="34" selection-end-line="402" selection-end-column="34" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -47,8 +45,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Funcs/LucketRelativePointsIcon/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="39" lean-forward="true" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
+            <state relative-caret-position="150">
+              <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -80,8 +78,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Containers/LucketsList/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="116" column="13" selection-start-line="116" selection-start-column="13" selection-end-line="116" selection-end-column="13" />
+            <state relative-caret-position="335">
+              <caret line="110" column="67" selection-start-line="110" selection-start-column="67" selection-end-line="110" selection-end-column="67" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -104,8 +102,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Models/LuketsModel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="195" column="2" selection-start-line="195" selection-start-column="2" selection-end-line="195" selection-end-column="2" />
+            <state relative-caret-position="228">
+              <caret line="178" column="79" lean-forward="true" selection-start-line="178" selection-start-column="79" selection-end-line="178" selection-end-column="79" />
             </state>
           </provider>
         </entry>
@@ -330,7 +328,7 @@
       <option name="presentableId" value="Default" />
       <updated>1556402400023</updated>
       <workItem from="1556402402903" duration="3086000" />
-      <workItem from="1556590285205" duration="13713000" />
+      <workItem from="1556590285205" duration="14814000" />
     </task>
     <task id="LOCAL-00001" summary="fixed the de do order , and change to webstorm">
       <created>1556403945542</created>
@@ -353,25 +351,17 @@
       <option name="project" value="LOCAL" />
       <updated>1556851591798</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="we got calculated points in children luckets">
+      <created>1556854279391</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1556854279391</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LucketsModel_Calculate_Points_ - 2019.05.02 at 22h 41m 39s.xml">
-      <configuration name="LucketsModel.Calculate Points " configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
-    <history-entry file="LucketsModel_Calculate_Points_ - 2019.05.02 at 22h 44m 56s.xml">
-      <configuration name="LucketsModel.Calculate Points " configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
-    <history-entry file="LucketsModel_Calculate_Points_ - 2019.05.02 at 22h 45m 09s.xml">
-      <configuration name="LucketsModel.Calculate Points " configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
-    <history-entry file="LucketsModel_Calculate_Points_ - 2019.05.02 at 22h 45m 46s.xml">
-      <configuration name="LucketsModel.Calculate Points " configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
-    <history-entry file="LucketsModel_Calculate_Points_ - 2019.05.02 at 23h 10m 03s.xml">
-      <configuration name="LucketsModel.Calculate Points " configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
     <history-entry file="LucketsModel_Calculate_Points_ - 2019.05.02 at 23h 13m 29s.xml">
       <configuration name="LucketsModel.Calculate Points " configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
@@ -387,21 +377,36 @@
     <history-entry file="LucketsModel_Calculate_Points_ - 2019.05.02 at 23h 18m 57s.xml">
       <configuration name="LucketsModel.Calculate Points " configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
+    <history-entry file="LucketsModel_Calculate_Points_ - 2019.05.02 at 23h 42m 47s.xml">
+      <configuration name="LucketsModel.Calculate Points " configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="LucketsModel_Calculate_Points_ - 2019.05.02 at 23h 44m 29s.xml">
+      <configuration name="LucketsModel.Calculate Points " configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="LucketsModel_Calculate_Points_ - 2019.05.02 at 23h 45m 08s.xml">
+      <configuration name="LucketsModel.Calculate Points " configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="LucketsModel_Calculate_Points_ - 2019.05.02 at 23h 45m 58s.xml">
+      <configuration name="LucketsModel.Calculate Points " configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="LucketsModel_Calculate_Points_ - 2019.05.02 at 23h 46m 22s.xml">
+      <configuration name="LucketsModel.Calculate Points " configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16799000" />
+    <option name="totallyTimeSpent" value="17900000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.84909093" visible="true" weight="0.24543288" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8488372" visible="true" weight="0.24543288" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="npm" order="2" sideWeight="0.1509091" side_tool="true" visible="true" weight="0.24543288" />
+      <window_info id="npm" order="2" sideWeight="0.15116279" side_tool="true" visible="true" weight="0.24543288" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24657534" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2931507" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -422,7 +427,8 @@
     <MESSAGE value="fixed the de do order , and change to webstorm" />
     <MESSAGE value="pretty bad solution for updating all luckets but seems to work" />
     <MESSAGE value="did the calculatePoints function" />
-    <option name="LAST_COMMIT_MESSAGE" value="did the calculatePoints function" />
+    <MESSAGE value="we got calculated points in children luckets" />
+    <option name="LAST_COMMIT_MESSAGE" value="we got calculated points in children luckets" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -439,7 +445,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/Containers/LucketsList/index.js</url>
-          <line>117</line>
+          <line>119</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="7" />
         </line-breakpoint>
@@ -454,6 +460,12 @@
           <line>264</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/Models/LuketsModel.js</url>
+          <line>181</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -498,8 +510,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Funcs/LucketRelativePointsIcon/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="39" lean-forward="true" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
+        <state relative-caret-position="150">
+          <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
@@ -508,8 +520,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Containers/LucketsList/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="116" column="13" selection-start-line="116" selection-start-column="13" selection-end-line="116" selection-end-column="13" />
+        <state relative-caret-position="335">
+          <caret line="110" column="67" selection-start-line="110" selection-start-column="67" selection-end-line="110" selection-end-column="67" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
@@ -518,15 +530,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Models/LuketsModel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="195" column="2" selection-start-line="195" selection-start-column="2" selection-end-line="195" selection-end-column="2" />
+        <state relative-caret-position="228">
+          <caret line="178" column="79" lean-forward="true" selection-start-line="178" selection-start-column="79" selection-end-line="178" selection-end-column="79" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Models/LucketsModel.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="362" column="5" lean-forward="true" selection-start-line="362" selection-start-column="5" selection-end-line="362" selection-end-column="5" />
+        <state relative-caret-position="295">
+          <caret line="402" column="34" selection-start-line="402" selection-start-column="34" selection-end-line="402" selection-end-column="34" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>

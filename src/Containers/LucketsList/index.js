@@ -108,6 +108,8 @@ class LucketsList extends Component {
       _childrenLucket = getChildrenLuckets(this.props.luckets, focusLucket);
     }
 
+    focusLucket = calculatePoints(this.props.luckets, focusLucket);
+
     if (this.props.step === "Do") {
       _childrenLucket = filterForDo(_childrenLucket);
     }
