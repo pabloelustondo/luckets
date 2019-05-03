@@ -42,7 +42,6 @@ const LucketItem = props => {
               backToParent={props.backToParent} lucket={props.lucket} 
               focus={props.focus}
               setFocus={() => {props.setFocus(props.lucket);}}
-              points="44" totalPoints="77" 
           />
 
         </div>

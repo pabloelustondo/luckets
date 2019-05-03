@@ -176,8 +176,8 @@ export const LucketsList2Object = (luckets) =>{
 export const calculatePoints = (luckets, lucket) => {
 
   const result = {...lucket};
-  result.totalActionPoints = result.actionPoints;
-  result.doneActionPoints = (result.actionStatus === "blue")?result.actionPoints:0;
+  result.totalActionPoints = result.points;
+  result.doneActionPoints = (result.actionStatus === "blue")?result.points:0;
 
   const childrenLuckets= getChildrenLuckets(luckets, lucket);
 

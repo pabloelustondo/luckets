@@ -14,7 +14,8 @@ import {
   updateLucket,
   filterForDo,
   isSameDay,
-    cleanActionStatus
+    cleanActionStatus,
+  calculatePoints
 } from "../../Models/LuketsModel";
 
 class LucketsList extends Component {
@@ -97,19 +98,23 @@ class LucketsList extends Component {
 
   render() {
     let focusLucket = null;
-    let childrenLucket = [];
+    let _childrenLucket = [];
 
     if (this.props.luckets) {
       focusLucket =
         this.state.focusLucket == null
           ? getRootLucket(this.props.luckets)
           : this.state.focusLucket;
-      childrenLucket = getChildrenLuckets(this.props.luckets, focusLucket);
+      _childrenLucket = getChildrenLuckets(this.props.luckets, focusLucket);
     }
 
     if (this.props.step === "Do") {
-      childrenLucket = filterForDo(childrenLucket);
+      _childrenLucket = filterForDo(_childrenLucket);
     }
+
+    const childrenLucket = _childrenLucket.map( l => calculatePoints(this.props.luckets,l) );
+
+    debugger;
     return (
       <div className="LucketsList">
         <Header

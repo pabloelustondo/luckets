@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="733e01b6-86ea-4cf6-9d41-dedce811f2df" name="Default Changelist" comment="pretty bad solution for updating all luckets but seems to work">
-      <change beforePath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/React App.html" beforeDir="false" afterPath="$PROJECT_DIR$/React App.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/logo.svg" afterDir="false" />
+    <list default="true" id="733e01b6-86ea-4cf6-9d41-dedce811f2df" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Containers/LucketsList/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/LucketsList/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Funcs/LucketItem/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Funcs/LucketItem/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Funcs/LucketRelativePointsIcon/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Funcs/LucketRelativePointsIcon/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Models/LucketsModel.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/LucketsModel.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Models/LuketsModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/LuketsModel.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,13 +20,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Models/LucketsModel.test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="236" column="37" selection-start-line="236" selection-start-column="19" selection-end-line="236" selection-end-column="37" />
+            <state relative-caret-position="313">
+              <caret line="362" column="5" lean-forward="true" selection-start-line="362" selection-start-column="5" selection-end-line="362" selection-end-column="5" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Funcs/LucketItem/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="395">
+              <caret line="43" column="62" selection-start-line="43" selection-start-column="62" selection-end-line="43" selection-end-column="62" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Funcs/LucketRelativePointsIcon/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="39" lean-forward="true" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -43,7 +68,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
@@ -55,8 +80,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Containers/LucketsList/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="68" column="2" selection-start-line="68" selection-start-column="2" selection-end-line="68" selection-end-column="49" />
+            <state relative-caret-position="338">
+              <caret line="116" column="13" selection-start-line="116" selection-start-column="13" selection-end-line="116" selection-end-column="13" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -79,8 +104,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Models/LuketsModel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="166" column="31" selection-start-line="166" selection-start-column="13" selection-end-line="166" selection-end-column="31" />
+            <state relative-caret-position="268">
+              <caret line="195" column="2" selection-start-line="195" selection-start-column="2" selection-end-line="195" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -90,9 +115,11 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>actionStatus</find>
+      <find>actionPoints</find>
     </findStrings>
     <replaceStrings>
       <replace>id</replace>
+      <replace>points</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -102,10 +129,12 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/App.js" />
+        <option value="$PROJECT_DIR$/src/Data/DataService.js" />
+        <option value="$PROJECT_DIR$/src/Funcs/LucketItem/index.js" />
+        <option value="$PROJECT_DIR$/src/Funcs/LucketRelativePointsIcon/index.js" />
         <option value="$PROJECT_DIR$/src/Containers/LucketsList/index.js" />
         <option value="$PROJECT_DIR$/src/Models/LuketsModel.js" />
         <option value="$PROJECT_DIR$/src/Models/LucketsModel.test.js" />
-        <option value="$PROJECT_DIR$/src/Data/DataService.js" />
       </list>
     </option>
   </component>
@@ -120,7 +149,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="x" value="45" />
     <option name="y" value="23" />
     <option name="width" value="1260" />
@@ -143,6 +172,52 @@
               <item name="luckets" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="luckets" type="b2602c69:ProjectViewProjectNode" />
+              <item name="luckets" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Containers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="luckets" type="b2602c69:ProjectViewProjectNode" />
+              <item name="luckets" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Containers" type="462c0819:PsiDirectoryNode" />
+              <item name="LucketsList" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="luckets" type="b2602c69:ProjectViewProjectNode" />
+              <item name="luckets" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Funcs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="luckets" type="b2602c69:ProjectViewProjectNode" />
+              <item name="luckets" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Funcs" type="462c0819:PsiDirectoryNode" />
+              <item name="LucketItem" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="luckets" type="b2602c69:ProjectViewProjectNode" />
+              <item name="luckets" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Funcs" type="462c0819:PsiDirectoryNode" />
+              <item name="LucketRelativePointsIcon" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="luckets" type="b2602c69:ProjectViewProjectNode" />
+              <item name="luckets" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Funcs" type="462c0819:PsiDirectoryNode" />
+              <item name="LucketSetFocusIcon" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="luckets" type="b2602c69:ProjectViewProjectNode" />
+              <item name="luckets" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Models" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -151,6 +226,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -172,7 +248,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Jest.All Tests">
+  <component name="RunManager" selected="Jest.LucketsModel.Calculate Points ">
     <configuration name="All Tests" type="JavaScriptTestRunnerJest" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -180,6 +256,20 @@
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="ALL" />
+      <method v="2" />
+    </configuration>
+    <configuration name="LucketsModel.Calculate Points " type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/Models/LucketsModel.test.js" />
+      <test-names>
+        <test-name value="LucketsModel" />
+        <test-name value="Calculate Points " />
+      </test-names>
       <method v="2" />
     </configuration>
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -218,9 +308,11 @@
       <item itemvalue="npm.start" />
       <item itemvalue="npm.test" />
       <item itemvalue="npm.build" />
+      <item itemvalue="Jest.LucketsModel.Calculate Points " />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.LucketsModel.Calculate Points " />
         <item itemvalue="npm.build" />
         <item itemvalue="npm.test" />
         <item itemvalue="npm.start" />
@@ -238,7 +330,7 @@
       <option name="presentableId" value="Default" />
       <updated>1556402400023</updated>
       <workItem from="1556402402903" duration="3086000" />
-      <workItem from="1556590285205" duration="5592000" />
+      <workItem from="1556590285205" duration="13713000" />
     </task>
     <task id="LOCAL-00001" summary="fixed the de do order , and change to webstorm">
       <created>1556403945542</created>
@@ -254,48 +346,62 @@
       <option name="project" value="LOCAL" />
       <updated>1556675122081</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="did the calculatePoints function">
+      <created>1556851591798</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1556851591798</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_Tests - 2019.04.28 at 19h 54m 36s.xml">
-      <configuration name="All Tests" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="LucketsModel_Calculate_Points_ - 2019.05.02 at 22h 41m 39s.xml">
+      <configuration name="LucketsModel.Calculate Points " configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="All_Tests - 2019.04.29 at 22h 11m 37s.xml">
-      <configuration name="All Tests" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="LucketsModel_Calculate_Points_ - 2019.05.02 at 22h 44m 56s.xml">
+      <configuration name="LucketsModel.Calculate Points " configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="All_Tests - 2019.04.29 at 22h 11m 43s.xml">
-      <configuration name="All Tests" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="LucketsModel_Calculate_Points_ - 2019.05.02 at 22h 45m 09s.xml">
+      <configuration name="LucketsModel.Calculate Points " configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="All_Tests - 2019.04.29 at 22h 12m 07s.xml">
-      <configuration name="All Tests" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="LucketsModel_Calculate_Points_ - 2019.05.02 at 22h 45m 46s.xml">
+      <configuration name="LucketsModel.Calculate Points " configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="All_Tests - 2019.04.29 at 22h 12m 17s.xml">
-      <configuration name="All Tests" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="LucketsModel_Calculate_Points_ - 2019.05.02 at 23h 10m 03s.xml">
+      <configuration name="LucketsModel.Calculate Points " configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="All_Tests - 2019.04.29 at 22h 13m 46s.xml">
-      <configuration name="All Tests" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="LucketsModel_Calculate_Points_ - 2019.05.02 at 23h 13m 29s.xml">
+      <configuration name="LucketsModel.Calculate Points " configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="All_Tests - 2019.04.30 at 20h 49m 19s.xml">
-      <configuration name="All Tests" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="LucketsModel_Calculate_Points_ - 2019.05.02 at 23h 13m 31s.xml">
+      <configuration name="LucketsModel.Calculate Points " configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="All_Tests - 2019.04.30 at 20h 50m 16s.xml">
-      <configuration name="All Tests" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="LucketsModel_Calculate_Points_ - 2019.05.02 at 23h 16m 49s.xml">
+      <configuration name="LucketsModel.Calculate Points " configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="LucketsModel_Calculate_Points_ - 2019.05.02 at 23h 17m 41s.xml">
+      <configuration name="LucketsModel.Calculate Points " configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="LucketsModel_Calculate_Points_ - 2019.05.02 at 23h 18m 57s.xml">
+      <configuration name="LucketsModel.Calculate Points " configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8678000" />
+    <option name="totallyTimeSpent" value="16799000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="45" y="23" width="1260" height="737" extended-state="0" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.67287236" visible="true" weight="0.24939467" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.84909093" visible="true" weight="0.24543288" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="npm" order="2" sideWeight="0.32712767" side_tool="true" visible="true" weight="0.24939467" />
+      <window_info id="npm" order="2" sideWeight="0.1509091" side_tool="true" visible="true" weight="0.24543288" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.41705427" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24657534" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -315,58 +421,50 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fixed the de do order , and change to webstorm" />
     <MESSAGE value="pretty bad solution for updating all luckets but seems to work" />
-    <option name="LAST_COMMIT_MESSAGE" value="pretty bad solution for updating all luckets but seems to work" />
+    <MESSAGE value="did the calculatePoints function" />
+    <option name="LAST_COMMIT_MESSAGE" value="did the calculatePoints function" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/Models/LucketsModel.test.js</url>
-          <line>171</line>
+          <line>172</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/Models/LucketsModel.test.js</url>
-          <line>159</line>
+          <line>160</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/Containers/LucketsList/index.js</url>
+          <line>117</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/Models/LucketsModel.test.js</url>
+          <line>266</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/Models/LucketsModel.test.js</url>
+          <line>264</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Models/LuketsModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="166" column="31" selection-start-line="166" selection-start-column="13" selection-end-line="166" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1040">
           <caret line="131" column="28" selection-start-line="131" selection-start-column="28" selection-end-line="131" selection-end-column="28" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Containers/LucketsList/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="68" column="2" selection-start-line="68" selection-start-column="2" selection-end-line="68" selection-end-column="49" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Models/LucketsModel.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="236" column="37" selection-start-line="236" selection-start-column="19" selection-end-line="236" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -385,6 +483,53 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Funcs/LucketItem/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="43" column="62" selection-start-line="43" selection-start-column="62" selection-end-line="43" selection-end-column="62" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Funcs/LucketRelativePointsIcon/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="39" lean-forward="true" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Containers/LucketsList/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="116" column="13" selection-start-line="116" selection-start-column="13" selection-end-line="116" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Models/LuketsModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="195" column="2" selection-start-line="195" selection-start-column="2" selection-end-line="195" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Models/LucketsModel.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="362" column="5" lean-forward="true" selection-start-line="362" selection-start-column="5" selection-end-line="362" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
