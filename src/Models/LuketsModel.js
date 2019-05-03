@@ -172,3 +172,27 @@ export const LucketsList2Object = (luckets) =>{
 
   return LucketsList2Object;
 }
+
+export const calculatePoints = (luckets, lucket) => {
+
+  const result = {...lucket};
+  result.totalActionPoints = result.actionPoints;
+  result.doneActionPoints = (result.actionStatus === "blue")?result.actionPoints:0;
+
+  const childrenLuckets= getChildrenLuckets(luckets, lucket);
+
+  if (childrenLuckets.length > 0){
+
+    const calculatedChildrens = childrenLuckets.map( children =>
+        calculatePoints(luckets, children));
+
+    const totalChildrenPoints = calculatedChildrens.reduce( (acc, cc) => acc + cc.totalActionPoints, 0);
+    const doneChildrenPoints = calculatedChildrens.reduce( (acc, cc) => acc + cc.doneActionPoints, 0);
+
+    result.totalActionPoints += totalChildrenPoints;
+    result.doneActionPoints += doneChildrenPoints;
+  }
+
+  return result;
+
+}

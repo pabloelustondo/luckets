@@ -9,7 +9,8 @@ import {
   updateLucket,
   filterForDo,
     cleanActionStatus,
-  LucketsList2Object
+  LucketsList2Object,
+    calculatePoints
 } from "./LuketsModel";
 
 describe("LucketsModel", function() {
@@ -241,6 +242,124 @@ describe("LucketsModel", function() {
       }
 
     });
+  });
+
+  describe("Calculate Points ", function() {
+    it("no blues, should return total and actions points based on itself if no children", function() {
+      let luckets = [
+        { id: "A11" , parent:"A1", actionPoints: 1 },  //0
+        { id: "A12" , parent: "A1",actionPoints: 1 },  //1
+        { id: "Root" , parent:"",actionPoints: 1}, //2
+        { id: "A" , parent:"Root",actionPoints: 1}, //3
+        { id: "B" , parent:"Root",actionPoints: 1}, //4
+        { id: "A1", parent:"A",actionPoints: 1 }, //5
+        { id: "A2", parent:"A" ,actionPoints: 1}, //6
+        { id: "B1", parent:"B" ,actionPoints: 1}, //7
+        { id: "B2", parent:"B" ,actionPoints: 1}, //8
+      ];
+
+      const lucket =  getLucketById(luckets,"A11");  //A11
+
+      const result = calculatePoints(luckets, lucket);
+
+      assert.equal(result.id, "A11");
+      assert.equal(result.totalActionPoints, 1);
+      assert.equal(result.doneActionPoints, 0);
+
+    });
+
+    it("no blues, should return total and actions points based oon two children", function() {
+      let luckets = [
+        { id: "A11" , parent:"A1", actionPoints: 1 },  //0
+        { id: "A12" , parent: "A1",actionPoints: 1 },  //1
+        { id: "Root" , parent:"",actionPoints: 1}, //2
+        { id: "A" , parent:"Root",actionPoints: 1}, //3
+        { id: "B" , parent:"Root",actionPoints: 1}, //4
+        { id: "A1", parent:"A",actionPoints: 1 }, //5
+        { id: "A2", parent:"A" ,actionPoints: 1}, //6
+        { id: "B1", parent:"B" ,actionPoints: 1}, //7
+        { id: "B2", parent:"B" ,actionPoints: 1}, //8
+      ];
+
+      const lucket =  getLucketById(luckets,"A1");  //A11
+
+      const result = calculatePoints(luckets, lucket);
+
+      assert.equal(result.id, "A1");
+      assert.equal(result.totalActionPoints, 3);
+      assert.equal(result.doneActionPoints, 0);
+
+    });
+
+    it("1 blue, should return total and actions points based oon two children", function() {
+      let luckets = [
+        { id: "A11" , parent:"A1", actionPoints: 1 , actionStatus: "blue"},  //0
+        { id: "A12" , parent: "A1",actionPoints: 1 },  //1
+        { id: "Root" , parent:"",actionPoints: 1}, //2
+        { id: "A" , parent:"Root",actionPoints: 1}, //3
+        { id: "B" , parent:"Root",actionPoints: 1}, //4
+        { id: "A1", parent:"A",actionPoints: 1 }, //5
+        { id: "A2", parent:"A" ,actionPoints: 1}, //6
+        { id: "B1", parent:"B" ,actionPoints: 1}, //7
+        { id: "B2", parent:"B" ,actionPoints: 1}, //8
+      ];
+
+      const lucket =  getLucketById(luckets,"A1");  //A11
+
+      const result = calculatePoints(luckets, lucket);
+
+      assert.equal(result.id, "A1");
+      assert.equal(result.totalActionPoints, 3);
+      assert.equal(result.doneActionPoints, 1);
+
+    });
+
+    it("2 blues, should return total and actions points based oon two children", function() {
+      let luckets = [
+        { id: "A11" , parent:"A1", actionPoints: 1 , actionStatus: "blue"},  //0
+        { id: "A12" , parent: "A1",actionPoints: 1 },  //1
+        { id: "Root" , parent:"",actionPoints: 1}, //2
+        { id: "A" , parent:"Root",actionPoints: 1}, //3
+        { id: "B" , parent:"Root",actionPoints: 1}, //4
+        { id: "A1", parent:"A",actionPoints: 1, actionStatus: "blue" }, //5
+        { id: "A2", parent:"A" ,actionPoints: 1}, //6
+        { id: "B1", parent:"B" ,actionPoints: 1}, //7
+        { id: "B2", parent:"B" ,actionPoints: 1}, //8
+      ];
+
+      const lucket =  getLucketById(luckets,"A1");  //A11
+
+      const result = calculatePoints(luckets, lucket);
+
+      assert.equal(result.id, "A1");
+      assert.equal(result.totalActionPoints, 3);
+      assert.equal(result.doneActionPoints, 2);
+
+    });
+
+    it("2 blues, should return total and actions points based oon two children two levesl", function() {
+      let luckets = [
+        { id: "A11" , parent:"A1", actionPoints: 1 , actionStatus: "blue"},  //0
+        { id: "A12" , parent: "A1",actionPoints: 1 },  //1
+        { id: "Root" , parent:"",actionPoints: 1}, //2
+        { id: "A" , parent:"Root",actionPoints: 1}, //3
+        { id: "B" , parent:"Root",actionPoints: 1}, //4
+        { id: "A1", parent:"A",actionPoints: 1, actionStatus: "blue" }, //5
+        { id: "A2", parent:"A" ,actionPoints: 1}, //6
+        { id: "B1", parent:"B" ,actionPoints: 1}, //7
+        { id: "B2", parent:"B" ,actionPoints: 1}, //8
+      ];
+
+      const lucket =  getLucketById(luckets,"A");  //A11
+
+      const result = calculatePoints(luckets, lucket);
+
+      assert.equal(result.id, "A");
+      assert.equal(result.totalActionPoints, 5);
+      assert.equal(result.doneActionPoints, 2);
+
+    });
+
   });
 
 });
