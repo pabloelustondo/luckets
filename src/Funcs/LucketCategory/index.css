@@ -16,7 +16,7 @@ div.LucketCategoryIcon {
     top:-21px;
     flex-direction: row;
     display: flex;
-    width:calc(35px * 8 + 25px);
+    width:calc(35px * 8 + 30px);
     height: 40px;
     }
          

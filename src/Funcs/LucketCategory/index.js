@@ -1,5 +1,8 @@
 import React, {Component} from 'react'
-import './index.css'
+import './index.css';
+import IconClose from '../IconClose'
+
+
 const colorFloatClass = (color) => "LucketCategoryIcon statusfloat-"+ color;
 
 class LucketCategory extends Component {
@@ -73,10 +76,7 @@ class LucketCategory extends Component {
            <img src="/images/add.svg" className="CategoryImage" alt="add.svg" />
            </div>
 
-        <div key={"close"} className={'LucketCategoryIcon ' + colorFloatClass("plus")} 
-           onClick={this.edit} >
-           <img src="/images/delete.svg" className="CategoryImage" alt="delete.svg" />
-           </div>
+            <IconClose edit={this.edit} key={"close"} />
 
         </div></div>:null
 
