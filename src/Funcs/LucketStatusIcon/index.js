@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import './index.css'
+import IconClose from "../IconClose";
 
 const colorClass = (color) => "LucketStatusIcon status-"+ color;
 const colorFloatClass = (color) => "LucketStatusIcon statusfloat-"+ color;
@@ -44,6 +45,7 @@ render() {
             <div className={'LucketStatusIconShort ' + colorFloatClass(o)} 
             onClick={(e) => this.set(e,o)} />
          )}
+         <IconClose edit={this.edit} key={"close"} />
          </div></div>:null }
     </div>)
 }

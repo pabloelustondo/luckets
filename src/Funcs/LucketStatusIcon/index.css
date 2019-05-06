@@ -25,7 +25,7 @@ div.LucketStatusIconShort {
     top: -3px;
     flex-direction: row;
     display: flex;
-    width:calc(35px * 6 + 10px);
+    width:calc(35px * 6 + 50px);
     height: 40px;
     }
          
