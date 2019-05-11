@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import './index.css'
+import IconClose from "../IconClose";
 
 class LucketTimeFrameIcon extends Component {
 
@@ -40,6 +41,7 @@ render() {
             <div className="LucketTimeFrameIconShort" 
             onClick={(e) => this.set(e,o)}>{o}</div>
          )}
+             <IconClose  edit={this.edit} key={"close"} />
          </div></div>:null }
     </div>)
 }
