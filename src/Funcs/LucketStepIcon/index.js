@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import './index.css'
+import IconClose from "../IconClose";
 
 class LucketStepIcon extends Component {
 
@@ -40,7 +41,10 @@ render() {
             <div className="LucketStepIconShort" 
             onClick={(e) => this.set(e,o)}>{o}</div>
          )}
-         </div></div>:null }
+             <IconClose  edit={this.edit} key={"close"} />
+         </div>
+         </div>:null }
+
     </div>)
 }
     
