@@ -8,6 +8,7 @@ import LucketActionStatusIcon from "../../LucketActionStatusIcon";
 import {increaseStatus, decreaseStatus, increaseActionStatus, decreaseActionStatus} from '../../../Models/LuketsModel'
 
 import LucketIcons from "../../LucketIcons"
+import IconClose from "../../IconClose";
 const LucketForm = props => {
 
 
@@ -21,6 +22,9 @@ const LucketForm = props => {
       lucket.name = event.target.value;
       props.updateLucket(props.lucket)
       }}/>
+      <div className="FormClose">
+      <IconClose  edit={props.setEditing} key={"close"} />
+      </div>
   </div>
   );
 

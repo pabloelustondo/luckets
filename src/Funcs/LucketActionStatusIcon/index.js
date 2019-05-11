@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import './index.css'
+import IconClose from "../IconClose";
 
 
 const colorClass = (color) => 'status-'+color;
@@ -78,6 +79,8 @@ class LucketActionStatusIcon extends Component {
             onClick={(e) => this.setPoints(e,"plus")} >
             <img src="/images/add.svg" className="ActionStatusImage" alt="add.svg" />
             </div>
+
+             <IconClose edit={this.edit} key={"close"} />
 
          </div></div>:null }
 
