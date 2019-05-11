@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="733e01b6-86ea-4cf6-9d41-dedce811f2df" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Funcs/LucketStepIcon/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Funcs/LucketStepIcon/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcs/LucketStepIcon/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Funcs/LucketStepIcon/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Funcs/LucketTimeFrameIcon/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Funcs/LucketTimeFrameIcon/index.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -64,8 +63,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Funcs/LucketStepIcon/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="44" column="15" selection-start-line="44" selection-start-column="15" selection-end-line="44" selection-end-column="15" />
+            <state relative-caret-position="220">
+              <caret line="43" column="6" selection-start-line="43" selection-start-column="6" selection-end-line="43" selection-end-column="58" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Funcs/LucketTimeFrameIcon/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="353">
+              <caret line="43" column="58" selection-start-line="43" selection-start-column="58" selection-end-line="43" selection-end-column="58" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -74,10 +85,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Funcs/LucketTimeFrameIcon/index.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-11">
+              <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Funcs/LucketStepIcon/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="27" column="18" lean-forward="true" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
+            <state relative-caret-position="221">
+              <caret line="23" column="28" lean-forward="true" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -143,6 +163,8 @@
         <option value="$PROJECT_DIR$/src/Funcs/LucketItem/LucketForm/index.css" />
         <option value="$PROJECT_DIR$/src/Funcs/LucketStepIcon/index.js" />
         <option value="$PROJECT_DIR$/src/Funcs/LucketStepIcon/index.css" />
+        <option value="$PROJECT_DIR$/src/Funcs/LucketTimeFrameIcon/index.js" />
+        <option value="$PROJECT_DIR$/src/Funcs/LucketTimeFrameIcon/index.css" />
       </list>
     </option>
   </component>
@@ -181,7 +203,21 @@
               <item name="luckets" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Funcs" type="462c0819:PsiDirectoryNode" />
+              <item name="LucketStatusIcon" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="luckets" type="b2602c69:ProjectViewProjectNode" />
+              <item name="luckets" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Funcs" type="462c0819:PsiDirectoryNode" />
               <item name="LucketStepIcon" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="luckets" type="b2602c69:ProjectViewProjectNode" />
+              <item name="luckets" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Funcs" type="462c0819:PsiDirectoryNode" />
+              <item name="LucketTimeFrameIcon" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="luckets" type="b2602c69:ProjectViewProjectNode" />
@@ -308,7 +344,7 @@
       <workItem from="1556402402903" duration="3086000" />
       <workItem from="1556590285205" duration="14855000" />
       <workItem from="1556932483446" duration="4064000" />
-      <workItem from="1557541269642" duration="1812000" />
+      <workItem from="1557541269642" duration="2078000" />
     </task>
     <task id="LOCAL-00001" summary="fixed the de do order , and change to webstorm">
       <created>1556403945542</created>
@@ -366,7 +402,21 @@
       <option name="project" value="LOCAL" />
       <updated>1557542753337</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="added close to the step button">
+      <created>1557543156109</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1557543156109</updated>
+    </task>
+    <task id="LOCAL-00010" summary="added close to the time frame">
+      <created>1557543271380</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1557543271380</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -402,7 +452,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23817000" />
+    <option name="totallyTimeSpent" value="24083000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="80" y="23" width="1280" height="777" extended-state="0" />
@@ -440,7 +490,9 @@
     <MESSAGE value="refactored the close button to put it in othe places" />
     <MESSAGE value="close button to put it in other places" />
     <MESSAGE value="we have all the close buttons in the item lists" />
-    <option name="LAST_COMMIT_MESSAGE" value="we have all the close buttons in the item lists" />
+    <MESSAGE value="added close to the step button" />
+    <MESSAGE value="added close to the time frame" />
+    <option name="LAST_COMMIT_MESSAGE" value="added close to the time frame" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -674,20 +726,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Funcs/LucketStepIcon/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="23" column="28" lean-forward="true" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Funcs/LucketStepIcon/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="44" column="15" selection-start-line="44" selection-start-column="15" selection-end-line="44" selection-end-column="15" />
+        <state relative-caret-position="220">
+          <caret line="43" column="6" selection-start-line="43" selection-start-column="6" selection-end-line="43" selection-end-column="58" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Funcs/LucketStepIcon/index.css">
+    <entry file="file://$PROJECT_DIR$/src/Funcs/LucketTimeFrameIcon/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="27" column="18" lean-forward="true" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
+        <state relative-caret-position="353">
+          <caret line="43" column="58" selection-start-line="43" selection-start-column="58" selection-end-line="43" selection-end-column="58" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Funcs/LucketTimeFrameIcon/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-11">
+          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
         </state>
       </provider>
     </entry>
