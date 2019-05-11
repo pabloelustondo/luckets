@@ -1,14 +1,14 @@
 div.LucketTimeFrameIcon {
-    height: var(--status-icon-height);
-    width: 65px;
-    max-width: 65px;
-    min-width: 65px;
-    margin-top: auto;
-    margin-bottom:auto;
-    margin-left: 3px;
-    border-style: solid;
-    text-align: center;
-    border-color: lightgray;
+        height: var(--status-icon-height);
+        width: 65px;
+        max-width: 65px;
+        min-width: 65px;
+        margin-top: auto;
+        margin-bottom:auto;
+        margin-left: 3px;
+        border-style: solid;
+        text-align: center;
+        border-color: lightgray;
     }
 
 div.LucketTimeFrameIconShort {
@@ -18,18 +18,17 @@ div.LucketTimeFrameIconShort {
         margin-bottom:auto;
         margin-left: 10px;
         border-radius: 50%;
-    
-        }
+    }
 
 .TimeFrameMenu {
-    position: relative;
-    background-color: beige;
-    left: -80px;
-    top:-30px;
-    flex-direction: row;
-    display: flex;
-    width:375px;
-    height: 40px;
+        position: relative;
+        background-color: beige;
+        left: -80px;
+        top:-30px;
+        flex-direction: row;
+        display: flex;
+        width:375px;
+        height: 40px;
     }
          
 .TimeFrameCallout {
@@ -40,5 +39,5 @@ div.LucketTimeFrameIconShort {
         width: 35px;
         height: 35px;
         transform: rotate(45deg);
-        }
+    }
             
