@@ -1,0 +1,51 @@
+div.LucketTimeIcon {
+    min-height: var(--status-icon-height);
+    min-width: var(--status-icon-height);
+    max-height: var(--status-icon-height);
+    max-width: var(--status-icon-height);
+    margin-top: auto;
+    margin-bottom:auto;
+    margin-right: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+div.LucketTimeIconShort {
+    min-height: var(--status-icon-height);
+    min-width: var(--status-icon-height);
+    max-height: var(--status-icon-height);
+    max-width: var(--status-icon-height);
+    margin-top: auto;
+    margin-bottom:auto;
+    margin-left: 2px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.TimeMenu {
+    position: relative;
+    background-color: beige;
+    left: 0px;
+    top:-65px;
+    flex-direction: row;
+    display: flex;
+    width:calc(35px * 5 + 30px);
+    height: 40px;
+    }
+         
+.TimeCallout {
+        position: relative;
+        background-color: beige;
+        left: -6px;
+        top:0px;
+        width: 35px;
+        height: 35px;
+        transform: rotate(45deg);
+        }
+
+.TimeImage {
+    vertical-align: middle;
+    width: 25px;
+    height: 25px;
+    margin:0px;
+}

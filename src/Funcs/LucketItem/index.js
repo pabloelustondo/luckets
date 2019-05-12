@@ -35,10 +35,11 @@ const LucketItem = props => {
 
                     <LucketStatusIcon status={props.lucket.status}
                                       lucket={props.lucket} updateLucket={props.updateLucket}/>
-                    <ChildrenStatusIcon status="yellow"/>
 
                     <LucketActionStatusIcon status={props.lucket.actionStatus}
                                             lucket={props.lucket} updateLucket={props.updateLucket}/>
+
+                    <ChildrenStatusIcon status="yellow"/>
 
                     <LucketRelativePointsIcon
                         backToParent={props.backToParent} lucket={props.lucket}
@@ -56,6 +57,8 @@ const LucketItem = props => {
             </div>
             <LucketInfo
                 focus={props.focus}
+                status={props.lucket.actionStatus}
+                updateLucket={props.updateLucket}
                 lucket={props.lucket}
                 setEditing={props.setEditing}
                 infoLevel={props.infoLevel}
