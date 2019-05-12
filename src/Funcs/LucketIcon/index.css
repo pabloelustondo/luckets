@@ -1,7 +1,9 @@
 .LucketIcon {
     vertical-align: middle;
-    width: 30px;
-    height: 30px;
+    min-width: 30px;
+    min-height: 30px;
+    max-width: 30px;
+    max-height: 30px;
     margin-top: 5px;
     margin-bottom: 5px;
     margin-left: 5px;

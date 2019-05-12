@@ -1,22 +1,35 @@
 div.LucketCategoryIcon {
-    height: var(--status-icon-height);
-    width: var(--status-icon-height);
+    min-height: var(--status-icon-height);
+    min-width: var(--status-icon-height);
+    max-height: var(--status-icon-height);
+    max-width: var(--status-icon-height);
     margin-top: auto;
     margin-bottom:auto;
     margin-left: 10px;
     text-align: center;
     font-weight: bold;
-     
+}
+
+div.LucketCategoryIconShort {
+    min-height: var(--status-icon-height);
+    min-width: var(--status-icon-height);
+    max-height: var(--status-icon-height);
+    max-width: var(--status-icon-height);
+    margin-top: auto;
+    margin-bottom:auto;
+    margin-left: 2px;
+    text-align: center;
+    font-weight: bold;
 }
 
 .CategoryMenu {
     position: relative;
     background-color: beige;
-    left: -5px;
+    left: -20px;
     top:-21px;
     flex-direction: row;
     display: flex;
-    width:calc(35px * 8 + 30px);
+    width:calc(35px * 9 + 30px);
     height: 40px;
     }
          

@@ -62,7 +62,7 @@ class LucketCategory extends Component {
         {options.filter(
             o => o!==this.props.status
         ).map( o => 
-           <div key={o} className={'LucketCategoryIcon'} 
+           <div key={o} className={'LucketCategoryIconShort'}
            onClick={(e) => this.set(e,o)} >{o}</div>
         )}
 

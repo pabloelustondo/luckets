@@ -5,7 +5,7 @@
 .LucketItem {
     width: 100%;
     display: flex;
-    background-color: lightgray;
+    background-color: gainsboro;
     vertical-align: middle;
     text-align: left;
 }
@@ -14,6 +14,7 @@
     width: 100%;
     display: flex;
     background-color: darkgrey;
+    border-top: black solid 2px;
     vertical-align: middle;
     text-align: left;
 }

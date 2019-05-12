@@ -15,51 +15,59 @@ import ChildrenStatusIcon from "../ChildrenStatusIcon"
 
 const LucketItem = props => {
 
-  let className = (props.focus === true) ? "FocusLucketItem" : "LucketItem";
-  let isEditing = (props.editingLucket !== null && props.editingLucket.id === props.lucket.id);
-  let feature = (props.editingLucket !== null)?props.editingLucket.feature: null;
-   
-  return (
-    <div>
-      <div className={className}>
-        <div className="ItemLeft">
+    let className = (props.focus === true) ? "FocusLucketItem" : "LucketItem";
+    let isEditing = (props.editingLucket !== null && props.editingLucket.id === props.lucket.id);
+    let feature = (props.editingLucket !== null) ? props.editingLucket.feature : null;
 
-        <LucketCategory status={props.lucket.actionStatus} 
-          lucket={props.lucket}  updateLucket={props.updateLucket} />
+    return (
+        <div>
+            <div className={className}>
+                <div className="ItemLeft">
 
-          <LucketIcon icon={props.lucket.icon} 
-          lucket={props.lucket} 
-          setEditing={props.setEditing}
-          />
-          <LucketStatusIcon status={props.lucket.status} 
-          lucket={props.lucket} updateLucket={props.updateLucket} />
-          <ChildrenStatusIcon status="yellow"/>
+                    <LucketIcon icon={props.lucket.icon}
+                                lucket={props.lucket}
+                                setEditing={props.setEditing}
+                    />
 
-          <LucketActionStatusIcon status={props.lucket.actionStatus} 
-          lucket={props.lucket}  updateLucket={props.updateLucket} />
-    
-          <LucketRelativePointsIcon
-              backToParent={props.backToParent} lucket={props.lucket} 
-              focus={props.focus}
-              setFocus={() => {props.setFocus(props.lucket);}}
-          />
+                    <LucketCategory status={props.lucket.actionStatus}
+                                    lucket={props.lucket} updateLucket={props.updateLucket}/>
 
+
+                    <LucketStatusIcon status={props.lucket.status}
+                                      lucket={props.lucket} updateLucket={props.updateLucket}/>
+                    <ChildrenStatusIcon status="yellow"/>
+
+                    <LucketActionStatusIcon status={props.lucket.actionStatus}
+                                            lucket={props.lucket} updateLucket={props.updateLucket}/>
+
+                    <LucketRelativePointsIcon
+                        backToParent={props.backToParent} lucket={props.lucket}
+                        focus={props.focus}
+                        setFocus={() => {
+                            props.setFocus(props.lucket);
+                        }}
+                    />
+                    <LucketTitle
+                        id={props.lucket.name}
+                        lucket={props.lucket}
+                        setEditing={props.setEditing}/>
+
+                </div>
+            </div>
+            <LucketInfo
+                focus={props.focus}
+                lucket={props.lucket}
+                setEditing={props.setEditing}
+                infoLevel={props.infoLevel}
+                lucket={props.lucket}/>
+
+            <LucketForm isEditing={isEditing}
+                        setEditing={props.setEditing}
+                        feature={feature}
+                        lucket={props.lucket}
+                        updateLucket={props.updateLucket}/>
         </div>
-        <LucketTitle 
-          id={props.lucket.name}  
-          lucket={props.lucket} 
-          setEditing={props.setEditing}/>
-      </div>
-      <LucketInfo infoLevel={props.infoLevel} 
-      lucket={props.lucket} />
-
-      <LucketForm isEditing={isEditing} 
-      setEditing = {props.setEditing}
-      feature = {feature}
-      lucket={props.lucket} 
-      updateLucket={props.updateLucket} />
-    </div>
-  );
+    );
 };
 
 export default LucketItem;
