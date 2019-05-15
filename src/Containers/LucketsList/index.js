@@ -5,6 +5,7 @@ import FocusLucket from "../../Funcs/FocusLucket";
 import Header from "../../Funcs/Header";
 import Footer from "../../Funcs/Footer";
 import { patchData, postData, postHistory, patchAllLuckets } from "../../Data/DataService";
+import LucketCategoryView from "../../Funcs/LucketCategoryView"
 
 import {
   getRootLucket,
@@ -114,7 +115,15 @@ class LucketsList extends Component {
       _childrenLucket = filterForDo(_childrenLucket);
     }
 
-    const childrenLucket = _childrenLucket.map( l => calculatePoints(this.props.luckets,l) );
+    const __childrenLucket = _childrenLucket.map( l => calculatePoints(this.props.luckets,l) );
+
+    const childrenLucket = [ { childrenLucket:__childrenLucket}  ];
+
+    // putting the children inside categories
+
+
+
+
 
     debugger;
     return (
@@ -140,19 +149,24 @@ class LucketsList extends Component {
           setEditing={this.setEditing}
           updateLucket={this.updateLucket}
         />
-        <div className="LucketsListChildren">
-          {childrenLucket.map(lucket => (
-            <LucketsItem
-              infoLevel={this.state.infoLevel}
-              editingLucket={this.state.editing}
-              lucket={lucket}
-              key={lucket.id}
-              setEditing={this.setEditing}
-              setFocus={this.setFocus}
-              updateLucket={this.updateLucket}
-            />
-          ))}
-        </div>
+        <LucketCategoryView>
+        {childrenLucket.map( cat =>
+            <div>
+              {cat.childrenLucket.map(lucket => (
+                <LucketsItem
+                    infoLevel={this.state.infoLevel}
+                    editingLucket={this.state.editing}
+                    lucket={lucket}
+                    key={lucket.id}
+                    setEditing={this.setEditing}
+                    setFocus={this.setFocus}
+                    updateLucket={this.updateLucket}
+                />
+            ))}
+            </div>
+        )};
+
+        </LucketCategoryView>
         <Footer
           postHistory={this.postHistory}
           setStep={this.props.setStep}

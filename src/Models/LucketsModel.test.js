@@ -10,7 +10,8 @@ import {
   filterForDo,
     cleanActionStatus,
   LucketsList2Object,
-    calculatePoints
+    calculatePoints,
+    timeSet
 } from "./LuketsModel";
 
 describe("LucketsModel", function() {
@@ -405,6 +406,22 @@ describe("LucketsModel", function() {
       assert.equal(result.doneActionPoints, 0);
 
     });
+
+
+    describe("Time object", function (){
+
+      it("set a value adds the values if not there", function(){
+
+          const DayTimes = [7,10,13,16,19,22];
+          const timeStructure = [7,9];
+
+          const result = timeSet(timeStructure, 13);
+
+          assert.equal(result.length, 3);
+
+      });
+
+    })
 
   });
 

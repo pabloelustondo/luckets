@@ -196,3 +196,17 @@ export const calculatePoints = (luckets, lucket) => {
   return result;
 
 }
+
+export const timeSet = (set, v) => {
+
+  const vv = set.filter( o => o !== v);
+
+  if( vv.length === set.length){
+    //then it was not there so we pushed it
+    return [...set,v];
+  } else {
+    //it was there so we remove it
+    return vv;
+  }
+
+}
