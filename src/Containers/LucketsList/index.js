@@ -149,6 +149,7 @@ class LucketsList extends Component {
           setEditing={this.setEditing}
           updateLucket={this.updateLucket}
         />
+        <div className='LucketsListChildren'>
         <LucketCategoryView>
         {childrenLucket.map( cat =>
             <div>
@@ -165,8 +166,8 @@ class LucketsList extends Component {
             ))}
             </div>
         )};
-
         </LucketCategoryView>
+        </div>
         <Footer
           postHistory={this.postHistory}
           setStep={this.props.setStep}

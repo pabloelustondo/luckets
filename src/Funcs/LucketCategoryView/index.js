@@ -19,9 +19,13 @@ toggle = () => {
 
 render() {
 
-    return (<div className="LucketsListChildreCategoryViewn">
-        <div className='LucketsListChildrenCategoryCategoryView' >Category 2</div>
-        {this.props.children};
+    const barContent = "Cateogry 3"
+    const barClassName='LucketsListChildrenCategoryCategoryView';
+    const children = (this.state.show)?this.props.children:null
+
+    return (<div onClick={this.toggle} className="LucketsListChildreCategoryViewn">
+        <div className={barClassName} >{barContent}</div>
+        {children}
     </div>)
 }
     
