@@ -15,8 +15,8 @@ import {
   updateLucket,
   filterForDo,
   isSameDay,
-    cleanActionStatus,
-  calculatePoints
+  cleanActionStatus,
+  calculatePoints, categorize
 } from "../../Models/LuketsModel";
 
 class LucketsList extends Component {
@@ -117,12 +117,7 @@ class LucketsList extends Component {
 
     const __childrenLucket = _childrenLucket.map( l => calculatePoints(this.props.luckets,l) );
 
-    const childrenLucket = [ { childrenLucket:__childrenLucket}  ];
-
-    // putting the children inside categories
-
-
-
+    const lucketCategories = categorize(__childrenLucket);
 
 
     debugger;
@@ -150,10 +145,10 @@ class LucketsList extends Component {
           updateLucket={this.updateLucket}
         />
         <div className='LucketsListChildren'>
-        <LucketCategoryView>
-        {childrenLucket.map( cat =>
+          {lucketCategories.map( cat =>
+        <LucketCategoryView category={cat}>
             <div>
-              {cat.childrenLucket.map(lucket => (
+              {cat.luckets.map(lucket => (
                 <LucketsItem
                     infoLevel={this.state.infoLevel}
                     editingLucket={this.state.editing}
@@ -165,8 +160,7 @@ class LucketsList extends Component {
                 />
             ))}
             </div>
-        )};
-        </LucketCategoryView>
+        </LucketCategoryView>)}
         </div>
         <Footer
           postHistory={this.postHistory}

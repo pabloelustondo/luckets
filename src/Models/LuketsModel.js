@@ -210,3 +210,29 @@ export const timeSet = (set, v) => {
   }
 
 }
+
+export const categorize = (luckets) => {
+
+ const lucketsMap = {};
+
+ luckets.forEach( lucket => {
+
+   if (!lucketsMap[lucket.category]){
+     lucketsMap[lucket.category]=[];
+   }
+
+   lucketsMap[lucket.category].push(lucket)
+
+
+ });
+
+ const result = [];
+
+  for( let cat in lucketsMap){
+    const categoryObject = { category: cat, luckets:lucketsMap[cat] };
+    result.push( categoryObject );
+  }
+
+  return result;
+
+};

@@ -11,7 +11,8 @@ import {
     cleanActionStatus,
   LucketsList2Object,
     calculatePoints,
-    timeSet
+    timeSet,
+  categorize
 } from "./LuketsModel";
 
 describe("LucketsModel", function() {
@@ -418,6 +419,164 @@ describe("LucketsModel", function() {
           const result = timeSet(timeStructure, 13);
 
           assert.equal(result.length, 3);
+
+      });
+
+    });
+
+    describe("categorize", function (){
+
+      it("returns a lisst of list with luckets in each category", function(){
+
+        let luckets = [
+          {
+            "actionPlan": "Lelia + Legals + Mondey or Walk...",
+            "actionStatus": "yellow",
+            "category": "A",
+            "displayName": "A3-We",
+            "doneActionPoints": 0,
+            "icon": "multiple-users-silhouette.svg",
+            "id": "A3-We",
+            "name": "We",
+            "order": 3,
+            "parent": "Life-Lucket",
+            "points": 1,
+            "status": "green",
+            "time": "19",
+            "totalActionPoints": 1
+          },
+          {
+            "actionPlan": "blue cross, pmp,subbscriptions, rogers\nquestrade",
+            "actionStatus": "yellow",
+            "category": "B",
+            "description": "bco.indhealth@ont.bluecross.ca",
+            "doneActionPoints": 0,
+            "icon": "money.svg",
+            "id": "311dd740-4609-11e9-9857-153a418475e3",
+            "name": "Money",
+            "order": 3,
+            "parent": "Life-Lucket",
+            "points": 1,
+            "status": "red",
+            "time": "22",
+            "totalActionPoints": 1
+          },
+          {
+            "actionPlan": "reset rodrigos ipad access my goog docs",
+            "actionStatus": "yellow",
+            "category": "B",
+            "doneActionPoints": 0,
+            "icon": "legal-paper.svg",
+            "id": "2d7aa360-460a-11e9-861c-19fba3ad858f",
+            "name": "InfoIT",
+            "order": 4,
+            "parent": "Life-Lucket",
+            "points": 1,
+            "status": "green",
+            "totalActionPoints": 1
+          },
+          {
+            "actionPlan": "time step  day (hours)",
+            "actionStatus": "yellow",
+            "category": "C",
+            "doneActionPoints": 0,
+            "icon": "start-up.svg",
+            "id": "c5747600-47fe-11e9-9dcd-fd3c6b645bdc",
+            "name": "ProProjects",
+            "order": 4,
+            "parent": "Life-Lucket",
+            "points": 2,
+            "status": "green",
+            "time": "10",
+            "totalActionPoints": 2
+          },
+          {
+            "actionPlan": "list of songs. start learning solos",
+            "actionStatus": "yellow",
+            "category": "E",
+            "doneActionPoints": 0,
+            "icon": "guitar.svg",
+            "id": "df19d5f0-5032-11e9-858a-150d8b06f50e",
+            "name": "Music",
+            "order": 1,
+            "parent": "Life-Lucket",
+            "points": 1,
+            "status": "green",
+            "time": "19",
+            "totalActionPoints": 1
+          },
+          {
+            "actionPlan": "sleep / diet / jog / stretch",
+            "actionStatus": "green",
+            "category": "A",
+            "displayName": "A2-Body",
+            "doneActionPoints": 0,
+            "icon": "A2-Body-Yoga.svg",
+            "id": "A2-Body",
+            "name": "Body",
+            "order": 2,
+            "parent": "Life-Lucket",
+            "points": 1,
+            "status": "green",
+            "time": "19",
+            "totalActionPoints": 1
+          },
+          {
+            "actionPlan": "close in 61 as i can, start ib 63",
+            "actionStatus": "green",
+            "category": "C",
+            "description": "0",
+            "doneActionPoints": 5,
+            "icon": "work1.svg",
+            "id": "3f6a57f0-47fe-11e9-9dcd-fd3c6b645bdc",
+            "name": "Work",
+            "order": 1,
+            "parent": "Life-Lucket",
+            "points": 1,
+            "status": "green",
+            "totalActionPoints": 8
+          },
+          {
+            "actionPlan": "pla, do, save be precise.",
+            "actionStatus": "blue",
+            "category": "A",
+            "description": "all about mind, psicology",
+            "displayName": "A1-Mind",
+            "doneActionPoints": 1,
+            "icon": "A1-Mind.svg",
+            "id": "A1-Mind",
+            "name": "Mind",
+            "order": 1,
+            "parent": "Life-Lucket",
+            "points": 1,
+            "status": "green",
+            "time": "7",
+            "totalActionPoints": 1
+          },
+          {
+            "actionPlan": "fill appllication https://drive.google.com/file/d/1RTl_wSfptbVfwSgIyownukb3GXjLJUuY/view?usp=sharing",
+            "actionStatus": "blue",
+            "category": "D",
+            "doneActionPoints": 1,
+            "icon": "reading.svg",
+            "id": "ee004810-5037-11e9-858a-150d8b06f50e",
+            "name": "Politics",
+            "order": 5,
+            "parent": "Life-Lucket",
+            "points": 1,
+            "status": "white",
+            "totalActionPoints": 1
+          }
+        ];
+
+        const result = categorize(luckets);
+
+        assert.equal(result.length, 5);
+
+
+        const firstCategory = result[0];
+        assert.equal(firstCategory.luckets.length, 3);
+        assert.equal(firstCategory.category, 'A');
 
       });
 

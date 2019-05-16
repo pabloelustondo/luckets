@@ -19,7 +19,7 @@ toggle = () => {
 
 render() {
 
-    const barContent = "Cateogry 3"
+    const barContent = this.props.category.category;
     const barClassName='LucketsListChildrenCategoryCategoryView';
     const children = (this.state.show)?this.props.children:null
 
