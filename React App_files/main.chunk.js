@@ -40,7 +40,7 @@ exports.push([module.i, ".LucketsList {\n    background-color: gainsboro;\n    b
 
 /***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Funcs/AddLucketIcon/index.css":
 /*!**********************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/Funcs/AddLucketIcon/index.css ***!
+  !*** ./node_modules/css-loader??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/Components/AddLucketIcon/index.css ***!
   \**********************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -59,7 +59,7 @@ exports.push([module.i, ".AddLucketIcon {\n    float: right;\n    vertical-align
 
 /***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Funcs/FocusLucket/index.css":
 /*!********************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/Funcs/FocusLucket/index.css ***!
+  !*** ./node_modules/css-loader??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/Components/FocusLucket/index.css ***!
   \********************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -78,7 +78,7 @@ exports.push([module.i, ".FocusLucket {\n    background-color: gainsboro;\n    v
 
 /***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Funcs/Footer/index.css":
 /*!***************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/Funcs/Footer/index.css ***!
+  !*** ./node_modules/css-loader??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/Components/Footer/index.css ***!
   \***************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -97,7 +97,7 @@ exports.push([module.i, ".Footer {\n    background-color:white;\n    width: 100%
 
 /***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Funcs/Header/index.css":
 /*!***************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/Funcs/Header/index.css ***!
+  !*** ./node_modules/css-loader??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/Components/Header/index.css ***!
   \***************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -116,7 +116,7 @@ exports.push([module.i, ".Header {\n    background-color:white;\n    width: 100%
 
 /***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Funcs/LucketActionStatusIcon/index.css":
 /*!*******************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/Funcs/LucketActionStatusIcon/index.css ***!
+  !*** ./node_modules/css-loader??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/Components/LucketActionStatusIcon/index.css ***!
   \*******************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -135,7 +135,7 @@ exports.push([module.i, "div.LucketActionStatusIcon {\n    height: var(--status-
 
 /***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Funcs/LucketIcon/index.css":
 /*!*******************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/Funcs/LucketIcon/index.css ***!
+  !*** ./node_modules/css-loader??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/Components/LucketIcon/index.css ***!
   \*******************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -154,7 +154,7 @@ exports.push([module.i, ".LucketIcon {\n    background-color: darkgrey;\n    ver
 
 /***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Funcs/LucketItem/index.css":
 /*!*******************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/Funcs/LucketItem/index.css ***!
+  !*** ./node_modules/css-loader??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/Components/LucketItem/index.css ***!
   \*******************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -173,7 +173,7 @@ exports.push([module.i, ".material-icons.vertically-centered { \n    vertical-al
 
 /***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Funcs/LucketPointsIcon/index.css":
 /*!*************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/Funcs/LucketPointsIcon/index.css ***!
+  !*** ./node_modules/css-loader??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/Components/LucketPointsIcon/index.css ***!
   \*************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -192,7 +192,7 @@ exports.push([module.i, "div.LucketPointsIcon {\n    height: var(--status-icon-h
 
 /***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Funcs/LucketRelativePointsIcon/index.css":
 /*!*********************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/Funcs/LucketRelativePointsIcon/index.css ***!
+  !*** ./node_modules/css-loader??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/Components/LucketRelativePointsIcon/index.css ***!
   \*********************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -211,7 +211,7 @@ exports.push([module.i, "div.LucketRelativePointsIcon {\n    height: var(--statu
 
 /***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Funcs/LucketSetFocusIcon/index.css":
 /*!***************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/Funcs/LucketSetFocusIcon/index.css ***!
+  !*** ./node_modules/css-loader??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/Components/LucketSetFocusIcon/index.css ***!
   \***************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -230,7 +230,7 @@ exports.push([module.i, ".LucketSetFocusIcon {\n    background-color: darkgrey;\
 
 /***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Funcs/LucketSetParentIcon/index.css":
 /*!****************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/Funcs/LucketSetParentIcon/index.css ***!
+  !*** ./node_modules/css-loader??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/Components/LucketSetParentIcon/index.css ***!
   \****************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -249,7 +249,7 @@ exports.push([module.i, ".LucketSetParentIcon {\n    background-color: darkgrey;
 
 /***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Funcs/LucketStatusIcon/index.css":
 /*!*************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/Funcs/LucketStatusIcon/index.css ***!
+  !*** ./node_modules/css-loader??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/Components/LucketStatusIcon/index.css ***!
   \*************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -268,7 +268,7 @@ exports.push([module.i, "div.LucketStatusIcon {\n    height: var(--status-icon-h
 
 /***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Funcs/LucketTitle/index.css":
 /*!********************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/Funcs/LucketTitle/index.css ***!
+  !*** ./node_modules/css-loader??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/Components/LucketTitle/index.css ***!
   \********************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -378,7 +378,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./App.css */ "./src/App.css");
 /* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_App_css__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var _Containers_LucketsList__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./Containers/LucketsList */ "./src/Containers/LucketsList/index.js");
-/* harmony import */ var _Funcs_Footer__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./Funcs/Footer */ "./src/Funcs/Footer/index.js");
+/* harmony import */ var _Funcs_Footer__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./Components/Footer */ "./src/Components/Footer/index.js");
 
 
 
@@ -501,10 +501,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./index.css */ "./src/Containers/LucketsList/index.css");
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _Funcs_LucketItem__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../Funcs/LucketItem */ "./src/Funcs/LucketItem/index.js");
-/* harmony import */ var _Funcs_FocusLucket__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../Funcs/FocusLucket */ "./src/Funcs/FocusLucket/index.js");
-/* harmony import */ var _Funcs_Header__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../Funcs/Header */ "./src/Funcs/Header/index.js");
-/* harmony import */ var _Funcs_Footer__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../Funcs/Footer */ "./src/Funcs/Footer/index.js");
+/* harmony import */ var _Funcs_LucketItem__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../Components/LucketItem */ "./src/Components/LucketItem/index.js");
+/* harmony import */ var _Funcs_FocusLucket__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../Components/FocusLucket */ "./src/Components/FocusLucket/index.js");
+/* harmony import */ var _Funcs_Header__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../Components/Header */ "./src/Components/Header/index.js");
+/* harmony import */ var _Funcs_Footer__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../Components/Footer */ "./src/Components/Footer/index.js");
 /* harmony import */ var _Data_DataService__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../Data/DataService */ "./src/Data/DataService.js");
 /* harmony import */ var _Models_LuketsModel__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../Models/LuketsModel */ "./src/Models/LuketsModel.js");
 
@@ -683,13 +683,13 @@ var postData = function postData(lucket, handler) {
 
 /***/ "./src/Funcs/AddLucketIcon/index.css":
 /*!*******************************************!*\
-  !*** ./src/Funcs/AddLucketIcon/index.css ***!
+  !*** ./src/Components/AddLucketIcon/index.css ***!
   \*******************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Funcs/AddLucketIcon/index.css");
+var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Components/AddLucketIcon/index.css");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -708,8 +708,8 @@ var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addS
 if(content.locals) module.exports = content.locals;
 
 if(true) {
-	module.hot.accept(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Funcs/AddLucketIcon/index.css", function() {
-		var newContent = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Funcs/AddLucketIcon/index.css");
+	module.hot.accept(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Components/AddLucketIcon/index.css", function() {
+		var newContent = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Components/AddLucketIcon/index.css");
 
 		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
 
@@ -738,7 +738,7 @@ if(true) {
 
 /***/ "./src/Funcs/AddLucketIcon/index.js":
 /*!******************************************!*\
-  !*** ./src/Funcs/AddLucketIcon/index.js ***!
+  !*** ./src/Components/AddLucketIcon/index.js ***!
   \******************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -747,9 +747,9 @@ if(true) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.css */ "./src/Funcs/AddLucketIcon/index.css");
+/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.css */ "./src/Components/AddLucketIcon/index.css");
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/elustondo/luckets/src/Funcs/AddLucketIcon/index.js";
+var _jsxFileName = "/Users/elustondo/luckets/src/Components/AddLucketIcon/index.js";
 
 
 var imageLocation = '/images/add-lucket-icon.svg';
@@ -774,13 +774,13 @@ var AddLucketIcon = function AddLucketIcon(props) {
 
 /***/ "./src/Funcs/FocusLucket/index.css":
 /*!*****************************************!*\
-  !*** ./src/Funcs/FocusLucket/index.css ***!
+  !*** ./src/Components/FocusLucket/index.css ***!
   \*****************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Funcs/FocusLucket/index.css");
+var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Components/FocusLucket/index.css");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -799,8 +799,8 @@ var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addS
 if(content.locals) module.exports = content.locals;
 
 if(true) {
-	module.hot.accept(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Funcs/FocusLucket/index.css", function() {
-		var newContent = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Funcs/FocusLucket/index.css");
+	module.hot.accept(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Components/FocusLucket/index.css", function() {
+		var newContent = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Components/FocusLucket/index.css");
 
 		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
 
@@ -829,7 +829,7 @@ if(true) {
 
 /***/ "./src/Funcs/FocusLucket/index.js":
 /*!****************************************!*\
-  !*** ./src/Funcs/FocusLucket/index.js ***!
+  !*** ./src/Components/FocusLucket/index.js ***!
   \****************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -838,10 +838,10 @@ if(true) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.css */ "./src/Funcs/FocusLucket/index.css");
+/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.css */ "./src/Components/FocusLucket/index.css");
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _LucketItem__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../LucketItem */ "./src/Funcs/LucketItem/index.js");
-var _jsxFileName = "/Users/elustondo/luckets/src/Funcs/FocusLucket/index.js";
+/* harmony import */ var _LucketItem__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../LucketItem */ "./src/Components/LucketItem/index.js");
+var _jsxFileName = "/Users/elustondo/luckets/src/Components/FocusLucket/index.js";
 
 
 
@@ -872,13 +872,13 @@ var FocusLucket = function FocusLucket(props) {
 
 /***/ "./src/Funcs/Footer/index.css":
 /*!************************************!*\
-  !*** ./src/Funcs/Footer/index.css ***!
+  !*** ./src/Components/Footer/index.css ***!
   \************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Funcs/Footer/index.css");
+var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Components/Footer/index.css");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -897,8 +897,8 @@ var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addS
 if(content.locals) module.exports = content.locals;
 
 if(true) {
-	module.hot.accept(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Funcs/Footer/index.css", function() {
-		var newContent = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Funcs/Footer/index.css");
+	module.hot.accept(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Components/Footer/index.css", function() {
+		var newContent = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Components/Footer/index.css");
 
 		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
 
@@ -927,7 +927,7 @@ if(true) {
 
 /***/ "./src/Funcs/Footer/index.js":
 /*!***********************************!*\
-  !*** ./src/Funcs/Footer/index.js ***!
+  !*** ./src/Components/Footer/index.js ***!
   \***********************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -936,9 +936,9 @@ if(true) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.css */ "./src/Funcs/Footer/index.css");
+/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.css */ "./src/Components/Footer/index.css");
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/elustondo/luckets/src/Funcs/Footer/index.js";
+var _jsxFileName = "/Users/elustondo/luckets/src/Components/Footer/index.js";
 
 
 
@@ -959,13 +959,13 @@ var Footer = function Footer() {
 
 /***/ "./src/Funcs/Header/index.css":
 /*!************************************!*\
-  !*** ./src/Funcs/Header/index.css ***!
+  !*** ./src/Components/Header/index.css ***!
   \************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Funcs/Header/index.css");
+var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Components/Header/index.css");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -984,8 +984,8 @@ var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addS
 if(content.locals) module.exports = content.locals;
 
 if(true) {
-	module.hot.accept(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Funcs/Header/index.css", function() {
-		var newContent = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Funcs/Header/index.css");
+	module.hot.accept(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Components/Header/index.css", function() {
+		var newContent = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Components/Header/index.css");
 
 		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
 
@@ -1014,7 +1014,7 @@ if(true) {
 
 /***/ "./src/Funcs/Header/index.js":
 /*!***********************************!*\
-  !*** ./src/Funcs/Header/index.js ***!
+  !*** ./src/Components/Header/index.js ***!
   \***********************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -1023,10 +1023,10 @@ if(true) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.css */ "./src/Funcs/Header/index.css");
+/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.css */ "./src/Components/Header/index.css");
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _AddLucketIcon__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../AddLucketIcon */ "./src/Funcs/AddLucketIcon/index.js");
-var _jsxFileName = "/Users/elustondo/luckets/src/Funcs/Header/index.js";
+/* harmony import */ var _AddLucketIcon__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../AddLucketIcon */ "./src/Components/AddLucketIcon/index.js");
+var _jsxFileName = "/Users/elustondo/luckets/src/Components/Header/index.js";
 
 
 
@@ -1056,13 +1056,13 @@ var Header = function Header(props) {
 
 /***/ "./src/Funcs/LucketActionStatusIcon/index.css":
 /*!****************************************************!*\
-  !*** ./src/Funcs/LucketActionStatusIcon/index.css ***!
+  !*** ./src/Components/LucketActionStatusIcon/index.css ***!
   \****************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Funcs/LucketActionStatusIcon/index.css");
+var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Components/LucketActionStatusIcon/index.css");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -1081,8 +1081,8 @@ var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addS
 if(content.locals) module.exports = content.locals;
 
 if(true) {
-	module.hot.accept(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Funcs/LucketActionStatusIcon/index.css", function() {
-		var newContent = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Funcs/LucketActionStatusIcon/index.css");
+	module.hot.accept(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Components/LucketActionStatusIcon/index.css", function() {
+		var newContent = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Components/LucketActionStatusIcon/index.css");
 
 		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
 
@@ -1111,7 +1111,7 @@ if(true) {
 
 /***/ "./src/Funcs/LucketActionStatusIcon/index.js":
 /*!***************************************************!*\
-  !*** ./src/Funcs/LucketActionStatusIcon/index.js ***!
+  !*** ./src/Components/LucketActionStatusIcon/index.js ***!
   \***************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -1120,9 +1120,9 @@ if(true) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.css */ "./src/Funcs/LucketActionStatusIcon/index.css");
+/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.css */ "./src/Components/LucketActionStatusIcon/index.css");
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/elustondo/luckets/src/Funcs/LucketActionStatusIcon/index.js";
+var _jsxFileName = "/Users/elustondo/luckets/src/Components/LucketActionStatusIcon/index.js";
 
 
 
@@ -1147,13 +1147,13 @@ var LucketActionStatusIcon = function LucketActionStatusIcon(props) {
 
 /***/ "./src/Funcs/LucketIcon/index.css":
 /*!****************************************!*\
-  !*** ./src/Funcs/LucketIcon/index.css ***!
+  !*** ./src/Components/LucketIcon/index.css ***!
   \****************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Funcs/LucketIcon/index.css");
+var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Components/LucketIcon/index.css");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -1172,8 +1172,8 @@ var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addS
 if(content.locals) module.exports = content.locals;
 
 if(true) {
-	module.hot.accept(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Funcs/LucketIcon/index.css", function() {
-		var newContent = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Funcs/LucketIcon/index.css");
+	module.hot.accept(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Components/LucketIcon/index.css", function() {
+		var newContent = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Components/LucketIcon/index.css");
 
 		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
 
@@ -1202,7 +1202,7 @@ if(true) {
 
 /***/ "./src/Funcs/LucketIcon/index.js":
 /*!***************************************!*\
-  !*** ./src/Funcs/LucketIcon/index.js ***!
+  !*** ./src/Components/LucketIcon/index.js ***!
   \***************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -1211,9 +1211,9 @@ if(true) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.css */ "./src/Funcs/LucketIcon/index.css");
+/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.css */ "./src/Components/LucketIcon/index.css");
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/elustondo/luckets/src/Funcs/LucketIcon/index.js";
+var _jsxFileName = "/Users/elustondo/luckets/src/Components/LucketIcon/index.js";
 
 
 
@@ -1240,13 +1240,13 @@ var LucketIcon = function LucketIcon(props) {
 
 /***/ "./src/Funcs/LucketItem/index.css":
 /*!****************************************!*\
-  !*** ./src/Funcs/LucketItem/index.css ***!
+  !*** ./src/Components/LucketItem/index.css ***!
   \****************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Funcs/LucketItem/index.css");
+var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Components/LucketItem/index.css");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -1265,8 +1265,8 @@ var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addS
 if(content.locals) module.exports = content.locals;
 
 if(true) {
-	module.hot.accept(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Funcs/LucketItem/index.css", function() {
-		var newContent = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Funcs/LucketItem/index.css");
+	module.hot.accept(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Components/LucketItem/index.css", function() {
+		var newContent = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Components/LucketItem/index.css");
 
 		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
 
@@ -1295,7 +1295,7 @@ if(true) {
 
 /***/ "./src/Funcs/LucketItem/index.js":
 /*!***************************************!*\
-  !*** ./src/Funcs/LucketItem/index.js ***!
+  !*** ./src/Components/LucketItem/index.js ***!
   \***************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -1304,17 +1304,17 @@ if(true) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.css */ "./src/Funcs/LucketItem/index.css");
+/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.css */ "./src/Components/LucketItem/index.css");
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _Funcs_LucketTitle__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../Funcs/LucketTitle */ "./src/Funcs/LucketTitle/index.js");
-/* harmony import */ var _Funcs_LucketStatusIcon__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../Funcs/LucketStatusIcon */ "./src/Funcs/LucketStatusIcon/index.js");
-/* harmony import */ var _Funcs_LucketPointsIcon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../Funcs/LucketPointsIcon */ "./src/Funcs/LucketPointsIcon/index.js");
-/* harmony import */ var _Funcs_LucketRelativePointsIcon__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../Funcs/LucketRelativePointsIcon */ "./src/Funcs/LucketRelativePointsIcon/index.js");
-/* harmony import */ var _Funcs_LucketActionStatusIcon__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../Funcs/LucketActionStatusIcon */ "./src/Funcs/LucketActionStatusIcon/index.js");
-/* harmony import */ var _Funcs_LucketIcon__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../Funcs/LucketIcon */ "./src/Funcs/LucketIcon/index.js");
-/* harmony import */ var _Funcs_LucketSetFocusIcon__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../Funcs/LucketSetFocusIcon */ "./src/Funcs/LucketSetFocusIcon/index.js");
-/* harmony import */ var _Funcs_LucketSetParentIcon__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../Funcs/LucketSetParentIcon */ "./src/Funcs/LucketSetParentIcon/index.js");
-var _jsxFileName = "/Users/elustondo/luckets/src/Funcs/LucketItem/index.js";
+/* harmony import */ var _Funcs_LucketTitle__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../Components/LucketTitle */ "./src/Components/LucketTitle/index.js");
+/* harmony import */ var _Funcs_LucketStatusIcon__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../Components/LucketStatusIcon */ "./src/Components/LucketStatusIcon/index.js");
+/* harmony import */ var _Funcs_LucketPointsIcon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../Components/LucketPointsIcon */ "./src/Components/LucketPointsIcon/index.js");
+/* harmony import */ var _Funcs_LucketRelativePointsIcon__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../Components/LucketRelativePointsIcon */ "./src/Components/LucketRelativePointsIcon/index.js");
+/* harmony import */ var _Funcs_LucketActionStatusIcon__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../Components/LucketActionStatusIcon */ "./src/Components/LucketActionStatusIcon/index.js");
+/* harmony import */ var _Funcs_LucketIcon__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../Components/LucketIcon */ "./src/Components/LucketIcon/index.js");
+/* harmony import */ var _Funcs_LucketSetFocusIcon__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../Components/LucketSetFocusIcon */ "./src/Components/LucketSetFocusIcon/index.js");
+/* harmony import */ var _Funcs_LucketSetParentIcon__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../Components/LucketSetParentIcon */ "./src/Components/LucketSetParentIcon/index.js");
+var _jsxFileName = "/Users/elustondo/luckets/src/Components/LucketItem/index.js";
 
 
 
@@ -1425,13 +1425,13 @@ var LucketItem = function LucketItem(props) {
 
 /***/ "./src/Funcs/LucketPointsIcon/index.css":
 /*!**********************************************!*\
-  !*** ./src/Funcs/LucketPointsIcon/index.css ***!
+  !*** ./src/Components/LucketPointsIcon/index.css ***!
   \**********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Funcs/LucketPointsIcon/index.css");
+var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Components/LucketPointsIcon/index.css");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -1450,8 +1450,8 @@ var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addS
 if(content.locals) module.exports = content.locals;
 
 if(true) {
-	module.hot.accept(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Funcs/LucketPointsIcon/index.css", function() {
-		var newContent = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Funcs/LucketPointsIcon/index.css");
+	module.hot.accept(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Components/LucketPointsIcon/index.css", function() {
+		var newContent = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Components/LucketPointsIcon/index.css");
 
 		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
 
@@ -1480,7 +1480,7 @@ if(true) {
 
 /***/ "./src/Funcs/LucketPointsIcon/index.js":
 /*!*********************************************!*\
-  !*** ./src/Funcs/LucketPointsIcon/index.js ***!
+  !*** ./src/Components/LucketPointsIcon/index.js ***!
   \*********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -1489,9 +1489,9 @@ if(true) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.css */ "./src/Funcs/LucketPointsIcon/index.css");
+/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.css */ "./src/Components/LucketPointsIcon/index.css");
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/elustondo/luckets/src/Funcs/LucketPointsIcon/index.js";
+var _jsxFileName = "/Users/elustondo/luckets/src/Components/LucketPointsIcon/index.js";
 
 
 
@@ -1512,13 +1512,13 @@ var LucketPointsIcon = function LucketPointsIcon(props) {
 
 /***/ "./src/Funcs/LucketRelativePointsIcon/index.css":
 /*!******************************************************!*\
-  !*** ./src/Funcs/LucketRelativePointsIcon/index.css ***!
+  !*** ./src/Components/LucketRelativePointsIcon/index.css ***!
   \******************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Funcs/LucketRelativePointsIcon/index.css");
+var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Components/LucketRelativePointsIcon/index.css");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -1537,8 +1537,8 @@ var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addS
 if(content.locals) module.exports = content.locals;
 
 if(true) {
-	module.hot.accept(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Funcs/LucketRelativePointsIcon/index.css", function() {
-		var newContent = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Funcs/LucketRelativePointsIcon/index.css");
+	module.hot.accept(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Components/LucketRelativePointsIcon/index.css", function() {
+		var newContent = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Components/LucketRelativePointsIcon/index.css");
 
 		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
 
@@ -1567,7 +1567,7 @@ if(true) {
 
 /***/ "./src/Funcs/LucketRelativePointsIcon/index.js":
 /*!*****************************************************!*\
-  !*** ./src/Funcs/LucketRelativePointsIcon/index.js ***!
+  !*** ./src/Components/LucketRelativePointsIcon/index.js ***!
   \*****************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -1576,9 +1576,9 @@ if(true) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.css */ "./src/Funcs/LucketRelativePointsIcon/index.css");
+/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.css */ "./src/Components/LucketRelativePointsIcon/index.css");
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/elustondo/luckets/src/Funcs/LucketRelativePointsIcon/index.js";
+var _jsxFileName = "/Users/elustondo/luckets/src/Components/LucketRelativePointsIcon/index.js";
 
 
 
@@ -1599,13 +1599,13 @@ var LucketRelativePointsIcon = function LucketRelativePointsIcon(props) {
 
 /***/ "./src/Funcs/LucketSetFocusIcon/index.css":
 /*!************************************************!*\
-  !*** ./src/Funcs/LucketSetFocusIcon/index.css ***!
+  !*** ./src/Components/LucketSetFocusIcon/index.css ***!
   \************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Funcs/LucketSetFocusIcon/index.css");
+var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Components/LucketSetFocusIcon/index.css");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -1624,8 +1624,8 @@ var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addS
 if(content.locals) module.exports = content.locals;
 
 if(true) {
-	module.hot.accept(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Funcs/LucketSetFocusIcon/index.css", function() {
-		var newContent = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Funcs/LucketSetFocusIcon/index.css");
+	module.hot.accept(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Components/LucketSetFocusIcon/index.css", function() {
+		var newContent = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Components/LucketSetFocusIcon/index.css");
 
 		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
 
@@ -1654,7 +1654,7 @@ if(true) {
 
 /***/ "./src/Funcs/LucketSetFocusIcon/index.js":
 /*!***********************************************!*\
-  !*** ./src/Funcs/LucketSetFocusIcon/index.js ***!
+  !*** ./src/Components/LucketSetFocusIcon/index.js ***!
   \***********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -1663,9 +1663,9 @@ if(true) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.css */ "./src/Funcs/LucketSetFocusIcon/index.css");
+/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.css */ "./src/Components/LucketSetFocusIcon/index.css");
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/elustondo/luckets/src/Funcs/LucketSetFocusIcon/index.js";
+var _jsxFileName = "/Users/elustondo/luckets/src/Components/LucketSetFocusIcon/index.js";
 
 
 var imageLocation = '/images/down-arrow.svg';
@@ -1690,13 +1690,13 @@ var LucketSetFocusIcon = function LucketSetFocusIcon(props) {
 
 /***/ "./src/Funcs/LucketSetParentIcon/index.css":
 /*!*************************************************!*\
-  !*** ./src/Funcs/LucketSetParentIcon/index.css ***!
+  !*** ./src/Components/LucketSetParentIcon/index.css ***!
   \*************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Funcs/LucketSetParentIcon/index.css");
+var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Components/LucketSetParentIcon/index.css");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -1715,8 +1715,8 @@ var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addS
 if(content.locals) module.exports = content.locals;
 
 if(true) {
-	module.hot.accept(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Funcs/LucketSetParentIcon/index.css", function() {
-		var newContent = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Funcs/LucketSetParentIcon/index.css");
+	module.hot.accept(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Components/LucketSetParentIcon/index.css", function() {
+		var newContent = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Components/LucketSetParentIcon/index.css");
 
 		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
 
@@ -1745,7 +1745,7 @@ if(true) {
 
 /***/ "./src/Funcs/LucketSetParentIcon/index.js":
 /*!************************************************!*\
-  !*** ./src/Funcs/LucketSetParentIcon/index.js ***!
+  !*** ./src/Components/LucketSetParentIcon/index.js ***!
   \************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -1754,9 +1754,9 @@ if(true) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.css */ "./src/Funcs/LucketSetParentIcon/index.css");
+/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.css */ "./src/Components/LucketSetParentIcon/index.css");
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/elustondo/luckets/src/Funcs/LucketSetParentIcon/index.js";
+var _jsxFileName = "/Users/elustondo/luckets/src/Components/LucketSetParentIcon/index.js";
 
 
 
@@ -1786,13 +1786,13 @@ var LucketSetParentIcon = function LucketSetParentIcon(props) {
 
 /***/ "./src/Funcs/LucketStatusIcon/index.css":
 /*!**********************************************!*\
-  !*** ./src/Funcs/LucketStatusIcon/index.css ***!
+  !*** ./src/Components/LucketStatusIcon/index.css ***!
   \**********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Funcs/LucketStatusIcon/index.css");
+var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Components/LucketStatusIcon/index.css");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -1811,8 +1811,8 @@ var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addS
 if(content.locals) module.exports = content.locals;
 
 if(true) {
-	module.hot.accept(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Funcs/LucketStatusIcon/index.css", function() {
-		var newContent = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Funcs/LucketStatusIcon/index.css");
+	module.hot.accept(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Components/LucketStatusIcon/index.css", function() {
+		var newContent = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Components/LucketStatusIcon/index.css");
 
 		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
 
@@ -1841,7 +1841,7 @@ if(true) {
 
 /***/ "./src/Funcs/LucketStatusIcon/index.js":
 /*!*********************************************!*\
-  !*** ./src/Funcs/LucketStatusIcon/index.js ***!
+  !*** ./src/Components/LucketStatusIcon/index.js ***!
   \*********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -1850,9 +1850,9 @@ if(true) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.css */ "./src/Funcs/LucketStatusIcon/index.css");
+/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.css */ "./src/Components/LucketStatusIcon/index.css");
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/elustondo/luckets/src/Funcs/LucketStatusIcon/index.js";
+var _jsxFileName = "/Users/elustondo/luckets/src/Components/LucketStatusIcon/index.js";
 
 
 
@@ -1877,13 +1877,13 @@ var LucketStatusIcon = function LucketStatusIcon(props) {
 
 /***/ "./src/Funcs/LucketTitle/index.css":
 /*!*****************************************!*\
-  !*** ./src/Funcs/LucketTitle/index.css ***!
+  !*** ./src/Components/LucketTitle/index.css ***!
   \*****************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Funcs/LucketTitle/index.css");
+var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Components/LucketTitle/index.css");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -1902,8 +1902,8 @@ var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addS
 if(content.locals) module.exports = content.locals;
 
 if(true) {
-	module.hot.accept(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Funcs/LucketTitle/index.css", function() {
-		var newContent = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Funcs/LucketTitle/index.css");
+	module.hot.accept(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Components/LucketTitle/index.css", function() {
+		var newContent = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/Components/LucketTitle/index.css");
 
 		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
 
@@ -1932,7 +1932,7 @@ if(true) {
 
 /***/ "./src/Funcs/LucketTitle/index.js":
 /*!****************************************!*\
-  !*** ./src/Funcs/LucketTitle/index.js ***!
+  !*** ./src/Components/LucketTitle/index.js ***!
   \****************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -1941,9 +1941,9 @@ if(true) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.css */ "./src/Funcs/LucketTitle/index.css");
+/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.css */ "./src/Components/LucketTitle/index.css");
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/elustondo/luckets/src/Funcs/LucketTitle/index.js";
+var _jsxFileName = "/Users/elustondo/luckets/src/Components/LucketTitle/index.js";
 
 
 

@@ -12,20 +12,18 @@ class LucketTime extends Component {
     }
 
     
-    edit = () => {
-        if (this.state.edit === false){
-            this.setState({edit:true})
-        } else {
-            this.setState({edit:false}) 
-        }
-    
-    }
+    edit = () => { this.setState({edit:!this.state.edit})}
     
     set = (event, v) => {
         event.stopPropagation();
-        this.setState({edit:false});
         let lucket = this.props.lucket;
-        lucket.time = v;
+        const timeType = typeof lucket.time;
+
+        if (timeType !== "object"){
+            lucket.time = {};
+        }
+
+        lucket.time[v]=(lucket.time[v])?false:true;
         this.props.updateLucket(lucket);
     }
 
@@ -52,18 +50,23 @@ class LucketTime extends Component {
     render() {    
 
 
-    let options = ['7','10','13','16','19','22'];
+    let options = ['1','2','3','4','5','6','7','8'];   //hardcoding day parts...this needs to be
 
+    const classForOption = (option, lucket) => {
+        if (typeof lucket.time === "object" && lucket.time[option]) {
+            return 'LucketTimeIconShort HighligtedTimeIcon';
+        } else {
+            return 'LucketTimeIconShort';
+        }
+
+    }
 
     const timeEditor =  (this.state.edit === true)?
         <div>
         <div className="TimeCallout"/>
         <div id="menu" className="TimeMenu">
-        {options.filter(
-            o => o!==this.props.status
-        ).map( o => 
-           <div key={o} className={'LucketTimeIconShort'}
-           onClick={(e) => this.set(e,o)} >{o}</div>
+        {options.map( o =>
+           <div key={o} className={classForOption(o, this.props.lucket)} onClick={(e) => this.set(e,o)} > {o} </div>
         )}
 
             <IconClose edit={this.edit} key={"close"} />
@@ -74,7 +77,7 @@ class LucketTime extends Component {
     <div className={ 'LucketTimeIcon'}
     onClick={this.edit}>
 
-        { this.props.lucket.time }
+        { 'T' }
         &nbsp;
         {timeEditor}
 

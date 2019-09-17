@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import "./index.css";
-import LucketsItem from "../../Funcs/LucketItem";
-import FocusLucket from "../../Funcs/FocusLucket";
-import Header from "../../Funcs/Header";
-import Footer from "../../Funcs/Footer";
+import LucketsItem from "../../Components/LucketItem";
+import FocusLucket from "../../Components/FocusLucket";
+import Header from "../../Components/Header";
+import Footer from "../../Components/Footer";
 import { patchData, postData, postHistory, patchAllLuckets } from "../../Data/DataService";
-import LucketCategoryView from "../../Funcs/LucketCategoryView"
+import LucketCategoryView from "../../Components/LucketCategoryView"
 
 import {
   getRootLucket,
