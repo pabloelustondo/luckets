@@ -16,7 +16,7 @@ import {
   filterForDo,
   isSameDay,
   cleanActionStatus,
-  calculatePoints, categorize
+  calculatePoints, categorize, categorizeByTime
 } from "../../Models/LuketsModel";
 
 class LucketsList extends Component {
@@ -111,14 +111,21 @@ class LucketsList extends Component {
 
     focusLucket = calculatePoints(this.props.luckets, focusLucket);
 
-    if (this.props.step === "Do") {
+    if (this.props.step === "Do" || this.props.step === "Time") {
       _childrenLucket = filterForDo(_childrenLucket);
     }
 
     const __childrenLucket = _childrenLucket.map( l => calculatePoints(this.props.luckets,l) );
 
-    const lucketCategories = categorize(__childrenLucket);
+    let lucketCategories;
 
+
+
+    if (this.props.step === "Do") {
+      lucketCategories = categorizeByTime(__childrenLucket);
+    } else {
+      lucketCategories = categorize(__childrenLucket);
+    }
 
     debugger;
     return (

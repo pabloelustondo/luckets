@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import './index.css';
 import IconClose from '../IconClose'
+import {TimeOptions} from '../../Models/LuketsModel';
 
 
 const colorFloatClass = (color) => "LucketTimeIcon statusfloat-"+ color;
@@ -50,7 +51,7 @@ class LucketTime extends Component {
     render() {    
 
 
-    let options = ['1','2','3','4','5','6','7','8'];   //hardcoding day parts...this needs to be
+    let timeOptions = TimeOptions;
 
     const classForOption = (option, lucket) => {
         if (typeof lucket.time === "object" && lucket.time[option]) {
@@ -65,7 +66,7 @@ class LucketTime extends Component {
         <div>
         <div className="TimeCallout"/>
         <div id="menu" className="TimeMenu">
-        {options.map( o =>
+        {timeOptions.map( o =>
            <div key={o} className={classForOption(o, this.props.lucket)} onClick={(e) => this.set(e,o)} > {o} </div>
         )}
 

@@ -17,7 +17,8 @@ div.LucketTimeIconShort {
     max-width: var(--status-icon-height);
     margin-top: auto;
     margin-bottom:auto;
-    margin-left: 2px;
+    margin-left: 6px;
+    margin-right: 6px;
     text-align: center;
     font-weight: bold;
 }
@@ -34,7 +35,7 @@ div.HighligtedTimeIcon {
     top:-65px;
     flex-direction: row;
     display: flex;
-    width:calc(35px * 7 + 30px);
+    width:calc(35px * 8 + 50px);
     height: 40px;
     }
          

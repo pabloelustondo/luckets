@@ -1,77 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="733e01b6-86ea-4cf6-9d41-dedce811f2df" name="Default Changelist" comment="category works pretty cool. Looks poor">
+    <list default="true" id="733e01b6-86ea-4cf6-9d41-dedce811f2df" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/React App_files/main.9e6a02d1ea7d8c52d7fe.hot-update.js" beforeDir="false" afterPath="$PROJECT_DIR$/React App_files/main.9e6a02d1ea7d8c52d7fe.hot-update.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/React App_files/main.chunk.js" beforeDir="false" afterPath="$PROJECT_DIR$/React App_files/main.chunk.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/functions/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/functions/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/LucketStepIcon/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/LucketStepIcon/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/LucketStepIcon/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/LucketStepIcon/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/LucketTime/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/LucketTime/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/LucketTime/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/LucketTime/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Containers/LucketsList/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/LucketsList/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcs/AddLucketIcon/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/AddLucketIcon/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcs/AddLucketIcon/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/AddLucketIcon/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcs/ChildrenStatusIcon/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ChildrenStatusIcon/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcs/ChildrenStatusIcon/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ChildrenStatusIcon/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcs/FocusLucket/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/FocusLucket/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcs/FocusLucket/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/FocusLucket/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcs/Footer/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Footer/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcs/Footer/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Footer/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcs/Header/Path/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header/Path/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcs/Header/Path/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header/Path/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcs/Header/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcs/Header/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcs/IconClose/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/IconClose/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcs/IconClose/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/IconClose/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcs/IconSpacer/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/IconSpacer/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcs/IconSpacer/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/IconSpacer/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcs/LucketActionStatusIcon/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/LucketActionStatusIcon/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcs/LucketActionStatusIcon/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/LucketActionStatusIcon/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcs/LucketCategory/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/LucketCategory/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcs/LucketCategory/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/LucketCategory/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcs/LucketCategoryView/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/LucketCategoryView/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcs/LucketCategoryView/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/LucketCategoryView/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcs/LucketDoneButton/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/LucketDoneButton/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcs/LucketDoneButton/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/LucketDoneButton/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcs/LucketEditingIcon/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/LucketEditingIcon/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcs/LucketEditingIcon/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/LucketEditingIcon/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcs/LucketIcon/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/LucketIcon/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcs/LucketIcon/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/LucketIcon/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcs/LucketIcons/icons.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/LucketIcons/icons.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcs/LucketIcons/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/LucketIcons/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcs/LucketIcons/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/LucketIcons/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcs/LucketInfo/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/LucketInfo/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcs/LucketInfo/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/LucketInfo/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcs/LucketItem/LucketForm/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/LucketItem/LucketForm/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcs/LucketItem/LucketForm/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/LucketItem/LucketForm/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcs/LucketItem/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/LucketItem/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcs/LucketItem/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/LucketItem/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcs/LucketOpenDay/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/LucketOpenDay/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcs/LucketOpenDay/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/LucketOpenDay/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcs/LucketPointsIcon/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/LucketPointsIcon/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcs/LucketPointsIcon/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/LucketPointsIcon/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcs/LucketPowerStatusIcon/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/LucketPowerStatusIcon/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcs/LucketPowerStatusIcon/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/LucketPowerStatusIcon/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcs/LucketRelativePointsIcon/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/LucketRelativePointsIcon/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcs/LucketRelativePointsIcon/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/LucketRelativePointsIcon/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcs/LucketSetFocusIcon/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/LucketSetFocusIcon/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcs/LucketSetFocusIcon/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/LucketSetFocusIcon/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcs/LucketSetParentIcon/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/LucketSetParentIcon/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcs/LucketSetParentIcon/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/LucketSetParentIcon/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcs/LucketStatusIcon/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/LucketStatusIcon/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcs/LucketStatusIcon/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/LucketStatusIcon/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcs/LucketStepIcon/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/LucketStepIcon/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcs/LucketStepIcon/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/LucketStepIcon/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcs/LucketTime/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/LucketTime/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcs/LucketTime/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/LucketTime/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcs/LucketTimeFrameIcon/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/LucketTimeFrameIcon/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcs/LucketTimeFrameIcon/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/LucketTimeFrameIcon/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcs/LucketTitle/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/LucketTitle/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcs/LucketTitle/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/LucketTitle/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcs/MinusIcon/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MinusIcon/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcs/MinusIcon/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MinusIcon/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcs/PlusIcon/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/PlusIcon/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcs/PlusIcon/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/PlusIcon/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcs/SettingsIcon/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/SettingsIcon/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcs/SettingsIcon/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/SettingsIcon/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Models/LuketsModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/LuketsModel.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -85,35 +27,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Components/LucketItem/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="64" column="39" selection-start-line="64" selection-start-column="39" selection-end-line="64" selection-end-column="39" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-                <element signature="e#1043#2365#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Components/LucketInfo/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
-              <folding>
-                <element signature="e#0#25#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Components/LucketTime/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="65" column="11" selection-start-line="65" selection-start-column="11" selection-end-line="65" selection-end-column="11" />
+            <state relative-caret-position="89">
+              <caret line="53" column="19" selection-start-line="53" selection-start-column="8" selection-end-line="53" selection-end-column="19" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -124,30 +41,47 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Components/LucketTime/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="36" column="23" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
+            <state relative-caret-position="394">
+              <caret line="37" column="23" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Components/LucketPowerStatusIcon/index.js">
+        <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="450">
+              <caret line="30" column="15" selection-start-line="30" selection-start-column="15" selection-end-line="30" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/functions/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Containers/LucketsList/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="214">
+              <caret line="123" column="31" selection-start-line="123" selection-start-column="31" selection-end-line="123" selection-end-column="31" />
               <folding>
-                <element signature="e#0#25#0" expanded="true" />
+                <element signature="e#0#41#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Components/LucketPointsIcon/index.js">
+        <entry file="file://$PROJECT_DIR$/src/Models/LuketsModel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#25#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="231">
+              <caret line="227" column="67" selection-start-line="227" selection-start-column="67" selection-end-line="227" selection-end-column="67" />
             </state>
           </provider>
         </entry>
@@ -211,27 +145,30 @@
         <option value="$PROJECT_DIR$/src/Funcs/LucketTime/index.css" />
         <option value="$PROJECT_DIR$/src/Containers/LucketsList/index.css" />
         <option value="$PROJECT_DIR$/src/Funcs/LucketCategoryView/index.css" />
-        <option value="$PROJECT_DIR$/src/Models/LuketsModel.js" />
         <option value="$PROJECT_DIR$/src/Models/LucketsModel.test.js" />
-        <option value="$PROJECT_DIR$/src/Containers/LucketsList/index.js" />
         <option value="$PROJECT_DIR$/src/Funcs/LucketCategoryView/index.js" />
         <option value="$PROJECT_DIR$/src/Components/LucketItem/index.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/functions/package.json" />
+        <option value="$PROJECT_DIR$/src/Components/LucketStepIcon/index.js" />
+        <option value="$PROJECT_DIR$/src/Components/LucketStepIcon/index.css" />
         <option value="$PROJECT_DIR$/src/Components/LucketTime/index.js" />
+        <option value="$PROJECT_DIR$/src/Containers/LucketsList/index.js" />
+        <option value="$PROJECT_DIR$/src/Models/LuketsModel.js" />
         <option value="$PROJECT_DIR$/src/Components/LucketTime/index.css" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="29" />
-    <option name="y" value="35" />
     <option name="width" value="1280" />
-    <option name="height" value="777" />
+    <option name="height" value="800" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -255,27 +192,31 @@
               <item name="luckets" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Components" type="462c0819:PsiDirectoryNode" />
-              <item name="LucketPointsIcon" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="luckets" type="b2602c69:ProjectViewProjectNode" />
-              <item name="luckets" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Components" type="462c0819:PsiDirectoryNode" />
-              <item name="LucketPowerStatusIcon" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="luckets" type="b2602c69:ProjectViewProjectNode" />
-              <item name="luckets" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Components" type="462c0819:PsiDirectoryNode" />
               <item name="LucketTime" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="luckets" type="b2602c69:ProjectViewProjectNode" />
+              <item name="luckets" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Containers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="luckets" type="b2602c69:ProjectViewProjectNode" />
+              <item name="luckets" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Containers" type="462c0819:PsiDirectoryNode" />
+              <item name="LucketsList" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="luckets" type="b2602c69:ProjectViewProjectNode" />
+              <item name="luckets" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Models" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -382,9 +323,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.build" />
         <item itemvalue="Jest.LucketsModel.test.js" />
         <item itemvalue="Jest.LucketsModel.Calculate Points " />
-        <item itemvalue="npm.build" />
         <item itemvalue="npm.test" />
         <item itemvalue="npm.start" />
       </list>
@@ -407,7 +348,8 @@
       <workItem from="1557687367428" duration="1473000" />
       <workItem from="1557689033371" duration="4961000" />
       <workItem from="1557886804580" duration="8641000" />
-      <workItem from="1568512923302" duration="5327000" />
+      <workItem from="1568512923302" duration="13352000" />
+      <workItem from="1569286582422" duration="4110000" />
     </task>
     <task id="LOCAL-00001" summary="fixed the de do order , and change to webstorm">
       <created>1556403945542</created>
@@ -535,7 +477,14 @@
       <option name="project" value="LOCAL" />
       <updated>1557973989619</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="can select multiple time slots">
+      <created>1568689747151</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1568689747151</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -571,15 +520,15 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48755000" />
+    <option name="totallyTimeSpent" value="60890000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.70240295" visible="true" weight="0.24543288" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7" visible="true" weight="0.24543288" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="npm" order="2" sideWeight="0.29759705" side_tool="true" visible="true" weight="0.24543288" />
+      <window_info id="npm" order="2" sideWeight="0.3" side_tool="true" visible="true" weight="0.24543288" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32876712" />
@@ -591,7 +540,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.2589041" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.04109589" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -616,14 +565,16 @@
     <MESSAGE value="nice component refactor for CategoryView" />
     <MESSAGE value="Category View opens and closes" />
     <MESSAGE value="category works pretty cool. Looks poor" />
-    <option name="LAST_COMMIT_MESSAGE" value="category works pretty cool. Looks poor" />
+    <MESSAGE value="can select multiple time slots" />
+    <MESSAGE value="did first version of time dimension. Needs more work and thougth. but getting there" />
+    <option name="LAST_COMMIT_MESSAGE" value="did first version of time dimension. Needs more work and thougth. but getting there" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/Containers/LucketsList/index.js</url>
-          <line>123</line>
+          <line>130</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
@@ -632,14 +583,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/Components/LucketTime/index.js</url>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/Components/LucketTime/index.js</url>
-          <line>25</line>
-          <properties lambdaOrdinal="-1" />
+          <line>26</line>
           <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/Containers/LucketsList/index.js</url>
+          <line>119</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -795,13 +750,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/LucketStepIcon/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Components/LucketPointsIcon/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -901,16 +849,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/LucketStepIcon/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="43" column="6" selection-start-line="43" selection-start-column="6" selection-end-line="43" selection-end-column="58" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Components/LucketCategoryView/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -924,23 +862,6 @@
           <caret line="573" selection-start-line="573" selection-end-line="573" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Models/LuketsModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3525">
-          <caret line="235" column="16" selection-start-line="235" selection-start-column="16" selection-end-line="235" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Containers/LucketsList/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2040">
-          <caret line="155" column="35" selection-start-line="155" selection-start-column="35" selection-end-line="155" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -962,16 +883,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Components/LucketItem/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
+        <state relative-caret-position="495">
           <caret line="64" column="39" selection-start-line="64" selection-start-column="39" selection-end-line="64" selection-end-column="39" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
@@ -982,8 +896,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Components/LucketInfo/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
+        <state relative-caret-position="225">
           <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="15" selection-start-line="30" selection-start-column="15" selection-end-line="30" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/LucketPowerStatusIcon/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
@@ -999,19 +929,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/LucketPowerStatusIcon/index.js">
+    <entry file="file://$PROJECT_DIR$/functions/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="315">
+          <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/LucketStepIcon/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="18" lean-forward="true" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/LucketStepIcon/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="27" column="60" selection-start-line="27" selection-start-column="60" selection-end-line="27" selection-end-column="60" />
           <folding>
-            <element signature="e#0#25#0" expanded="true" />
+            <element signature="e#0#38#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Containers/LucketsList/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="123" column="31" selection-start-line="123" selection-start-column="31" selection-end-line="123" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Models/LuketsModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="227" column="67" selection-start-line="227" selection-start-column="67" selection-end-line="227" selection-end-column="67" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Components/LucketTime/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="65" column="11" selection-start-line="65" selection-start-column="11" selection-end-line="65" selection-end-column="11" />
+        <state relative-caret-position="89">
+          <caret line="53" column="19" selection-start-line="53" selection-start-column="8" selection-end-line="53" selection-end-column="19" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
@@ -1020,8 +982,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Components/LucketTime/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="36" column="23" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
+        <state relative-caret-position="394">
+          <caret line="37" column="23" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
         </state>
       </provider>
     </entry>

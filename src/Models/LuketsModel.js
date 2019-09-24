@@ -211,6 +211,52 @@ export const timeSet = (set, v) => {
 
 }
 
+
+/*
+		DayPart:
+			1 - [12, 3)    Late Night
+			2 - [3, 6)      Deep Night
+			3 - [6 - 9)     Early morning
+			4 - [9 - 12)   Morning
+			5 - [12 - 15) Noon
+			6 - [15 - 18) Afternoon
+			7 - [18 - 21) Evening
+			8 - [21 - 12) Night
+
+ */
+
+export const TimeOptions =  ['LN','DN','EM','MO','NO','AF','EV','NI'];
+
+export const categorizeByTime = (luckets) => {
+
+  const lucketsMap = {};
+
+  luckets.forEach( lucket => {
+
+    TimeOptions.forEach( option => {
+
+      if (lucket.time && lucket.time[option]){
+        if (!lucketsMap[option]){
+          lucketsMap[option]=[];
+        }
+
+        lucketsMap[option].push(lucket)
+      }
+    })
+  });
+
+  const result = [];
+
+  for( let cat in lucketsMap){
+    const categoryObject = { category: cat, luckets:lucketsMap[cat] };
+    result.push( categoryObject );
+  }
+
+  return result;
+
+};
+
+
 export const categorize = (luckets) => {
 
  const lucketsMap = {};
