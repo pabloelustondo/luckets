@@ -12,12 +12,14 @@ import LucketSetParentIcon from "../LucketSetParentIcon";
 import LucketForm from './LucketForm'
 import LucketEditingItem from '../LucketEditingIcon'
 import ChildrenStatusIcon from "../ChildrenStatusIcon"
+import {getPath} from "../../Models";
 
 const LucketItem = props => {
 
     let className = (props.focus === true) ? "FocusLucketItem" : "LucketItem";
     let isEditing = (props.editingLucket !== null && props.editingLucket.id === props.lucket.id);
     let feature = (props.editingLucket !== null) ? props.editingLucket.feature : null;
+    let path = getPath(props.luckets || [],props.lucket);
 
     return (
         <div>
@@ -50,6 +52,7 @@ const LucketItem = props => {
                     />
                     <LucketTitle
                         id={props.lucket.name}
+                        path={path}
                         lucket={props.lucket}
                         setEditing={props.setEditing}/>
 

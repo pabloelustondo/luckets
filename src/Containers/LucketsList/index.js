@@ -153,10 +153,11 @@ class LucketsList extends Component {
         />
         <div className='LucketsListChildren'>
           {lucketCategories.map( cat =>
-        <LucketCategoryView category={cat}>
+        <LucketCategoryView category={cat} key={cat}>
             <div>
               {cat.luckets.map(lucket => (
                 <LucketsItem
+                    luckets={this.props.luckets}
                     infoLevel={this.state.infoLevel}
                     editingLucket={this.state.editing}
                     lucket={lucket}
