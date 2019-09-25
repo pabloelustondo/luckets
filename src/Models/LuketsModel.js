@@ -231,18 +231,23 @@ export const categorizeByTime = (luckets) => {
 
   const lucketsMap = {};
 
+  TimeOptions.forEach( option => {
+    lucketsMap[option]=[];
+  });
+
   luckets.forEach( lucket => {
-
     TimeOptions.forEach( option => {
-
       if (lucket.time && lucket.time[option]){
-        if (!lucketsMap[option]){
-          lucketsMap[option]=[];
-        }
-
         lucketsMap[option].push(lucket)
       }
     })
+  });
+
+  TimeOptions.forEach( option => {
+    if (lucketsMap[option].length === 0){
+      delete lucketsMap[option];
+    }
+
   });
 
   const result = [];
