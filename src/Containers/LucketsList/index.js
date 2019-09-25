@@ -122,7 +122,7 @@ class LucketsList extends Component {
 
 
     if (this.props.step === "Do") {
-      lucketCategories = categorizeByTime(__childrenLucket);
+      lucketCategories = categorizeByTime(this.props.luckets || []);
     } else {
       lucketCategories = categorize(__childrenLucket);
     }
