@@ -231,11 +231,13 @@ export const categorizeByTime = (luckets) => {
 
   const lucketsMap = {};
 
+  const activeLuckets = luckets.filter( l => l.actionStatus !== 'white');
+
   TimeOptions.forEach( option => {
     lucketsMap[option]=[];
   });
 
-  luckets.forEach( lucket => {
+  activeLuckets.forEach( lucket => {
     TimeOptions.forEach( option => {
       if (lucket.time && lucket.time[option]){
         lucketsMap[option].push(lucket)
