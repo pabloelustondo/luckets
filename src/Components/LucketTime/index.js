@@ -14,6 +14,12 @@ class LucketTime extends Component {
 
     
     edit = () => { this.setState({edit:!this.state.edit})}
+
+    toggle = () => {
+        let lucket = this.props.lucket;
+        lucket.time = {};
+        this.props.updateLucket(lucket);
+    }
     
     set = (event, v) => {
         event.stopPropagation();
@@ -70,6 +76,7 @@ class LucketTime extends Component {
            <div key={o} className={classForOption(o, this.props.lucket)} onClick={(e) => this.set(e,o)} > {o} </div>
         )}
 
+            <IconClose edit={this.toggle} key={"toggle"} />
             <IconClose edit={this.edit} key={"close"} />
 
         </div></div>:null

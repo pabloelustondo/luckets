@@ -126,8 +126,6 @@ class LucketsList extends Component {
     } else {
       lucketCategories = categorize(__childrenLucket);
     }
-
-    debugger;
     return (
       <div className="LucketsList">
         <Header
@@ -153,20 +151,21 @@ class LucketsList extends Component {
         />
         <div className='LucketsListChildren'>
           {lucketCategories.map( cat =>
-        <LucketCategoryView category={cat} key={cat}>
+        <LucketCategoryView category={cat} key={cat.category}>
             <div>
-              {cat.luckets.map(lucket => (
-                <LucketsItem
+              {cat.luckets.map(lucket => {
+                  const key = cat.category + lucket.id;
+                  return    <LucketsItem
                     luckets={this.props.luckets}
                     infoLevel={this.state.infoLevel}
                     editingLucket={this.state.editing}
                     lucket={lucket}
-                    key={lucket.id}
+                    key={key}
                     setEditing={this.setEditing}
                     setFocus={this.setFocus}
                     updateLucket={this.updateLucket}
                 />
-            ))}
+            })}
             </div>
         </LucketCategoryView>)}
         </div>

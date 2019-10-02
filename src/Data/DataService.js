@@ -9,9 +9,11 @@ export const getData = handler => {
       let luckets = Object.keys(response.data).map(key => {
         let obj = response.data[key];
         obj.id = key;
+        debugger;
         return obj
       }
       );
+      debugger;
       let focusLucket = getRootLucket(luckets);
       handler(luckets, focusLucket);
     })
@@ -34,6 +36,7 @@ export const getUserData = (handler, user) => {
         let luckets = Object.keys(response.data).map(key => {
           let obj = response.data[key];
           obj.id = key;
+                debugger;
           return obj
         }
         );
@@ -54,9 +57,11 @@ export const patchAllLuckets = (user, luckets, handler) => {
 };
 
 export const patchData = (user, lucket, handler) => {
+    debugger;
   axios
     .patch("https://luckets-5fbb4.firebaseio.com//users/"+user.uid+"/luckets/" + lucket.id +".json", lucket)
     .then(response => {
+        debugger;
     })
     .catch(err => {
       alert("ERROR" + err);
@@ -64,9 +69,11 @@ export const patchData = (user, lucket, handler) => {
 };
 
 export const postData = (user, lucket, handler) => {
+    debugger;
   axios
     .patch("https://luckets-5fbb4.firebaseio.com//users/"+user.uid+"/luckets/" + lucket.id +".json", lucket)
     .then(response => {
+        debugger;
     })
     .catch(err => {
       alert("ERROR" + err);

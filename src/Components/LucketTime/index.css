@@ -35,7 +35,7 @@ div.HighligtedTimeIcon {
     top:-65px;
     flex-direction: row;
     display: flex;
-    width:calc(35px * 8 + 50px);
+    width:calc(35px * 9 + 50px);
     height: 40px;
     }
          

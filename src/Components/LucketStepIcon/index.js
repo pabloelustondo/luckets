@@ -38,10 +38,11 @@ render() {
          {options.filter(
              o => o!==this.props.status
          ).map( o => 
-            <div className="LucketStepIconShort" 
+            <div className="LucketStepIconShort"
+                 key={o}
             onClick={(e) => this.set(e,o)}>{o}</div>
          )}
-             <IconClose  edit={this.edit} key={"close"} />
+             <IconClose  edit={this.edit} />
          </div>
          </div>:null }
 
