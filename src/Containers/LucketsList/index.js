@@ -116,13 +116,18 @@ class LucketsList extends Component {
     }
 
     const __childrenLucket = _childrenLucket.map( l => calculatePoints(this.props.luckets,l) );
+    let __allLucketsWithPoints = [];
+
+    if (this.props.luckets) {
+      __allLucketsWithPoints = this.props.luckets.map(l => calculatePoints(this.props.luckets, l));
+    }
 
     let lucketCategories;
 
 
 
     if (this.props.step === "Do") {
-      lucketCategories = categorizeByTime(this.props.luckets || []);
+      lucketCategories = categorizeByTime(__allLucketsWithPoints || []);
     } else {
       lucketCategories = categorize(__childrenLucket);
     }
