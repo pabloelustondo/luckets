@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import './index.css';
 import IconClose from '../IconClose'
+import IconToggle from '../IconToggle'
 import {TimeOptions} from '../../Models/LuketsModel';
 
 
@@ -76,7 +77,7 @@ class LucketTime extends Component {
            <div key={o} className={classForOption(o, this.props.lucket)} onClick={(e) => this.set(e,o)} > {o} </div>
         )}
 
-            <IconClose edit={this.toggle} key={"toggle"} />
+            <IconToggle edit={this.toggle} key={"toggle"} />
             <IconClose edit={this.edit} key={"close"} />
 
         </div></div>:null
