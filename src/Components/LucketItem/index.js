@@ -46,6 +46,7 @@ const LucketItem = props => {
                     <LucketRelativePointsIcon
                         backToParent={props.backToParent} lucket={props.lucket}
                         focus={props.focus}
+                        lucket={props.lucket}
                         setFocus={() => {
                             props.setFocus(props.lucket);
                         }}

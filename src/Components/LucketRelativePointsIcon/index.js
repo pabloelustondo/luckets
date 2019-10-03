@@ -10,9 +10,12 @@ const LucketRelativePointsIcon = (props) => {
             props.backToParent();
         }
     }
+
+    const status = props.lucket.childrenActionStatus;
+    const className = 'LucketRelativePointsIcon status-' + status;
     
     return (
-    <div className='LucketRelativePointsIcon'
+    <div className = { className }
     onClick={handleEvent}>
     {props.lucket.doneActionPoints}/{props.lucket.totalActionPoints}
     </div>

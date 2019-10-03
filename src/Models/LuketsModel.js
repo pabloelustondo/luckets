@@ -175,9 +175,13 @@ export const LucketsList2Object = (luckets) =>{
 
 export const calculatePoints = (luckets, lucket) => {
 
+  const statusOrder = {'red':-2, 'yellow':-1, 'white':0, 'green':1, 'blue':2};
+
+
   const result = {...lucket};
   result.totalActionPoints = (result.actionStatus === "white")?0:result.points;
   result.doneActionPoints = (result.actionStatus === "blue")?result.points:0;
+  result.childrenActionStatus = 'white'; //if no children we assume white
 
   const childrenLuckets= getChildrenLuckets(luckets, lucket);
 
@@ -188,14 +192,18 @@ export const calculatePoints = (luckets, lucket) => {
 
     const totalChildrenPoints = calculatedChildrens.reduce( (acc, cc) => acc + cc.totalActionPoints, 0);
     const doneChildrenPoints = calculatedChildrens.reduce( (acc, cc) => acc + cc.doneActionPoints, 0);
+    const childrenActionStatus = calculatedChildrens.reduce( (acc, cc) =>
+        (statusOrder[cc.actionStatus] < statusOrder[acc])?cc.actionStatus:acc, 'blue');
 
     result.totalActionPoints += totalChildrenPoints;
     result.doneActionPoints += doneChildrenPoints;
+    result.childrenActionStatus = childrenActionStatus;
   }
 
   return result;
 
 }
+
 
 export const timeSet = (set, v) => {
 
