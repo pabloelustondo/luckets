@@ -43,7 +43,7 @@ class App extends Component {
 
   setCleanToDoList = () => {
 
-    const cleanLuckets = cleanActionStatus(this.state.luckets);
+    const cleanLuckets = cleanActionStatus(this.state.luckets, this.state.timeFrame);
     this.setState( {luckets: cleanLuckets});
 
   };

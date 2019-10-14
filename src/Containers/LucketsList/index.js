@@ -8,6 +8,7 @@ import { patchData, postData, postHistory, patchAllLuckets } from "../../Data/Da
 import LucketCategoryView from "../../Components/LucketCategoryView"
 
 import {
+  fixActionStatus,
   getRootLucket,
   getChildrenLuckets,
   getParentLucket,
@@ -36,7 +37,7 @@ class LucketsList extends Component {
         userInfo: this.props.userInfo
       };
       postHistory(this.props.user, openDay, () => {
-        patchAllLuckets(this.props.user, cleanActionStatus(this.props.luckets));
+        patchAllLuckets(this.props.user, cleanActionStatus(this.props.luckets, this.props.timeFrame));
         this.props.setDayToToday();
         this.props.setCleanToDoList();
       });
@@ -98,6 +99,11 @@ class LucketsList extends Component {
   };
 
   render() {
+
+    //fix luckets if wrong date this is temporary code
+
+    fixActionStatus(this.props.luckets);
+
     let focusLucket = null;
     let _childrenLucket = [];
 
@@ -109,17 +115,17 @@ class LucketsList extends Component {
       _childrenLucket = getChildrenLuckets(this.props.luckets, focusLucket);
     }
 
-    focusLucket = calculatePoints(this.props.luckets, focusLucket);
+    focusLucket = calculatePoints(this.props.luckets, focusLucket,this.props.timeFrame);
 
     if (this.props.step === "Do" || this.props.step === "Time" || this.props.step === "Close" ) {
-      _childrenLucket = filterForDo(_childrenLucket);
+      _childrenLucket = filterForDo(_childrenLucket, this.props.timeFrame);
     }
 
-    const __childrenLucket = _childrenLucket.map( l => calculatePoints(this.props.luckets,l) );
+    const __childrenLucket = _childrenLucket.map( l => calculatePoints(this.props.luckets,l,this.props.timeFrame) );
     let __allLucketsWithPoints = [];
 
     if (this.props.luckets) {
-      __allLucketsWithPoints = this.props.luckets.map(l => calculatePoints(this.props.luckets, l));
+      __allLucketsWithPoints = this.props.luckets.map(l => calculatePoints(this.props.luckets, l,this.props.timeFrame));
     }
 
     let lucketCategories;
@@ -127,7 +133,7 @@ class LucketsList extends Component {
 
 
     if (this.props.step === "Do") {
-      lucketCategories = categorizeByTime(__allLucketsWithPoints || []);
+      lucketCategories = categorizeByTime(__allLucketsWithPoints || [],this.props.timeFrame);
     } else {
       lucketCategories = categorize(__childrenLucket);
     }

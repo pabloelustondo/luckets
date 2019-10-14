@@ -31,14 +31,14 @@ const LucketItem = props => {
                                 setEditing={props.setEditing}
                     />
 
-                    <LucketCategory status={props.lucket.actionStatus}
+                    <LucketCategory status={props.lucket.actionStatus}    timeFrame={props.timeFrame}
                                     lucket={props.lucket} updateLucket={props.updateLucket}/>
 
 
                     <LucketStatusIcon status={props.lucket.status}
                                       lucket={props.lucket} updateLucket={props.updateLucket}/>
 
-                    <LucketActionStatusIcon status={props.lucket.actionStatus}
+                    <LucketActionStatusIcon status={props.lucket.actionStatus} timeFrame={props.timeFrame}
                                             lucket={props.lucket} updateLucket={props.updateLucket}/>
 
                     <ChildrenStatusIcon status={props.lucket.childrenStatus}/>
@@ -62,6 +62,7 @@ const LucketItem = props => {
             </div>
             <LucketInfo
                 focus={props.focus}
+                timeFrame={props.timeFrame}
                 status={props.lucket.actionStatus}
                 updateLucket={props.updateLucket}
                 lucket={props.lucket}

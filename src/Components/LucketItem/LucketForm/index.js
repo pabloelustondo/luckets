@@ -5,7 +5,7 @@ import PlusIcon from "../../PlusIcon";
 import MinusIcon from "../../MinusIcon";
 import IconSpacer from "../../IconSpacer";
 import LucketActionStatusIcon from "../../LucketActionStatusIcon";
-import {increaseStatus, decreaseStatus, increaseActionStatus, decreaseActionStatus} from '../../../Models/LuketsModel'
+import {increaseStatus, decreaseStatus} from '../../../Models/LuketsModel'
 
 import LucketIcons from "../../LucketIcons"
 import IconClose from "../../IconClose";
@@ -20,7 +20,7 @@ const LucketForm = props => {
     onChange={(event) => {
       let lucket = props.lucket;
       lucket.name = event.target.value;
-      props.updateLucket(props.lucket)
+      props.updateLucket(props.lucket, props.timeFrame)
       }}/>
       <div className="FormClose">
       <IconClose  edit={props.setEditing} key={"close"} />
@@ -36,7 +36,7 @@ const LucketForm = props => {
     onChange={(event) => {
       let lucket = props.lucket;
       lucket.actionPlan = event.target.value;
-      props.updateLucket(props.lucket)
+      props.updateLucket(props.lucket, props.timeFrame)
       }}/>
   </div>
   )
@@ -49,7 +49,7 @@ const LucketForm = props => {
     onChange={(event) => {
       let lucket = props.lucket;
       lucket.description = event.target.value;
-      props.updateLucket(props.lucket)
+      props.updateLucket(props.lucket, props.timeFrame)
       }}/>
   </div>
   )
@@ -61,7 +61,7 @@ const LucketForm = props => {
     onClick={() => {
       let lucket = props.lucket;
       lucket.deleted = true;
-      props.updateLucket(props.lucket)
+      props.updateLucket(props.lucket,props.timeFrame)
       }}>Delete</button>
   </div>
   )

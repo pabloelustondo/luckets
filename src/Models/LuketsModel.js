@@ -50,46 +50,6 @@ export const decreaseStatus = lucket => {
   return lucket.status;
 };
 
-export const increaseActionStatus = lucket => {
-  let newActionStatus;
-  newActionStatus =
-    lucket.actionStatus === "purple"
-      ? "purple"
-      : lucket.actionStatus === "blue"
-      ? "purple"
-      : lucket.actionStatus === "green"
-      ? "blue"
-      : lucket.actionStatus === "white"
-      ? "green"
-      : lucket.actionStatus === "yellow"
-      ? "white"
-      : lucket.actionStatus === "red"
-      ? "yellow"
-      : null;
-  lucket.actionStatus = newActionStatus;
-  return lucket.actionStatus;
-};
-
-export const decreaseActionStatus = lucket => {
-  let newActionStatus;
-  newActionStatus =
-    lucket.actionStatus === "purple"
-      ? "blue"
-      : lucket.actionStatus === "blue"
-      ? "green"
-      : lucket.actionStatus === "green"
-      ? "white"
-      : lucket.actionStatus === "white"
-      ? "yellow"
-      : lucket.actionStatus === "yellow"
-      ? "red"
-      : lucket.actionStatus === "red"
-      ? "red"
-      : null;
-  lucket.actionStatus = newActionStatus;
-  return lucket.actionStatus;
-};
-
 export const getNewLucket = parentLucket => {
   const id = uuidv1();
   const parentId = parentLucket ? parentLucket.id : "Life-Lucket";
@@ -99,7 +59,7 @@ export const getNewLucket = parentLucket => {
     category:"A",
     order:0,
     name: "NEW",
-    actionStatus: "white",
+    actionStatus: {day:"white", week:"white",monthy:"white",quarter:"white",year:"white"},
     icon: "reading.svg",
     points: 1,
     status: "white"
@@ -141,12 +101,12 @@ export const getPath = (luckets, focusLucket) => {
 export const isSameDay = (d1,d2) => (d1.getDate() === d2.getDate());
 
 
-export const filterForDo = (lucketsIn) => {
+export const filterForDo = (lucketsIn,timeFrame) => {
 
 
-  const luckets = lucketsIn.filter( l => l.actionStatus!=="white");
+  const luckets = lucketsIn.filter( l => l.actionStatus[timeFrame]!=="white");
 
-  const lucketActionOrder = (lucket) => LUCKET_COLOR_RANK[lucket.actionStatus];
+  const lucketActionOrder = (lucket) => LUCKET_COLOR_RANK[lucket.actionStatus[timeFrame]];
 
   const compare = (a,b) => lucketActionOrder(a) - lucketActionOrder(b);
 
@@ -155,12 +115,19 @@ export const filterForDo = (lucketsIn) => {
 
 }
 
-export const cleanActionStatus = (luckets) =>{
-
+export const cleanActionStatus = (luckets,timeFrame) =>{
   const newLuckets = luckets.map(
-    l => { return {...l, actionStatus:"white"} }
-  );
+    l => {
 
+      if (typeof l.actionStatus === 'string'){  //this code is temporaryr to clean actionStatus after refactor Timeframe
+        const dayActionStatus = l.actionStatus;
+        l.actionStatus = {};
+        l.actionStatus[timeFrame] = dayActionStatus;   //TODO Make this timeFrame aware work for Day now
+      }
+      const actionStatus=actionStatus[timeFrame];
+      return {...l}
+    }
+  );
   return newLuckets;
 }
 
@@ -173,14 +140,16 @@ export const LucketsList2Object = (luckets) =>{
   return LucketsList2Object;
 }
 
-export const calculatePoints = (luckets, lucket) => {
+export const calculatePoints = (luckets, lucket, timeFrame) => {
+
+  if (lucket === null) return 0;
 
   const aStatusOrder = {'red':-2, 'yellow':-1, 'white':3, 'green':1, 'blue':2};
   const statusOrder = {'red':-2, 'yellow':-1, 'white':0, 'green':1, 'blue':2};
 
   const result = {...lucket};
-  result.totalActionPoints = (result.actionStatus === "white")?0:result.points;
-  result.doneActionPoints = (result.actionStatus === "blue")?result.points:0;
+  result.totalActionPoints = (result.actionStatus[timeFrame] === "white")?0:result.points;
+  result.doneActionPoints = (result.actionStatus[timeFrame] === "blue")?result.points:0;
   result.childrenActionStatus = 'white'; //if no children we assume white
   result.childrenStatus = 'white'; //if no children we assume white
 
@@ -189,12 +158,12 @@ export const calculatePoints = (luckets, lucket) => {
   if (childrenLuckets.length > 0){
 
     const calculatedChildrens = childrenLuckets.map( children =>
-        calculatePoints(luckets, children));
+        calculatePoints(luckets, children, timeFrame));
 
     const totalChildrenPoints = calculatedChildrens.reduce( (acc, cc) => acc + cc.totalActionPoints, 0);
     const doneChildrenPoints = calculatedChildrens.reduce( (acc, cc) => acc + cc.doneActionPoints, 0);
     const childrenActionStatus = calculatedChildrens.reduce( (acc, cc) =>
-        (aStatusOrder[cc.actionStatus] < aStatusOrder[acc])?cc.actionStatus:acc, 'white');
+        (aStatusOrder[cc.actionStatus[timeFrame]] < aStatusOrder[acc])?cc.actionStatus[timeFrame]:acc, 'white');
     const childrenStatus = calculatedChildrens.reduce( (acc, cc) =>
           (statusOrder[cc.status] < statusOrder[acc])?cc.status:acc, 'blue');
 
@@ -239,11 +208,11 @@ export const timeSet = (set, v) => {
 
 export const TimeOptions =  ['LN','DN','EM','MO','NO','AF','EV','NI'];
 
-export const categorizeByTime = (luckets) => {
+export const categorizeByTime = (luckets, timeFrame) => {
 
   const lucketsMap = {};
 
-  const activeLuckets = luckets.filter( l => l.actionStatus !== 'white');
+  const activeLuckets = luckets.filter( l => l.actionStatus[timeFrame] !== 'white');
 
   TimeOptions.forEach( option => {
     lucketsMap[option]=[];
@@ -301,3 +270,17 @@ export const categorize = (luckets) => {
   return result;
 
 };
+
+
+export const fixActionStatus = (luckets) => {
+  if (luckets) {
+    luckets.forEach(l => {
+      if (typeof l.actionStatus === "string") {
+        const actionStatus = l.actionStatus;
+        l.actionStatus = {};
+        l.actionStatus["Day"] = actionStatus;
+        updateLucket(luckets, l);
+      }
+    })
+  }
+}

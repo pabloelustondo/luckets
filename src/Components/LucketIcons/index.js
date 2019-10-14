@@ -19,7 +19,7 @@ const LucketIcons = (props) => {
                 src={imageLocation(o)}
                 alt={o}
                 onClick={() => {
-                    props.updateLucket({...props.lucket, icon: o + ".svg"});
+                    props.updateLucket({...props.lucket, icon: o + ".svg"},props.timeFrame);
                     props.setEditing(false);
                 }}
             />

@@ -51,7 +51,7 @@ class LucketTime extends Component {
                 lucket.order -= 1;
             }
             if (!lucket.order){lucket.order=1}
-            this.props.updateLucket(lucket)
+            this.props.updateLucket(lucket, this.props.timeFrame)
         }
     }
 

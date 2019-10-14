@@ -26,8 +26,8 @@ class LucketActionStatusIcon extends Component {
         event.stopPropagation();
         this.setState({edit:false});
         let lucket = this.props.lucket;
-        lucket.actionStatus = v;
-        this.props.updateLucket(lucket);
+        lucket.actionStatus[this.props.timeFrame] = v;
+        this.props.updateLucket(lucket,this.props.timeFrame);
     }
 
     setPoints = (event, v) => {
@@ -36,14 +36,14 @@ class LucketActionStatusIcon extends Component {
             let lucket = this.props.lucket;
             if (lucket.points < 25){
             lucket.points += 1;
-            this.props.updateLucket(lucket)
+            this.props.updateLucket(lucket, this.props.timeFrame)
             }
         }
         if (v==="minus"){
             let lucket = this.props.lucket;
             if (lucket.points > 1){
                 lucket.points -= 1;
-                this.props.updateLucket(lucket)
+                this.props.updateLucket(lucket,this.props.timeFrame)
             }
         }
     }

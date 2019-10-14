@@ -9,7 +9,7 @@ const LucketInfo = (props) => {
     let className = (props.focus === true) ? "FocusLucketInfo" : "LucketInfo";
     return (
         <div className={className}>
-            <LucketTime status={props.lucket.actionStatus}
+            <LucketTime status={props.lucket.actionStatus[props.timeFrame]}
                             lucket={props.lucket} updateLucket={props.updateLucket}/>
 
 
