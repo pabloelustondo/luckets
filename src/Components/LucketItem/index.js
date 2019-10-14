@@ -20,7 +20,7 @@ const LucketItem = props => {
     let isEditing = (props.editingLucket !== null && props.editingLucket.id === props.lucket.id);
     let feature = (props.editingLucket !== null) ? props.editingLucket.feature : null;
     let path = getPath(props.luckets || [],props.lucket);
-
+    debugger;
     return (
         <div>
             <div className={className}>

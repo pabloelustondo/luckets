@@ -59,7 +59,7 @@ export const getNewLucket = parentLucket => {
     category:"A",
     order:0,
     name: "NEW",
-    actionStatus: {day:"white", week:"white",monthy:"white",quarter:"white",year:"white"},
+    actionStatus: {Day:"white", Week:"white",Monthy:"white",Quarter:"white",Year:"white"},
     icon: "reading.svg",
     points: 1,
     status: "white"

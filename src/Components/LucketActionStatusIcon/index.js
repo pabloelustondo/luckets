@@ -50,12 +50,12 @@ class LucketActionStatusIcon extends Component {
 
     render() {    
 
-
+    debugger;
     let options = ['blue','green','white','yellow','red','purple','black'];
 
 
     return (
-    <div className={ 'LucketActionStatusIcon ' + colorClass(this.props.status)} 
+    <div className={ 'LucketActionStatusIcon ' + colorClass(this.props.status[this.props.timeFrame])}
     onClick={this.edit}>
         {this.props.lucket.points}
         

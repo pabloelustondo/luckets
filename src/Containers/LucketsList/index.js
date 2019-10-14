@@ -103,7 +103,7 @@ class LucketsList extends Component {
     //fix luckets if wrong date this is temporary code
 
     fixActionStatus(this.props.luckets);
-
+  debugger;
     let focusLucket = null;
     let _childrenLucket = [];
 
@@ -153,6 +153,7 @@ class LucketsList extends Component {
           signOut={this.props.signOut}
         />
         <FocusLucket
+            timeFrame={this.props.timeFrame}
           infoLevel={this.state.infoLevel}
           editingLucket={this.state.editing}
           lucket={focusLucket}
@@ -167,6 +168,7 @@ class LucketsList extends Component {
               {cat.luckets.map(lucket => {
                   const key = cat.category + lucket.id;
                   return    <LucketsItem
+                      timeFrame={this.props.timeFrame}
                     luckets={this.props.luckets}
                     infoLevel={this.state.infoLevel}
                     editingLucket={this.state.editing}
