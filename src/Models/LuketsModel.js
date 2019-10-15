@@ -116,6 +116,7 @@ export const filterForDo = (lucketsIn,timeFrame) => {
 }
 
 export const cleanActionStatus = (luckets,timeFrame) =>{
+  debugger;
   const newLuckets = luckets.map(
     l => {
 
@@ -123,8 +124,13 @@ export const cleanActionStatus = (luckets,timeFrame) =>{
         const dayActionStatus = l.actionStatus;
         l.actionStatus = {};
         l.actionStatus[timeFrame] = dayActionStatus;   //TODO Make this timeFrame aware work for Day now
+      } else {
+        if (!l.actionStatus){
+          l.actionStatus[timeFrame] = {};
+        }
+        l.actionStatus[timeFrame] = 'white';
       }
-      const actionStatus=actionStatus[timeFrame];
+      debugger;
       return {...l}
     }
   );

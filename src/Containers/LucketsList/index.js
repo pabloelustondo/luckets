@@ -28,8 +28,9 @@ class LucketsList extends Component {
   };
 
   postHistory = () => {
-    if (isSameDay(this.props.userInfo.openDay, new Date())) {
-      alert("Sorry, cannot archive the day your are on, wait until tomorrow");
+    debugger;
+    if (false && isSameDay(this.props.userInfo.openDay, new Date())) {
+      alert("Sorry, cannot archive the day your are on, wait until tomorrow (DISABLED)");
       return;
     } else {
       const openDay = {

@@ -81,6 +81,7 @@ export const postData = (user, lucket, handler) => {
 };
 
 export const postHistory = (user, closedDay, handler) => {
+    debugger;
   const id=closedDay.userInfo.openDay;
   axios
     .put("https://luckets-5fbb4.firebaseio.com//users/"+user.uid+"/history/"+ id +".json/", closedDay)
