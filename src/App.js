@@ -131,12 +131,11 @@ class App extends Component {
             setDayToToday={this.setDayToToday}
             setCleanToDoList={this.setCleanToDoList}
           />
-        ) : (
+        ):null}
           <StyledFirebaseAuth
             uiConfig={this.uiConfig}
             firebaseAuth={firebase.auth()}
           />
-        )}
       </div>
     );
   }
