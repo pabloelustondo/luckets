@@ -13,7 +13,7 @@ import {
 
 import {
 cleanActionStatus
-} from "./Models/LuketsModel";
+} from "./Logic/LuketsModel";
 
 firebase.initializeApp({
   apiKey: "AIzaSyAu-HXBAYHQOxksCHplaz9JbbvJdrgVOGY",

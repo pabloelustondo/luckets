@@ -50,7 +50,7 @@ class LucketActionStatusIcon extends Component {
 
     render() {    
 
-    debugger;
+
     let options = ['blue','green','white','yellow','red','purple','black'];
 
 

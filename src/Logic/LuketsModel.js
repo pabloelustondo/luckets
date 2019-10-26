@@ -116,7 +116,7 @@ export const filterForDo = (lucketsIn,timeFrame) => {
 }
 
 export const cleanActionStatus = (luckets,timeFrame) =>{
-  debugger;
+
   const newLuckets = luckets.map(
     l => {
 
@@ -130,7 +130,7 @@ export const cleanActionStatus = (luckets,timeFrame) =>{
         }
         l.actionStatus[timeFrame] = 'white';
       }
-      debugger;
+
       return {...l}
     }
   );
@@ -214,20 +214,40 @@ export const timeSet = (set, v) => {
 
 export const TimeOptions =  ['LN','DN','EM','MO','NO','AF','EV','NI'];
 
+
+const setDefaultTimeAssignment = (timeOptions, lucket) => {
+  //if luckets has not being assinged to any time option... then put it in all time options
+  if (!lucket.time) {
+    lucket.time = {};
+  }
+  //1. check is we have at least one assingment
+  let numberOfAssingments = 0;
+  timeOptions.forEach( timeOption => {
+    numberOfAssingments +=  (lucket.time[timeOption]) ? 1:0;
+  })
+
+  if (numberOfAssingments === 0) {
+    timeOptions.forEach( timeOption => {
+      lucket.time[timeOption] = true;
+    })
+  }
+}
+
 export const categorizeByTime = (luckets, timeFrame) => {
 
   const lucketsMap = {};
 
   const activeLuckets = luckets.filter( l => l.actionStatus[timeFrame] !== 'white');
 
-  TimeOptions.forEach( option => {
-    lucketsMap[option]=[];
+  TimeOptions.forEach( timeOption => {
+    lucketsMap[timeOption]=[];
   });
 
   activeLuckets.forEach( lucket => {
-    TimeOptions.forEach( option => {
-      if (lucket.time && lucket.time[option]){
-        lucketsMap[option].push(lucket)
+    setDefaultTimeAssignment(TimeOptions, lucket);
+    TimeOptions.forEach( timeOption => {
+      if (lucket.time && lucket.time[timeOption]){
+        lucketsMap[timeOption].push(lucket);
       }
     })
   });

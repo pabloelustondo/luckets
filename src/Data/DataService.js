@@ -1,5 +1,5 @@
 import axios from "axios";
-import { getRootLucket, LucketsList2Object } from '../Models/LuketsModel';
+import { getRootLucket, LucketsList2Object } from '../Logic/LuketsModel';
 import masterData from "./master-data.json";
 
 export const getData = handler => {
@@ -9,11 +9,11 @@ export const getData = handler => {
       let luckets = Object.keys(response.data).map(key => {
         let obj = response.data[key];
         obj.id = key;
-        debugger;
+
         return obj
       }
       );
-      debugger;
+
       let focusLucket = getRootLucket(luckets);
       handler(luckets, focusLucket);
     })
@@ -36,7 +36,7 @@ export const getUserData = (handler, user) => {
         let luckets = Object.keys(response.data).map(key => {
           let obj = response.data[key];
           obj.id = key;
-                debugger;
+
           return obj
         }
         );
@@ -57,11 +57,11 @@ export const patchAllLuckets = (user, luckets, handler) => {
 };
 
 export const patchData = (user, lucket, handler) => {
-    debugger;
+
   axios
     .patch("https://luckets-5fbb4.firebaseio.com//users/"+user.uid+"/luckets/" + lucket.id +".json", lucket)
     .then(response => {
-        debugger;
+
     })
     .catch(err => {
       alert("ERROR" + err);
@@ -69,11 +69,11 @@ export const patchData = (user, lucket, handler) => {
 };
 
 export const postData = (user, lucket, handler) => {
-    debugger;
+
   axios
     .patch("https://luckets-5fbb4.firebaseio.com//users/"+user.uid+"/luckets/" + lucket.id +".json", lucket)
     .then(response => {
-        debugger;
+
     })
     .catch(err => {
       alert("ERROR" + err);
@@ -81,7 +81,7 @@ export const postData = (user, lucket, handler) => {
 };
 
 export const postHistory = (user, closedDay, handler) => {
-    debugger;
+
   const id=closedDay.userInfo.openDay;
   axios
     .put("https://luckets-5fbb4.firebaseio.com//users/"+user.uid+"/history/"+ id +".json/", closedDay)

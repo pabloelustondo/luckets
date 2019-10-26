@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import './index.css';
 import IconClose from '../IconClose'
 import IconToggle from '../IconToggle'
-import {TimeOptions} from '../../Models/LuketsModel';
+import {TimeOptions} from '../../Logic/LuketsModel';
 
 
 const colorFloatClass = (color) => "LucketTimeIcon statusfloat-"+ color;

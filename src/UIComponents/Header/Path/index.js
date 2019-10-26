@@ -1,6 +1,6 @@
 import React from 'react'
 import './index.css'
-import {getPath} from "../../../Models/LuketsModel"
+import {getPath} from "../../../Logic/LuketsModel"
 
 const imageLocation = (imagename) => `/images/${imagename}`
 

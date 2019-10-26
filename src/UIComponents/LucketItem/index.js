@@ -12,7 +12,7 @@ import LucketSetParentIcon from "../LucketSetParentIcon";
 import LucketForm from './LucketForm'
 import LucketEditingItem from '../LucketEditingIcon'
 import ChildrenStatusIcon from "../ChildrenStatusIcon"
-import {getPath} from "../../Models";
+import {getPath} from "../../Logic";
 
 const LucketItem = props => {
 
@@ -20,7 +20,7 @@ const LucketItem = props => {
     let isEditing = (props.editingLucket !== null && props.editingLucket.id === props.lucket.id);
     let feature = (props.editingLucket !== null) ? props.editingLucket.feature : null;
     let path = getPath(props.luckets || [],props.lucket);
-    debugger;
+
     return (
         <div>
             <div className={className}>

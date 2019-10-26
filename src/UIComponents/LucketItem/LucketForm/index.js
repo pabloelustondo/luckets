@@ -5,7 +5,7 @@ import PlusIcon from "../../PlusIcon";
 import MinusIcon from "../../MinusIcon";
 import IconSpacer from "../../IconSpacer";
 import LucketActionStatusIcon from "../../LucketActionStatusIcon";
-import {increaseStatus, decreaseStatus} from '../../../Models/LuketsModel'
+import {increaseStatus, decreaseStatus} from '../../../Logic/LuketsModel'
 
 import LucketIcons from "../../LucketIcons"
 import IconClose from "../../IconClose";

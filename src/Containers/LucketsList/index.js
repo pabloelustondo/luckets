@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import "./index.css";
-import LucketsItem from "../../Components/LucketItem";
-import FocusLucket from "../../Components/FocusLucket";
-import Header from "../../Components/Header";
-import Footer from "../../Components/Footer";
+import LucketsItem from "../../UIComponents/LucketItem";
+import FocusLucket from "../../UIComponents/FocusLucket";
+import Header from "../../UIComponents/Header";
+import Footer from "../../UIComponents/Footer";
 import { patchData, postData, postHistory, patchAllLuckets } from "../../Data/DataService";
-import LucketCategoryView from "../../Components/LucketCategoryView"
+import LucketCategoryView from "../../UIComponents/LucketCategoryView"
 
 import {
   fixActionStatus,
@@ -18,7 +18,7 @@ import {
   isSameDay,
   cleanActionStatus,
   calculatePoints, categorize, categorizeByTime
-} from "../../Models/LuketsModel";
+} from "../../Logic/LuketsModel";
 
 class LucketsList extends Component {
   state = {
@@ -28,7 +28,7 @@ class LucketsList extends Component {
   };
 
   postHistory = () => {
-    debugger;
+
     if (false && isSameDay(this.props.userInfo.openDay, new Date())) {
       alert("Sorry, cannot archive the day your are on, wait until tomorrow (DISABLED)");
       return;
@@ -104,7 +104,7 @@ class LucketsList extends Component {
     //fix luckets if wrong date this is temporary code
 
     fixActionStatus(this.props.luckets);
-  debugger;
+
     let focusLucket = null;
     let _childrenLucket = [];
 
