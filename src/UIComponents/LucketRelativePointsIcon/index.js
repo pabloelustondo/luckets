@@ -17,7 +17,7 @@ const LucketRelativePointsIcon = (props) => {
     return (
     <div className = { className }
     onClick={handleEvent}>
-    {props.lucket.doneActionPoints}/{props.lucket.totalActionPoints}
+    {props.lucket.doneActionPoints}-{props.lucket.totalActionPoints}
     </div>
 )}
 

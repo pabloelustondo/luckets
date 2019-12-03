@@ -17,7 +17,8 @@ cleanActionStatus
 
 firebase.initializeApp({
   apiKey: "AIzaSyAu-HXBAYHQOxksCHplaz9JbbvJdrgVOGY",
-  authDomain: "luckets-5fbb4.firebaseapp.com"
+  authDomain: "luckets-5fbb4.firebaseapp.com",
+  name:"luckets"
 });
 
 class App extends Component {

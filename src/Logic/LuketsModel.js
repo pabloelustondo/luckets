@@ -282,21 +282,34 @@ export const categorize = (luckets) => {
    }
 
    lucketsMap[lucket.category].push(lucket)
-
-
  });
 
  const result = [];
-
   for( let cat in lucketsMap){
-    const categoryObject = { category: cat, luckets:lucketsMap[cat] };
+    const categoryObject = buildCategory(cat,lucketsMap[cat] );
     result.push( categoryObject );
   }
 
   return result;
-
 };
 
+const buildCategory = (category, luckets) => {
+  //given a key and a list of luckets assinged to that categor
+  //returns an object that represents the category with a key, a name and relative points
+  let totalActionPoints=0;
+  let doneActionPoints=0;
+  let childrenActionStatus=0;
+  let childrenStatus=0;
+  //calculate points
+  luckets.forEach( l => {
+    totalActionPoints += l.totalActionPoints;
+    doneActionPoints += l.doneActionPoints;
+    childrenActionStatus = (l.childrenActionStatus < childrenActionStatus)?l.childrenActionStatus:childrenActionStatus;
+    childrenActionStatus = (l.childrenStatus < childrenStatus)?l.childrenStatus:childrenStatus;
+  })
+
+  return { category, luckets,totalActionPoints, doneActionPoints,childrenActionStatus, childrenStatus };
+}
 
 export const fixActionStatus = (luckets) => {
   if (luckets) {
