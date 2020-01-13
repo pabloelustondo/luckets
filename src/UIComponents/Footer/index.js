@@ -7,7 +7,9 @@ import AddLucketIcon from "../AddLucketIcon";
 const Footer = (props) => (<div className='Footer'>
 
 <div className="HeaderItem"></div>
-<SettingsIcon user={props.user} 
+<SettingsIcon
+    user={props.user}
+    luckets={props.luckets}
     signOut={props.signOut}
     />
 

@@ -1,5 +1,7 @@
 import uuidv1 from "uuid/v1";
 
+
+
 export const getRootLucket = luckets => {
   return luckets.find(l => l.parent === "");
 };
@@ -322,4 +324,17 @@ export const fixActionStatus = (luckets) => {
       }
     })
   }
+}
+
+
+export const FUNCS = {};
+
+FUNCS.resetTemplate = (luckets) => {
+    const n = luckets.length;
+    alert("resetTemplate GOT " + n);
+}
+
+FUNCS.exportTemplate = (luckets) => {
+  const n = luckets.length;
+  alert("exportTemplate GOT " + n);
 }

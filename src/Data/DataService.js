@@ -28,8 +28,7 @@ export const getUserData = (handler, user) => {
   axios
     .get("https://luckets-5fbb4.firebaseio.com/" + user.uid + ".json")
     .then(response => {
-      if (response.data === null) { 
-        ;
+      if (response.data === null) {
         postUserData(user) 
       }
       else {

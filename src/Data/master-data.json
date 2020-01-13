@@ -1,15 +1,1 @@
-[
-
-    {
-        "id": "1",
-        "parent": null,
-        "name": "Life",
-        "description":"Consider your whole life, everything you care. Forget about things you definetelly cannot change no matter what",
-        "status":"yellow",
-        "actionStatus":"yellow",
-        "points":1,
-        "actionPlan": "focus on important body, family, work, some meaning"
-    }
-
-
-]
+[]

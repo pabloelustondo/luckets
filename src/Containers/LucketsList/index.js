@@ -17,7 +17,9 @@ import {
   filterForDo,
   isSameDay,
   cleanActionStatus,
-  calculatePoints, categorize, categorizeByTime
+  calculatePoints,
+  categorize,
+  categorizeByTime,
 } from "../../Logic/LuketsModel";
 
 class LucketsList extends Component {
@@ -138,6 +140,7 @@ class LucketsList extends Component {
     } else {
       lucketCategories = categorize(__childrenLucket);
     }
+    debugger;
     return (
       <div className="LucketsList">
         <Header
