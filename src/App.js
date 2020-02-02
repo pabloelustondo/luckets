@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
-
+import store from './test/testing_redux_installation';  //trying dexu by hand
 import LucketsList from "./Containers/LucketsList";
 import firebase from "firebase";
 import { StyledFirebaseAuth } from "react-firebaseui";
@@ -88,6 +88,19 @@ class App extends Component {
   };
 
   componentDidMount = () => {
+
+    //TESTING CODE TO TRY TO REDUX STORE
+    console.log("SUBSCRIBING TO STORE");
+    store.subscribe( () =>
+        {
+        console.log("NEW STORE DATA");
+        console.log(store.getState());
+        });
+
+    setInterval(() => store.dispatch({ type: 'INCREMENT' }) , 1000);
+
+    //
+
     firebase.auth().onAuthStateChanged(user => {
       if (user !== null) {
         // HERE IS WHEN WE HAVE THE USER

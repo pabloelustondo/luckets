@@ -219,7 +219,7 @@ export const TimeOptions =  ['LN','DN','EM','MO','NO','AF','EV','NI'];
 
 const setDefaultTimeAssignment = (timeOptions, lucket) => {
   //if luckets has not being assinged to any time option... then put it in all time options
-  if (!lucket.time) {
+  if (typeof lucket.time !== 'object') {
     lucket.time = {};
   }
   //1. check is we have at least one assingment
@@ -337,4 +337,11 @@ FUNCS.resetTemplate = (luckets) => {
 FUNCS.exportTemplate = (luckets) => {
   const n = luckets.length;
   alert("exportTemplate GOT " + n);
+}
+
+//pushDataToServer
+
+FUNCS.pushDataToServer = (luckets) => {
+  const n = luckets.length;
+  alert("pushDataToServer GOT " + n);
 }

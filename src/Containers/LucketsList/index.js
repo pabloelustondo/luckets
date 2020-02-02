@@ -140,7 +140,6 @@ class LucketsList extends Component {
     } else {
       lucketCategories = categorize(__childrenLucket);
     }
-    debugger;
     return (
       <div className="LucketsList">
         <Header

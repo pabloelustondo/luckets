@@ -31,6 +31,7 @@ class SettingsIcon extends Component {
       {this.props.user ? <div>{this.props.user.displayName}</div> : null}
       <button onClick={this.props.signOut}> SignOut </button>
       <button onClick={this.props.setDayToToday}> Set Day to Today </button>
+        <button onClick={() => FUNCS.pushDataToServer(this.props.luckets)}> Push Data to Server </button>
         <button onClick={() => FUNCS.resetTemplate(this.props.luckets)}> Reset Template </button>
         <button onClick={() => FUNCS.exportTemplate(this.props.luckets)}> Export Template </button>
       </div>:null}
