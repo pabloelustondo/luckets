@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
-import store from './test/testing_redux_installation';  //trying dexu by hand
+import {store, REDUCER} from './Store/LucketsStore';
 import LucketsList from "./Containers/LucketsList";
 import firebase from "firebase";
 import { StyledFirebaseAuth } from "react-firebaseui";
@@ -96,8 +96,8 @@ class App extends Component {
         console.log("NEW STORE DATA");
         console.log(store.getState());
         });
-
-    setInterval(() => store.dispatch({ type: 'INCREMENT' }) , 1000);
+    
+    setInterval(() => store.dispatch({type:'REDUCER', reducer:REDUCER.dummy}) , 1000);
 
     //
 
@@ -124,6 +124,7 @@ class App extends Component {
   };
 
   componentWillMount(){
+    debugger;
     document.title = "Luckets"
   }
 
