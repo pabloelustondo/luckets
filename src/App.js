@@ -28,7 +28,7 @@ class App extends Component {
     step: "Do",
     timeFrame: "Day",
     user: null,
-    openDay: null
+    openDay: null,
   };
 
   signOut = () => {
@@ -96,7 +96,7 @@ class App extends Component {
         console.log("NEW STORE DATA");
         console.log(store.getState());
         });
-    
+
     setInterval(() => store.dispatch({type:'REDUCER', reducer:REDUCER.dummy}) , 1000);
 
     //
