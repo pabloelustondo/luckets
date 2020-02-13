@@ -21,7 +21,9 @@
     "build": "react-scripts build",
     "test": "react-scripts src/test",
     "test:debug": "react-scripts --inspect-brk src/test --runInBand --no-cache",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "jtest": "jest",
+    "jtest:watch": "npm jtest -- --watch"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -34,5 +36,9 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "babel-jest": "^25.1.0",
+    "jest": "^25.1.0"
+  }
 }

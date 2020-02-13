@@ -10,17 +10,17 @@ const INITIAL_STATE = {
     todos: []
 }
 
-const REDUCER = {};
+const ACTION_REDUCER = {};
 
 //ADD_TODO
-REDUCER[ACTION.ADD_TODO] = (state, {id, name, description}) => {
+ACTION_REDUCER[ACTION.ADD_TODO] = (state, {id, name, description}) => {
     const newTodos = [...state.todos, {id, name,description}];
     return {todos:newTodos};
 }
 
 
 //UPDATE_TODO
-REDUCER[ACTION.UPDATE_TODO] = (state, {id ,name, description}) => {
+ACTION_REDUCER[ACTION.UPDATE_TODO] = (state, {id ,name, description}) => {
     const newTodos = state.todos.map(
         t => ( t.id===id ) ? {id ,name, description} : t
         );
@@ -28,7 +28,7 @@ REDUCER[ACTION.UPDATE_TODO] = (state, {id ,name, description}) => {
 }
 
 //DELETE_TODO
-REDUCER[ACTION.DELETE_TODO] = (state, {id ,name, description}) => {
+ACTION_REDUCER[ACTION.DELETE_TODO] = (state, {id ,name, description}) => {
     const newTodos = state.todos.map(
         t => ( t.id===id ) ? {id ,name, description} : t
     );
@@ -37,24 +37,27 @@ REDUCER[ACTION.DELETE_TODO] = (state, {id ,name, description}) => {
 
 
 
-function STORE_REDUCER(state = INITIAL_STATE, action) {
+function REDUCER(state = INITIAL_STATE, action) {
     if (action.type in ACTION){
-        return REDUCER[ACTION[action.type]](state,action);
+        return ACTION_REDUCER[ACTION[action.type]](state,action.todo);
     }else {
         return state;
     }
 
 }
 
-let store = redux.createStore(STORE_REDUCER)
 
+
+let store = redux.createStore(REDUCER)
+
+/*
 store.subscribe(() => console.log(store.getState()))
 
 store.dispatch({ type: ACTION.ADD_TODO, id:1, name:'mind', description:'plan day'} );
 
+*/
 
 
 
 
-
-module.exports = store;
+module.exports= { store, ACTION, REDUCER, INITIAL_STATE };
