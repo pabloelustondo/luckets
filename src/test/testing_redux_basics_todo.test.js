@@ -1,4 +1,4 @@
-const { store, ACTION, REDUCER, INITIAL_STATE } = require('./testing_redux_basics_todo');
+const { ACTION_CREATOR, REDUCER, INITIAL_STATE } = require('./testing_redux_basics_todo_lib');
 
 describe('REDUCER', () => {
 
@@ -10,7 +10,7 @@ describe('REDUCER', () => {
 
     it('should add a todo', () => {
         const state = { todos:[]};
-        const action = {type:ACTION.ADD_TODO, todo:sampleTodo};
+        const action = ACTION_CREATOR.addTodo(sampleTodo);
 
         const newState = REDUCER( state , action);
         expect(newState.todos.length).toBe(1);
@@ -18,7 +18,7 @@ describe('REDUCER', () => {
 
     it('should update a todo', () => {
         const state = { todos:[sampleTodo]};
-        const action = {type:ACTION.UPDATE_TODO, todo:{ id:1, name:'body', description:'nice'}};
+        const action = ACTION_CREATOR.updateTodo( { id:1, name:'body', description:'nice'} );
 
         const newState = REDUCER( state , action);
         expect(newState.todos.length).toBe(1);
