@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="733e01b6-86ea-4cf6-9d41-dedce811f2df" name="Default Changelist" comment="got a new redux examples">
-      <change afterPath="$PROJECT_DIR$/src/test/testing_redux_basics_todo_lib.js" afterDir="false" />
+    <list default="true" id="733e01b6-86ea-4cf6-9d41-dedce811f2df" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/testing_redux_basics_todo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/testing_redux_basics_todo_client.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/testing_redux_basics_todo.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/testing_redux_basics_todo.test.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,11 +15,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/testing_redux_basics_todo.test.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="70">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="87">
+              <caret line="11" column="27" lean-forward="true" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -30,7 +36,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/testing_redux_basics_todo_lib.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
+            <state relative-caret-position="1320">
               <caret line="88" column="36" selection-start-line="88" selection-start-column="36" selection-end-line="88" selection-end-column="36" />
             </state>
           </provider>
@@ -163,8 +169,8 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="11" />
-    <option name="y" value="24" />
+    <option name="x" value="67" />
+    <option name="y" value="26" />
     <option name="width" value="1213" />
     <option name="height" value="777" />
   </component>
@@ -173,7 +179,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -196,6 +201,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -283,8 +289,8 @@
       <item itemvalue="Node.js.testing_redux_basics.js" />
       <item itemvalue="Node.js.test-async-await.js" />
       <item itemvalue="Node.js.testing_redux_basics_todo_lib.js" />
-      <item itemvalue="npm.jtest" />
       <item itemvalue="Node.js.testing_redux_basics_todo_client.js" />
+      <item itemvalue="npm.jtest" />
     </list>
     <recent_temporary>
       <list>
@@ -327,7 +333,8 @@
       <workItem from="1578877256043" duration="1823000" />
       <workItem from="1580593082803" duration="15620000" />
       <workItem from="1581560398697" duration="4125000" />
-      <workItem from="1581784320929" duration="6410000" />
+      <workItem from="1581784320929" duration="6903000" />
+      <workItem from="1582343829454" duration="575000" />
     </task>
     <task id="LOCAL-00001" summary="fixed the de do order , and change to webstorm">
       <created>1556403945542</created>
@@ -630,7 +637,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581564657432</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="refactor using action creators">
+      <created>1582165691906</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1582165691906</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -666,18 +680,19 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="180368000" />
+    <option name="totallyTimeSpent" value="181436000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="11" y="24" width="1213" height="777" extended-state="0" />
+    <frame x="67" y="26" width="1213" height="777" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.73239434" visible="true" weight="0.2592282" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7295775" visible="true" weight="0.2592282" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="npm" order="2" sideWeight="0.26760563" side_tool="true" visible="true" weight="0.2592282" />
+      <window_info id="npm" order="2" sideWeight="0.27042255" side_tool="true" visible="true" weight="0.2592282" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49642575" weight="0.40958905" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49328858" visible="true" weight="0.48175183" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49328858" weight="0.48175183" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49563146" weight="0.5849315" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -699,7 +714,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="we have all the close buttons in the item lists" />
     <MESSAGE value="added close to the step button" />
     <MESSAGE value="added close to the time frame" />
     <MESSAGE value="what I did today? ... not sure :)..but here is the last version" />
@@ -724,7 +738,8 @@
     <MESSAGE value="adding test function for promise and async await code" />
     <MESSAGE value="got some redux simple apporach working" />
     <MESSAGE value="got a new redux examples" />
-    <option name="LAST_COMMIT_MESSAGE" value="got a new redux examples" />
+    <MESSAGE value="refactor using action creators" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor using action creators" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1143,13 +1158,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/.babelrc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -1171,9 +1179,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/testing_redux_basics_todo.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/testing_redux_basics_todo_lib.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
+        <state relative-caret-position="1320">
           <caret line="88" column="36" selection-start-line="88" selection-start-column="36" selection-end-line="88" selection-end-column="36" />
         </state>
       </provider>
@@ -1185,10 +1200,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/testing_redux_basics_todo.test.js">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="87">
+          <caret line="11" column="27" lean-forward="true" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
         </state>
       </provider>
     </entry>
