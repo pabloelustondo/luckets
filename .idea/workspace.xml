@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="733e01b6-86ea-4cf6-9d41-dedce811f2df" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/test-js.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/testing_redux_basics_todo.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/testing_redux_basics_todo.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/testing_redux_basics_todo_client.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/testing_redux_basics_todo_client.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/testing_redux_basics_todo_lib.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/testing_redux_basics_todo_lib.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -15,20 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/testing_redux_basics_todo.test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="70">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="11" column="27" lean-forward="true" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+            <state relative-caret-position="126">
+              <caret line="66" column="55" selection-start-line="66" selection-start-column="55" selection-end-line="66" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -36,17 +31,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/testing_redux_basics_todo_lib.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1320">
-              <caret line="88" column="36" selection-start-line="88" selection-start-column="36" selection-end-line="88" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/testing_redux_basics_todo_client.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="53" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
+            <state relative-caret-position="189">
+              <caret line="77" column="51" selection-start-line="77" selection-start-column="51" selection-end-line="77" selection-end-column="51" />
+              <folding>
+                <element signature="e#1515#1646#0" />
+                <element signature="e#1702#1783#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -108,7 +98,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Funcs/LucketTimeIcon/index.js" />
         <option value="$PROJECT_DIR$/src/Funcs/LucketTime/index.js" />
         <option value="$PROJECT_DIR$/src/Funcs/LucketTime/index.css" />
         <option value="$PROJECT_DIR$/src/Containers/LucketsList/index.css" />
@@ -156,8 +145,9 @@
         <option value="$PROJECT_DIR$/src/.babelrc" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/test/testing_redux_basics_todo.js" />
-        <option value="$PROJECT_DIR$/src/test/testing_redux_basics_todo_lib.js" />
         <option value="$PROJECT_DIR$/src/test/testing_redux_basics_todo_client.js" />
+        <option value="$PROJECT_DIR$/src/test/test-js.js" />
+        <option value="$PROJECT_DIR$/src/test/testing_redux_basics_todo_lib.js" />
         <option value="$PROJECT_DIR$/src/test/testing_redux_basics_todo.test.js" />
       </list>
     </option>
@@ -169,10 +159,10 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="67" />
-    <option name="y" value="26" />
+    <option name="x" value="1326" />
+    <option name="y" value="-138" />
     <option name="width" value="1213" />
-    <option name="height" value="777" />
+    <option name="height" value="710" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -190,6 +180,12 @@
               <item name="luckets" type="b2602c69:ProjectViewProjectNode" />
               <item name="luckets" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="luckets" type="b2602c69:ProjectViewProjectNode" />
+              <item name="luckets" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Store" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="luckets" type="b2602c69:ProjectViewProjectNode" />
@@ -264,13 +260,13 @@
     <configuration name="test-async-await.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="test-async-await.js" working-dir="$PROJECT_DIR$/src/test">
       <method v="2" />
     </configuration>
+    <configuration name="test-js.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="test-js.js" working-dir="$PROJECT_DIR$/src/test">
+      <method v="2" />
+    </configuration>
     <configuration name="testing_redux_basics.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/test/testing_redux_basics.js" working-dir="$PROJECT_DIR$/src/test">
       <method v="2" />
     </configuration>
     <configuration name="testing_redux_basics_todo_client.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="testing_redux_basics_todo_client.js" working-dir="$PROJECT_DIR$/src/test">
-      <method v="2" />
-    </configuration>
-    <configuration name="testing_redux_basics_todo_lib.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/test/testing_redux_basics_todo_lib.js" working-dir="$PROJECT_DIR$/src/test">
       <method v="2" />
     </configuration>
     <configuration name="jtest" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -288,17 +284,17 @@
       <item itemvalue="Jest.testing_redux_basics_todo.test.js" />
       <item itemvalue="Node.js.testing_redux_basics.js" />
       <item itemvalue="Node.js.test-async-await.js" />
-      <item itemvalue="Node.js.testing_redux_basics_todo_lib.js" />
       <item itemvalue="Node.js.testing_redux_basics_todo_client.js" />
       <item itemvalue="npm.jtest" />
+      <item itemvalue="Node.js.test-js.js" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Node.js.testing_redux_basics_todo_client.js" />
-        <item itemvalue="Jest.testing_redux_basics_todo.test.js" />
-        <item itemvalue="npm.jtest" />
-        <item itemvalue="Node.js.testing_redux_basics_todo_lib.js" />
+        <item itemvalue="Node.js.test-js.js" />
         <item itemvalue="Node.js.testing_redux_basics.js" />
+        <item itemvalue="Node.js.test-async-await.js" />
+        <item itemvalue="Jest.testing_redux_basics_todo.test.js" />
       </list>
     </recent_temporary>
   </component>
@@ -335,6 +331,8 @@
       <workItem from="1581560398697" duration="4125000" />
       <workItem from="1581784320929" duration="6903000" />
       <workItem from="1582343829454" duration="575000" />
+      <workItem from="1584926568817" duration="671000" />
+      <workItem from="1585430568145" duration="15326000" />
     </task>
     <task id="LOCAL-00001" summary="fixed the de do order , and change to webstorm">
       <created>1556403945542</created>
@@ -648,59 +646,59 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="testing_redux_basics_todo_test_js - 2020.02.12 at 22h 29m 22s.xml">
+    <history-entry file="testing_redux_basics_todo_test_js - 2020.03.29 at 18h 41m 23s.xml">
       <configuration name="testing_redux_basics_todo.test.js" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="testing_redux_basics_todo_test_js - 2020.02.12 at 22h 30m 37s.xml">
+    <history-entry file="testing_redux_basics_todo_test_js - 2020.03.29 at 18h 41m 57s.xml">
       <configuration name="testing_redux_basics_todo.test.js" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="testing_redux_basics_todo_test_js - 2020.02.12 at 22h 30m 43s.xml">
+    <history-entry file="testing_redux_basics_todo_test_js - 2020.03.29 at 18h 42m 38s.xml">
       <configuration name="testing_redux_basics_todo.test.js" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="testing_redux_basics_todo_test_js - 2020.02.15 at 11h 32m 16s.xml">
+    <history-entry file="testing_redux_basics_todo_test_js - 2020.03.29 at 18h 43m 32s.xml">
       <configuration name="testing_redux_basics_todo.test.js" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="testing_redux_basics_todo_test_js - 2020.02.17 at 16h 30m 20s.xml">
+    <history-entry file="testing_redux_basics_todo_test_js - 2020.03.29 at 18h 43m 36s.xml">
       <configuration name="testing_redux_basics_todo.test.js" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="testing_redux_basics_todo_test_js - 2020.02.17 at 16h 58m 56s.xml">
+    <history-entry file="testing_redux_basics_todo_test_js - 2020.03.29 at 18h 53m 22s.xml">
       <configuration name="testing_redux_basics_todo.test.js" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="testing_redux_basics_todo_test_js - 2020.02.19 at 19h 49m 05s.xml">
+    <history-entry file="testing_redux_basics_todo_test_js - 2020.03.29 at 18h 53m 26s.xml">
       <configuration name="testing_redux_basics_todo.test.js" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="testing_redux_basics_todo_test_js - 2020.02.19 at 19h 50m 43s.xml">
+    <history-entry file="testing_redux_basics_todo_test_js - 2020.03.29 at 19h 21m 32s.xml">
       <configuration name="testing_redux_basics_todo.test.js" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="testing_redux_basics_todo_test_js - 2020.02.19 at 21h 17m 53s.xml">
+    <history-entry file="testing_redux_basics_todo_test_js - 2020.03.29 at 19h 25m 36s.xml">
       <configuration name="testing_redux_basics_todo.test.js" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="testing_redux_basics_todo_test_js - 2020.02.19 at 21h 26m 13s.xml">
+    <history-entry file="testing_redux_basics_todo_test_js - 2020.03.29 at 19h 26m 00s.xml">
       <configuration name="testing_redux_basics_todo.test.js" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="181436000" />
+    <option name="totallyTimeSpent" value="197433000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="26" width="1213" height="777" extended-state="0" />
+    <frame x="1326" y="-138" width="1213" height="710" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7295775" visible="true" weight="0.2592282" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.72262776" visible="true" weight="0.3204698" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="npm" order="2" sideWeight="0.27042255" side_tool="true" visible="true" weight="0.2592282" />
+      <window_info id="npm" order="2" sideWeight="0.27737227" side_tool="true" visible="true" weight="0.3204698" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49642575" weight="0.40958905" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49328858" weight="0.48175183" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49563146" weight="0.5849315" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4899329" visible="true" weight="0.5566343" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49289098" weight="0.5841584" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49960285" weight="0.3298193" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5067114" side_tool="true" visible="true" weight="0.48175183" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.48292294" weight="0.3739726" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49916106" weight="0.32846716" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5100671" side_tool="true" visible="true" weight="0.5566343" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.48077935" weight="0.22772278" />
       <window_info anchor="bottom" id="TypeScript" order="11" />
       <window_info anchor="bottom" id="Messages" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -745,79 +743,10 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/Data/DataService.js</url>
-          <line>12</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/Logic/LuketsModel.js</url>
-          <line>4</line>
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/Containers/LucketsList/index.js</url>
-          <line>33</line>
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/Containers/LucketsList/index.js</url>
-          <line>142</line>
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/test/testing_redux_basics_todo_lib.js</url>
-          <line>22</line>
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/test/testing_redux_basics_todo_lib.js</url>
-          <line>37</line>
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/test/testing_redux_basics_todo_lib.js</url>
-          <line>29</line>
-          <option name="timeStamp" value="29" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/test/testing_redux_basics_todo_lib.js</url>
-          <line>23</line>
-          <option name="timeStamp" value="30" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/test/testing_redux_basics_todo.test.js</url>
-          <line>25</line>
-          <option name="timeStamp" value="32" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/test/testing_redux_basics_todo.test.js</url>
-          <line>23</line>
-          <option name="timeStamp" value="33" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/test/testing_redux_basics_todo_lib.js</url>
-          <line>32</line>
-          <option name="timeStamp" value="34" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/test/testing_redux_basics_todo.test.js</url>
-          <line>22</line>
-          <option name="timeStamp" value="35" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/test/testing_redux_basics_todo_lib.js</url>
-          <line>56</line>
-          <option name="timeStamp" value="36" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/test/testing_redux_basics_todo_lib.js</url>
-          <line>59</line>
-          <option name="timeStamp" value="37" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/test/testing_redux_basics_todo_lib.js</url>
-          <line>57</line>
-          <option name="timeStamp" value="38" />
+          <line>64</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="46" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -826,16 +755,6 @@
     <SUITE FILE_PATH="coverage/luckets$testing_redux_basics_todo_test_js.info" NAME="testing_redux_basics_todo.test.js Coverage Results" MODIFIED="1581562862293" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/UIComponents/IconToggle/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/UIComponents/LucketTime/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="246">
@@ -1082,9 +1001,7 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Logic/LucketsTemplates,js" />
-    <entry file="file://$PROJECT_DIR$/src/synchronous.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/synchronous.txt" />
     <entry file="file://$PROJECT_DIR$/src/test2.js" />
     <entry file="file://$PROJECT_DIR$/src/test.js" />
     <entry file="file://$PROJECT_DIR$/src/Data/DataService.js">
@@ -1165,6 +1082,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/testing_redux_basics.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="24" lean-forward="true" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/test-async-await.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -1172,38 +1103,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/testing_redux_basics.js">
+    <entry file="file://$PROJECT_DIR$/src/test/test-js.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="16" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/testing_redux_basics_todo.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/testing_redux_basics_todo_lib.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1320">
-          <caret line="88" column="36" selection-start-line="88" selection-start-column="36" selection-end-line="88" selection-end-column="36" />
+        <state relative-caret-position="30">
+          <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/testing_redux_basics_todo_client.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="53" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
+        <state relative-caret-position="225">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
+    <entry file="file://$PROJECT_DIR$/src/test/testing_redux_basics_todo_lib.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="11" column="27" lean-forward="true" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+        <state relative-caret-position="189">
+          <caret line="77" column="51" selection-start-line="77" selection-start-column="51" selection-end-line="77" selection-end-column="51" />
+          <folding>
+            <element signature="e#1515#1646#0" />
+            <element signature="e#1702#1783#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/testing_redux_basics_todo.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="66" column="55" selection-start-line="66" selection-start-column="55" selection-end-line="66" selection-end-column="55" />
         </state>
       </provider>
     </entry>

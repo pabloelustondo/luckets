@@ -1,82 +1,96 @@
 const ACTION_TYPE = {};
 
+const FETCH_STATUS = {};
+FETCH_STATUS.fetching="Fetching";
+FETCH_STATUS.fetchSuccess="FetchSuccess";
+FETCH_STATUS.fetchError="FetchError";
+
+
 ACTION_TYPE.ADD_TODO = "ADD_TODO";
 ACTION_TYPE.UPDATE_TODO = "UPDATE_TODO";
 ACTION_TYPE.DELETE_TODO = "DELETE_TODO";
-
-//FETCH POSTS
-
 ACTION_TYPE.FETCH_POSTS = "FETCH_POSTS";
 ACTION_TYPE.FETCH_POSTS_SUCCESS = "FETCH_POSTS_SUCCESS";
 ACTION_TYPE.FETCH_POSTS_ERROR = "FETCH_POSTS_ERROR";
 
+
 const INITIAL_STATE = {
-    todos: []
+    todos: [],
+    posts: [],
+    reddit: null
 }
 
-const ACTION_REDUCER = {};
-const ACTION_CREATOR = {};
+const REDUCER = {};
+const ACTION = {};
 
-//ADD_TODO
-
-ACTION_CREATOR.addTodo = ({id, name, description}) => {
+ACTION.addTodo = ({id, name, description}) => {
     return {
         type: ACTION_TYPE.ADD_TODO,
         todo: {id, name, description}
     }
 }
-
-ACTION_REDUCER[ACTION_TYPE.ADD_TODO] = (state, {id, name, description}) => {
+REDUCER[ACTION_TYPE.ADD_TODO] = (state, {todo:{id, name, description}}) => {
     const newTodos = [...state.todos, {id, name,description}];
     return {todos:newTodos};
 }
 
 
-ACTION_CREATOR.updateTodo = ({id, name, description}) => {
+ACTION.updateTodo = ({id, name, description}) => {
     return {
         type: ACTION_TYPE.UPDATE_TODO,
         todo: {id, name, description}
     }
 }
-//UPDATE_TODO
-ACTION_REDUCER[ACTION_TYPE.UPDATE_TODO] = (state, {id ,name, description}) => {
+REDUCER[ACTION_TYPE.UPDATE_TODO] = (state, {todo:{id ,name, description}}) => {
     const newTodos = state.todos.map(
         t => ( t.id===id ) ? {id ,name, description} : t
         );
     return {todos:newTodos};
 }
 
-//DELETE_TODO  -wrong make a failing unit test
 
-
-ACTION_CREATOR.updateTodo = ({id, name, description}) => {
+ACTION.deleteTodo = ({id}) => {
     return {
-        type: ACTION_TYPE.UPDATE_TODO,
-        todo: {id, name, description}
+        type: ACTION_TYPE.DELETE_TODO,
+        todo: {id }
     }
 }
-ACTION_REDUCER[ACTION_TYPE.DELETE_TODO] = (state, {id ,name, description}) => {
-    const newTodos = state.todos.map(
-        t => ( t.id===id ) ? {id ,name, description} : t
-    );
+REDUCER[ACTION_TYPE.DELETE_TODO] = (state, {todo:{id} }) => {
+    const newTodos = state.todos.filter( t => t.id !== id);
     return {todos:newTodos};
 }
 
+ACTION.fetchPosts = ( redditId ) => {
+    return {
+        type: ACTION_TYPE.FETCH_POSTS,
+        reddit: { redditId: redditId, status: FETCH_STATUS.fetching }
+    }
+}
+REDUCER[ACTION_TYPE.FETCH_POSTS] = (state, action) => {
+    const newState = {...state, reddit: action.reddit };
+    return newState;
+}
 
-//FECTH POSTS
 
-//ADD_TODO
-ACTION_REDUCER[ACTION_TYPE.FETCH_POSTS] = (state, action) => {
-    const newTodos = [...state.todos, {id, name,description}];
-    return {todos:newTodos};
+ACTION.fetchPostsSuccess = ( posts ) => {
+    return {
+        type: ACTION_TYPE.FETCH_POSTS_SUCCESS,
+        reddit: { status: FETCH_STATUS.fetchSuccess },
+        posts: posts
+    }
+}
+
+REDUCER[ACTION_TYPE.FETCH_POSTS_SUCCESS] = (state, action) => {
+    const newReddit = {...state.reddit, status: action.reddit.status}
+    const newState = {...state, reddit: newReddit, posts:action.posts };
+    return newState;
 }
 
 
 
-
-function REDUCER(state = INITIAL_STATE, action) {
+function STORE_REDUCER(state = INITIAL_STATE, action) {
     if (action.type in ACTION_TYPE){
-        return ACTION_REDUCER[ACTION_TYPE[action.type]](state,action.todo);
+        return REDUCER[ACTION_TYPE[action.type]](state,action);
     }else {
         return state;
     }
@@ -84,6 +98,4 @@ function REDUCER(state = INITIAL_STATE, action) {
 }
 
 
-
-
-module.exports= { ACTION_CREATOR, REDUCER, INITIAL_STATE };
+module.exports= { FETCH_STATUS, ACTION, STORE_REDUCER, INITIAL_STATE };
