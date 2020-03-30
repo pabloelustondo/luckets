@@ -79,10 +79,21 @@ ACTION.fetchPostsSuccess = ( posts ) => {
         posts: posts
     }
 }
-
 REDUCER[ACTION_TYPE.FETCH_POSTS_SUCCESS] = (state, action) => {
     const newReddit = {...state.reddit, status: action.reddit.status}
     const newState = {...state, reddit: newReddit, posts:action.posts };
+    return newState;
+}
+
+ACTION.fetchPostsError = ( error ) => {
+    return {
+        type: ACTION_TYPE.FETCH_POSTS_ERROR,
+        reddit: { status: FETCH_STATUS.fetchError, error: error }
+    }
+}
+REDUCER[ACTION_TYPE.FETCH_POSTS_ERROR] = (state, action) => {
+    const newReddit = {...state.reddit, status: action.reddit.status, error: action.reddit.error}
+    const newState = {...state, reddit: newReddit };
     return newState;
 }
 

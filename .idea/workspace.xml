@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="733e01b6-86ea-4cf6-9d41-dedce811f2df" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/test-js.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/testing_redux_basics_todo.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/testing_redux_basics_todo.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/testing_redux_basics_todo_client.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/testing_redux_basics_todo_client.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/testing_redux_basics_todo_lib.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/testing_redux_basics_todo_lib.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -22,8 +20,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/testing_redux_basics_todo.test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="66" column="55" selection-start-line="66" selection-start-column="55" selection-end-line="66" selection-end-column="55" />
+            <state relative-caret-position="466">
+              <caret line="76" column="30" lean-forward="true" selection-start-line="76" selection-start-column="30" selection-end-line="76" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -31,11 +29,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/testing_redux_basics_todo_lib.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="77" column="51" selection-start-line="77" selection-start-column="51" selection-end-line="77" selection-end-column="51" />
+            <state relative-caret-position="234">
+              <caret line="90" column="65" lean-forward="true" selection-start-line="90" selection-start-column="65" selection-end-line="90" selection-end-column="65" />
               <folding>
                 <element signature="e#1515#1646#0" />
                 <element signature="e#1702#1783#0" />
+                <element signature="e#1842#1973#0" />
+                <element signature="e#2028#2109#0" />
               </folding>
             </state>
           </provider>
@@ -158,7 +158,7 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="x" value="1326" />
     <option name="y" value="-138" />
     <option name="width" value="1213" />
@@ -332,7 +332,7 @@
       <workItem from="1581784320929" duration="6903000" />
       <workItem from="1582343829454" duration="575000" />
       <workItem from="1584926568817" duration="671000" />
-      <workItem from="1585430568145" duration="15326000" />
+      <workItem from="1585430568145" duration="17184000" />
     </task>
     <task id="LOCAL-00001" summary="fixed the de do order , and change to webstorm">
       <created>1556403945542</created>
@@ -642,19 +642,17 @@
       <option name="project" value="LOCAL" />
       <updated>1582165691906</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="added actions / reducers for fetch posts">
+      <created>1585524402251</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1585524402253</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="testing_redux_basics_todo_test_js - 2020.03.29 at 18h 41m 23s.xml">
-      <configuration name="testing_redux_basics_todo.test.js" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
-    <history-entry file="testing_redux_basics_todo_test_js - 2020.03.29 at 18h 41m 57s.xml">
-      <configuration name="testing_redux_basics_todo.test.js" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
-    <history-entry file="testing_redux_basics_todo_test_js - 2020.03.29 at 18h 42m 38s.xml">
-      <configuration name="testing_redux_basics_todo.test.js" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
     <history-entry file="testing_redux_basics_todo_test_js - 2020.03.29 at 18h 43m 32s.xml">
       <configuration name="testing_redux_basics_todo.test.js" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
@@ -676,28 +674,37 @@
     <history-entry file="testing_redux_basics_todo_test_js - 2020.03.29 at 19h 26m 00s.xml">
       <configuration name="testing_redux_basics_todo.test.js" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
+    <history-entry file="testing_redux_basics_todo_test_js - 2020.03.29 at 19h 50m 17s.xml">
+      <configuration name="testing_redux_basics_todo.test.js" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="testing_redux_basics_todo_test_js - 2020.03.29 at 19h 50m 56s.xml">
+      <configuration name="testing_redux_basics_todo.test.js" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="testing_redux_basics_todo_test_js - 2020.03.29 at 19h 52m 01s.xml">
+      <configuration name="testing_redux_basics_todo.test.js" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="197433000" />
+    <option name="totallyTimeSpent" value="199291000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1326" y="-138" width="1213" height="710" extended-state="0" />
+    <frame x="1280" y="-280" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.72262776" visible="true" weight="0.3204698" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7237237" visible="true" weight="0.20115851" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="npm" order="2" sideWeight="0.27737227" side_tool="true" visible="true" weight="0.3204698" />
+      <window_info id="npm" order="2" sideWeight="0.2762763" side_tool="true" visible="true" weight="0.20115851" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49642575" weight="0.40958905" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4899329" visible="true" weight="0.5566343" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49025804" visible="true" weight="0.34059405" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49289098" weight="0.5841584" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49916106" weight="0.32846716" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5100671" side_tool="true" visible="true" weight="0.5566343" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50974196" side_tool="true" visible="true" weight="0.34059405" />
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.48077935" weight="0.22772278" />
       <window_info anchor="bottom" id="TypeScript" order="11" />
       <window_info anchor="bottom" id="Messages" order="12" />
@@ -712,7 +719,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="added close to the step button" />
     <MESSAGE value="added close to the time frame" />
     <MESSAGE value="what I did today? ... not sure :)..but here is the last version" />
     <MESSAGE value="ok we have a rudimentary &quot;time&quot; button." />
@@ -737,7 +743,8 @@
     <MESSAGE value="got some redux simple apporach working" />
     <MESSAGE value="got a new redux examples" />
     <MESSAGE value="refactor using action creators" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor using action creators" />
+    <MESSAGE value="added actions / reducers for fetch posts" />
+    <option name="LAST_COMMIT_MESSAGE" value="added actions / reducers for fetch posts" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1119,19 +1126,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/testing_redux_basics_todo_lib.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="77" column="51" selection-start-line="77" selection-start-column="51" selection-end-line="77" selection-end-column="51" />
+        <state relative-caret-position="234">
+          <caret line="90" column="65" lean-forward="true" selection-start-line="90" selection-start-column="65" selection-end-line="90" selection-end-column="65" />
           <folding>
             <element signature="e#1515#1646#0" />
             <element signature="e#1702#1783#0" />
+            <element signature="e#1842#1973#0" />
+            <element signature="e#2028#2109#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/testing_redux_basics_todo.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="66" column="55" selection-start-line="66" selection-start-column="55" selection-end-line="66" selection-end-column="55" />
+        <state relative-caret-position="466">
+          <caret line="76" column="30" lean-forward="true" selection-start-line="76" selection-start-column="30" selection-end-line="76" selection-end-column="30" />
         </state>
       </provider>
     </entry>

@@ -66,4 +66,18 @@ describe('REDUCER', () => {
         expect(newState.reddit.status).toBe(FETCH_STATUS.fetchSuccess);
         expect(newState.posts.length).toBe(posts.length);
     })
+
+    it('should accept fetch post error', () => {
+        const state = { todos:[sampleTodo, sampleTodo2,sampleTodo3], reddit:{redditId: 1, status: FETCH_STATUS.fetching}};
+        const error = "Error";
+        const action = ACTION.fetchPostsError( error );
+
+        const newState = STORE_REDUCER( state , action);
+        expect(newState.todos.length).toBe(3);
+        console.log(newState);
+        expect(newState.reddit.redditId).toBe(1);
+        expect(newState.reddit.status).toBe(FETCH_STATUS.fetchError);
+        expect(newState.reddit.error).toBe(error);
+
+    })
 })
