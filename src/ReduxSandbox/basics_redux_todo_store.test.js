@@ -35,8 +35,8 @@ describe('STORE', () => {
         expect(newState.todos.length).toBe(0);
     })
 
-    it('should fetch reddit posts', async () => {
-        await store.dispatch(ASYNC_ACTION.realFetchPost("polandball") );
+    it('should fetch reddit posts asynchronously ', async () => {
+        await store.fetchPostsAsync("polandball");
         const newState = store.getState();
         expect(newState.posts.length).toBe(10);
     })

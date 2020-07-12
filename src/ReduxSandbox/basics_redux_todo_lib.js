@@ -87,28 +87,6 @@ REDUCER[ACTION_TYPE.FETCH_POSTS_ERROR] = (state, action) => {
 }
 
 
-ASYNC_ACTION.realFetchPost = (redditId)=> {
-    return (dispatch) => {
-        dispatch(ACTION.fetchPosts(redditId));
-
-        return fetch(`https://www.reddit.com/r/${redditId}.json`)
-            .then(
-                response => response.json(),
-                // Do not use catch, because that will also catch
-                // any errors in the dispatch and resulting render,
-                // causing a loop of 'Unexpected batch number' errors.
-                // https://github.com/facebook/react/issues/6895
-                error => console.log('An error occurred.', error)
-            )
-            .then(json =>
-                // We can dispatch many times!
-                // Here, we update the app state with the results of the API call.
-
-                dispatch(ACTION.fetchPostsSuccess(redditId, json))
-            )
-    }
-}
-
 function STORE_REDUCER(state = INITIAL_STATE, action) {
     if (action.type in ACTION_TYPE){
         return REDUCER[ACTION_TYPE[action.type]](state,action);
@@ -158,6 +136,23 @@ class STORE {
         }
         return this.store.dispatch(action);
     }
+
+    fetchPostsAsync = (redditId)=> {
+        const action = (dispatch) => {
+            dispatch(ACTION.fetchPosts(redditId));
+
+            return fetch(`https://www.reddit.com/r/${redditId}.json`)
+                .then(
+                    response => response.json(),
+                    error => console.log('An error occurred.', error)
+                )
+                .then(json =>
+                    dispatch(ACTION.fetchPostsSuccess(redditId, json))
+                )
+        }
+        return this.store.dispatch(action);
+    }
+
 }
 
 
