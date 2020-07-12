@@ -32,26 +32,11 @@ const ACTION = {};
 const ASYNC_ACTION = {};
 
 
-
-
-ACTION.addTodo = ({id, name, description}) => {
-    return {
-        type: ACTION_TYPE.ADD_TODO,
-        todo: {id, name, description}
-    }
-}
 REDUCER[ACTION_TYPE.ADD_TODO] = (state, {todo:{id, name, description}}) => {
     const newTodos = [...state.todos, {id, name,description}];
     return {todos:newTodos};
 }
 
-
-ACTION.updateTodo = ({id, name, description}) => {
-    return {
-        type: ACTION_TYPE.UPDATE_TODO,
-        todo: {id, name, description}
-    }
-}
 REDUCER[ACTION_TYPE.UPDATE_TODO] = (state, {todo:{id ,name, description}}) => {
     const newTodos = state.todos.map(
         t => ( t.id===id ) ? {id ,name, description} : t
@@ -59,13 +44,6 @@ REDUCER[ACTION_TYPE.UPDATE_TODO] = (state, {todo:{id ,name, description}}) => {
     return {todos:newTodos};
 }
 
-
-ACTION.deleteTodo = ({id}) => {
-    return {
-        type: ACTION_TYPE.DELETE_TODO,
-        todo: {id }
-    }
-}
 REDUCER[ACTION_TYPE.DELETE_TODO] = (state, {todo:{id} }) => {
     const newTodos = state.todos.filter( t => t.id !== id);
     return {todos:newTodos};
@@ -158,10 +136,27 @@ class STORE {
     }
 
     addTodo = ({id, name, description}) => {
-        return {
+        const action = {
             type: ACTION_TYPE.ADD_TODO,
             todo: {id, name, description}
         }
+        return this.store.dispatch(action);
+    }
+
+    updateTodo = ({id, name, description}) => {
+        const action = {
+            type: ACTION_TYPE.UPDATE_TODO,
+            todo: {id, name, description}
+        }
+        return this.store.dispatch(action);
+    }
+
+    deleteTodo = ({id}) => {
+        const action = {
+            type: ACTION_TYPE.DELETE_TODO,
+            todo: {id }
+        }
+        return this.store.dispatch(action);
     }
 }
 

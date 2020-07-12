@@ -13,7 +13,9 @@ describe('STORE', () => {
     });
 
     it('should add a todo', () => {
-        store.dispatch(store.addTodo({id:1, name:'mind', description:'plan day'}) );
+      //  store.dispatch(store.addTodo({id:1, name:'mind', description:'plan day'}) );
+        store.addTodo({id:1, name:'mind', description:'plan day'});
+
         const newState = store.getState();
         expect(newState.todos.length).toBe(1);
         expect(newState.todos[0].id).toBe(sampleTodo.id);
@@ -21,14 +23,14 @@ describe('STORE', () => {
     })
 
     it('should update a todo', () => {
-        store.dispatch(ACTION.updateTodo({id:1, name:'mind', description:'plan day better'}) );
+        store.updateTodo({id:1, name:'mind', description:'plan day better'});
         const newState = store.getState();
         expect(newState.todos.length).toBe(1);
         expect(newState.todos[0].description).toBe('plan day better');
     })
 
     it('should delete a todo', () => {
-        store.dispatch(ACTION.deleteTodo({id:1}) );
+        store.deleteTodo({id:1});
         const newState = store.getState();
         expect(newState.todos.length).toBe(0);
     })
