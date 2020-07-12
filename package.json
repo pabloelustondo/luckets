@@ -5,9 +5,11 @@
   "dependencies": {
     "@mdi/font": "^3.3.92",
     "axios": "^0.18.0",
+    "cross-fetch": "^3.0.4",
     "file-system": "^2.2.2",
     "firebase": "^5.8.4",
     "firebase-functions": "^3.2.0",
+    "puppeteer": "^3.0.4",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-firebaseui": "^3.1.2",
@@ -21,8 +23,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts src/test",
-    "test:debug": "react-scripts --inspect-brk src/test --runInBand --no-cache",
+    "test": "react-scripts src/ReduxSandbox",
+    "test:debug": "react-scripts --inspect-brk src/ReduxSandbox --runInBand --no-cache",
     "eject": "react-scripts eject",
     "jtest": "jest",
     "jtest:watch": "npm jtest -- --watch"

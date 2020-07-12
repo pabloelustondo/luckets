@@ -1,4 +1,16 @@
+const fetch = require('cross-fetch')
+const { createLogger } = require('redux-logger');
+const { createStore, applyMiddleware } = require('redux');
+const loggerMiddleware = createLogger();
+const thunkMiddleware = require( 'redux-thunk').default;
+
 const ACTION_TYPE = {};
+ACTION_TYPE.ADD_TODO = "ADD_TODO";
+ACTION_TYPE.UPDATE_TODO = "UPDATE_TODO";
+ACTION_TYPE.DELETE_TODO = "DELETE_TODO";
+ACTION_TYPE.FETCH_POSTS = "FETCH_POSTS";
+ACTION_TYPE.FETCH_POSTS_SUCCESS = "FETCH_POSTS_SUCCESS";
+ACTION_TYPE.FETCH_POSTS_ERROR = "FETCH_POSTS_ERROR";
 
 const FETCH_STATUS = {};
 FETCH_STATUS.fetching="Fetching";
@@ -6,12 +18,7 @@ FETCH_STATUS.fetchSuccess="FetchSuccess";
 FETCH_STATUS.fetchError="FetchError";
 
 
-ACTION_TYPE.ADD_TODO = "ADD_TODO";
-ACTION_TYPE.UPDATE_TODO = "UPDATE_TODO";
-ACTION_TYPE.DELETE_TODO = "DELETE_TODO";
-ACTION_TYPE.FETCH_POSTS = "FETCH_POSTS";
-ACTION_TYPE.FETCH_POSTS_SUCCESS = "FETCH_POSTS_SUCCESS";
-ACTION_TYPE.FETCH_POSTS_ERROR = "FETCH_POSTS_ERROR";
+
 
 
 const INITIAL_STATE = {
@@ -23,6 +30,9 @@ const INITIAL_STATE = {
 const REDUCER = {};
 const ACTION = {};
 const ASYNC_ACTION = {};
+
+
+
 
 ACTION.addTodo = ({id, name, description}) => {
     return {
@@ -116,7 +126,7 @@ ASYNC_ACTION.realFetchPost = (redditId)=> {
                 // We can dispatch many times!
                 // Here, we update the app state with the results of the API call.
 
-                dispatch(ACTION.fetchPostsSuccess(subreddit, json))
+                dispatch(ACTION.fetchPostsSuccess(redditId, json))
             )
     }
 }
@@ -130,5 +140,30 @@ function STORE_REDUCER(state = INITIAL_STATE, action) {
 
 }
 
+class STORE {
+    constructor(dependecies) {
+        this.dependecies = dependecies;
+        this.store =  createStore(STORE_REDUCER,
+            applyMiddleware(
+                thunkMiddleware,
+                loggerMiddleware
+            ));
+    }
+    dispatch( action ){
+        return this.store.dispatch(action);
+    }
 
-module.exports= { ASYNC_ACTION, FETCH_STATUS, ACTION, STORE_REDUCER, INITIAL_STATE };
+    getState() {
+        return this.store.getState();
+    }
+
+    addTodo = ({id, name, description}) => {
+        return {
+            type: ACTION_TYPE.ADD_TODO,
+            todo: {id, name, description}
+        }
+    }
+}
+
+
+module.exports= { STORE, ASYNC_ACTION, FETCH_STATUS, ACTION, STORE_REDUCER, INITIAL_STATE };

@@ -1,4 +1,4 @@
-const { FETCH_STATUS, ACTION, STORE_REDUCER, INITIAL_STATE } = require('./testing_redux_basics_todo_lib');
+const { FETCH_STATUS, ACTION, STORE_REDUCER, INITIAL_STATE } = require('./basics_redux_todo_lib');
 
 describe('REDUCER', () => {
 
