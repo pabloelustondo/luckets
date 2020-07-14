@@ -141,7 +141,7 @@ class STORE {
 
     fetchPostsAsync = (redditId)=> {
         const action = (dispatch) => {
-            dispatch(this.fetchPosts(redditId));
+            this.fetchPosts(redditId);
 
             return this.fetch(`https://www.reddit.com/r/${redditId}.json`)
                 .then(
@@ -149,7 +149,7 @@ class STORE {
                     error => console.log('An error occurred.', error)
                 )
                 .then(json =>
-                    dispatch(this.fetchPostsSuccess(redditId, json))
+                    this.fetchPostsSuccess(redditId, json)
                 )
         }
         return this.store.dispatch(action);
