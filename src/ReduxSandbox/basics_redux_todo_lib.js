@@ -83,8 +83,8 @@ class STORE {
         }
     }
 
-    constructor(dependencies) {
-        this.dependecies = dependencies;
+    constructor(_fetch) {
+        this.fetch = _fetch || fetch;
         this.store =  createStore(this.STORE_REDUCER,
             applyMiddleware(
                 thunkMiddleware,
@@ -143,7 +143,7 @@ class STORE {
         const action = (dispatch) => {
             dispatch(this.fetchPosts(redditId));
 
-            return fetch(`https://www.reddit.com/r/${redditId}.json`)
+            return this.fetch(`https://www.reddit.com/r/${redditId}.json`)
                 .then(
                     response => response.json(),
                     error => console.log('An error occurred.', error)
