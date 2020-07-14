@@ -140,9 +140,9 @@ class STORE {
     }
 
     fetchPostsAsync = (redditId)=> {
-        const action = (dispatch) => {
-            this.fetchPosts(redditId);
+        return this.dispatch( (dispatch) => {
 
+            this.fetchPosts(redditId);
             return this.fetch(`https://www.reddit.com/r/${redditId}.json`)
                 .then(
                     response => response.json(),
@@ -151,8 +151,7 @@ class STORE {
                 .then(json =>
                     this.fetchPostsSuccess(redditId, json)
                 )
-        }
-        return this.store.dispatch(action);
+        })
     }
 }
 
