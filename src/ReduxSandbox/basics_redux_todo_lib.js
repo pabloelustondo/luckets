@@ -11,10 +11,10 @@ ACTION_TYPE.FETCH_POSTS = "FETCH_POSTS";
 ACTION_TYPE.FETCH_POSTS_SUCCESS = "FETCH_POSTS_SUCCESS";
 ACTION_TYPE.FETCH_POSTS_ERROR = "FETCH_POSTS_ERROR";
 
-const FETCH_STATUS = {};
-FETCH_STATUS.fetching="Fetching";
-FETCH_STATUS.fetchSuccess="FetchSuccess";
-FETCH_STATUS.fetchError="FetchError";
+const CONSTANTS = {};
+CONSTANTS.fetching="Fetching";
+CONSTANTS.fetchSuccess="FetchSuccess";
+CONSTANTS.fetchError="FetchError";
 
 
 
@@ -31,40 +31,10 @@ const ACTION = {};
 const ASYNC_ACTION = {};
 
 
-REDUCER['addTodo'] = (state, {todo:{id, name, description}}) => {
-    const newTodos = [...state.todos, {id, name,description}];
-    return {todos:newTodos};
-}
-
-REDUCER['updateTodo'] = (state, {todo:{id ,name, description}}) => {
-    const newTodos = state.todos.map(
-        t => ( t.id===id ) ? {id ,name, description} : t
-        );
-    return {todos:newTodos};
-}
-
-REDUCER['deleteTodo'] = (state, {todo:{id} }) => {
-    const newTodos = state.todos.filter( t => t.id !== id);
-    return {todos:newTodos};
-}
-
-
-REDUCER['fetchPosts'] = (state, action) => {
-    const newState = {...state, reddit: action.reddit };
-    return newState;
-}
-
-
-REDUCER['fetchPostsSuccess'] = (state, action) => {
-    const newReddit = {...state.reddit, status: action.reddit.status}
-    const newState = {...state, reddit: newReddit, posts:action.posts };
-    return newState;
-}
-
 ACTION.fetchPostsError = ( error ) => {
     return {
         type: ACTION_TYPE.FETCH_POSTS_ERROR,
-        reddit: { status: FETCH_STATUS.fetchError, error: error }
+        reddit: { status: CONSTANTS.fetchError, error: error }
     }
 }
 REDUCER[ACTION_TYPE.FETCH_POSTS_ERROR] = (state, action) => {
@@ -75,9 +45,9 @@ REDUCER[ACTION_TYPE.FETCH_POSTS_ERROR] = (state, action) => {
 
 class STORE {
 
-    STORE_REDUCER(state = INITIAL_STATE, action) {
-        if (['addTodo','updateTodo','deleteTodo','fetchPosts','fetchPostsSuccess'].includes(action.type) ){
-            return REDUCER[action.type](state,action);
+    STORE_REDUCER = (state = INITIAL_STATE, action) => {
+        if (['addTodo','updateTodo','deleteTodo','fetchPosts','fetchPostsSuccess','fetchPostsError'].includes(action.type) ){
+            return this[action.type + "Reducer"](state,action);
         }else {
             return state;
         }
@@ -100,6 +70,7 @@ class STORE {
         return this.store.getState();
     }
 
+/////////// ADD TOOO
     addTodo = ({id, name, description}) => {
         const action = {
             type: 'addTodo',
@@ -107,7 +78,12 @@ class STORE {
         }
         return this.store.dispatch(action);
     }
+    addTodoReducer = (state, {todo:{id, name, description}}) => {
+        const newTodos = [...state.todos, {id, name,description}];
+        return {todos:newTodos};
+    }
 
+///////////// UPDATE TOOO
     updateTodo = ({id, name, description}) => {
         const action = {
             type: 'updateTodo',
@@ -115,7 +91,14 @@ class STORE {
         }
         return this.store.dispatch(action);
     }
+    updateTodoReducer = (state, {todo:{id ,name, description}}) => {
+        const newTodos = state.todos.map(
+            t => ( t.id===id ) ? {id ,name, description} : t
+        );
+        return {todos:newTodos};
+    }
 
+//////////////  /DELETE TODO
     deleteTodo = ({id}) => {
         const action = {
             type: 'deleteTodo',
@@ -123,20 +106,46 @@ class STORE {
         }
         return this.store.dispatch(action);
     }
+    deleteTodoReducer = (state, {todo:{id} }) => {
+        const newTodos = state.todos.filter( t => t.id !== id);
+        return {todos:newTodos};
+    }
 
+//////////////  FETCH POSTS
     fetchPosts = ( redditId ) => {
         return this.dispatch({
             type: 'fetchPosts',
-            reddit: { redditId: redditId, status: FETCH_STATUS.fetching }
+            reddit: { redditId: redditId, status: CONSTANTS.fetching }
         })
     }
-
-    fetchPostsSuccess = ( posts ) => {
+    fetchPostsReducer = (state, action) => {
+        const newState = {...state, reddit: action.reddit };
+        return newState;
+    }
+    fetchPostsSuccess = ( reditt, posts ) => {
         return this.dispatch({
             type: 'fetchPostsSuccess',
-            reddit: { status: FETCH_STATUS.fetchSuccess },
+            reddit: { status: CONSTANTS.fetchSuccess },
             posts: posts
         })
+    }
+    fetchPostsSuccessReducer = (state, action) => {
+        const newReddit = {...state.reddit, status: action.reddit.status}
+        const newState = {...state, reddit: newReddit, posts:action.posts };
+        return newState;
+    }
+
+
+    fetchPostsError = ( error ) => {
+        return this.dispatch({
+            type: 'fetchPostsError',
+            reddit: { status: CONSTANTS.fetchError, error: error }
+        })
+    }
+    fetchPostsErrorReducer = (state, action) => {
+        const newReddit = {...state.reddit, status: action.reddit.status, error: action.reddit.error}
+        const newState = {...state, reddit: newReddit };
+        return newState;
     }
 
     fetchPostsAsync = (redditId)=> {
@@ -146,14 +155,19 @@ class STORE {
             return this.fetch(`https://www.reddit.com/r/${redditId}.json`)
                 .then(
                     response => response.json(),
-                    error => console.log('An error occurred.', error)
+                    error =>  this.fetchPostsError(error)
                 )
-                .then(json =>
-                    this.fetchPostsSuccess(redditId, json)
+                .then(fetchResult =>{
+                    if (fetchResult.error){
+                        this.fetchPostsError(fetchResult.error);
+                    }else{
+                        this.fetchPostsSuccess(redditId, fetchResult.data.children)
+                    }
+                }
                 )
         })
     }
 }
 
 
-module.exports= { STORE, ASYNC_ACTION, FETCH_STATUS, ACTION, INITIAL_STATE };
+module.exports= { STORE, ASYNC_ACTION, CONSTANTS, ACTION, INITIAL_STATE };

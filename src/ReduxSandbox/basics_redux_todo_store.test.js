@@ -1,4 +1,4 @@
-const { STORE, ASYNC_ACTION, ACTION } = require('./basics_redux_todo_lib');
+const { STORE, ASYNC_ACTION, ACTION, CONSTANTS } = require('./basics_redux_todo_lib');
 
 describe('STORE', () => {
 
@@ -38,6 +38,12 @@ describe('STORE', () => {
     it('should fetch reddit posts asynchronously ', async () => {
         await store.fetchPostsAsync("polandball");
         const newState = store.getState();
-        expect(newState.posts.length).toBe(10);
+        expect(newState.posts.length).toBe(27);
+    })
+
+    it('should manage errors from fetch reddit posts asynchronously ', async () => {
+        await store.fetchPostsAsync("^&^&^&^&^&^&^&");
+        const newState = store.getState();
+        expect(newState.reddit.status).toBe(CONSTANTS.fetchError);
     })
 })

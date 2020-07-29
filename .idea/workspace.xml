@@ -4,6 +4,7 @@
     <list default="true" id="733e01b6-86ea-4cf6-9d41-dedce811f2df" name="Default Changelist" comment="all works after refactore action type">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ReduxSandbox/basics_redux_todo_lib.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReduxSandbox/basics_redux_todo_lib.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ReduxSandbox/basics_redux_todo_store.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReduxSandbox/basics_redux_todo_store.test.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,18 +17,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ReduxSandbox/basics_redux_todo_store.test.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-468" />
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ReduxSandbox/basics_redux_todo_lib.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="59">
-              <caret line="142" column="38" lean-forward="true" selection-start-line="142" selection-start-column="38" selection-end-line="142" selection-end-column="38" />
+            <state relative-caret-position="210">
+              <caret line="142" column="10" selection-start-line="142" selection-start-column="10" selection-end-line="142" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -161,7 +160,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1280" />
-    <option name="height" value="715" />
+    <option name="height" value="726" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -240,6 +239,34 @@
       <scope-kind value="ALL" />
       <method v="2" />
     </configuration>
+    <configuration name="STORE.should add a todo" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/ReduxSandbox/basics_redux_todo_store.test.js" />
+      <test-names>
+        <test-name value="STORE" />
+        <test-name value="should add a todo" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="STORE.should manage errors from fetch reddit posts asynchronously " type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/ReduxSandbox/basics_redux_todo_store.test.js" />
+      <test-names>
+        <test-name value="STORE" />
+        <test-name value="should manage errors from fetch reddit posts asynchronously " />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <configuration name="STORE.should manage fetch errors well " type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -252,16 +279,6 @@
         <test-name value="STORE" />
         <test-name value="should manage fetch errors well " />
       </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="basics_redux_todo_reducer.test.js" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST_FILE" />
-      <test-file value="$PROJECT_DIR$/src/ReduxSandbox/basics_redux_todo_reducer.test.js" />
       <method v="2" />
     </configuration>
     <configuration name="basics_redux_todo_store.test.js" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
@@ -284,28 +301,25 @@
       <test-file value="$PROJECT_DIR$/src/test/testing_redux_basics_todo.test.js" />
       <method v="2" />
     </configuration>
-    <configuration name="test-async-await.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/ReduxSandbox/test-async-await.js" working-dir="$PROJECT_DIR$/src/ReduxSandbox">
-      <method v="2" />
-    </configuration>
     <configuration name="test-js.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="test-js.js" working-dir="$PROJECT_DIR$/src/ReduxSandbox">
       <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Jest.All Tests" />
       <item itemvalue="Jest.testing_redux_basics_todo.test.js" />
-      <item itemvalue="Jest.basics_redux_todo_reducer.test.js" />
       <item itemvalue="Jest.basics_redux_todo_store.test.js" />
-      <item itemvalue="Node.js.test-async-await.js" />
-      <item itemvalue="Node.js.test-js.js" />
       <item itemvalue="Jest.STORE.should manage fetch errors well " />
+      <item itemvalue="Jest.STORE.should add a todo" />
+      <item itemvalue="Node.js.test-js.js" />
+      <item itemvalue="Jest.STORE.should manage errors from fetch reddit posts asynchronously " />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Jest.basics_redux_todo_store.test.js" />
+        <item itemvalue="Jest.STORE.should manage errors from fetch reddit posts asynchronously " />
+        <item itemvalue="Jest.STORE.should add a todo" />
         <item itemvalue="Jest.STORE.should manage fetch errors well " />
         <item itemvalue="Node.js.test-js.js" />
-        <item itemvalue="Jest.basics_redux_todo_reducer.test.js" />
-        <item itemvalue="Node.js.test-async-await.js" />
       </list>
     </recent_temporary>
   </component>
@@ -349,28 +363,9 @@
       <workItem from="1586560035482" duration="7582000" />
       <workItem from="1589057165213" duration="2903000" />
       <workItem from="1594483641340" duration="13644000" />
-      <workItem from="1594692008130" duration="3287000" />
-    </task>
-    <task id="LOCAL-00003" summary="did the calculatePoints function">
-      <created>1556851591798</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1556851591798</updated>
-    </task>
-    <task id="LOCAL-00004" summary="we got calculated points in children luckets">
-      <created>1556854279391</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1556854279391</updated>
-    </task>
-    <task id="LOCAL-00005" summary="we got points working across the board!">
-      <created>1556856458430</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1556856458430</updated>
+      <workItem from="1594692008130" duration="5949000" />
+      <workItem from="1595815568971" duration="1416000" />
+      <workItem from="1595981259051" duration="4531000" />
     </task>
     <task id="LOCAL-00006" summary="refactored the close button to put it in othe places">
       <created>1556935162055</created>
@@ -694,56 +689,76 @@
       <option name="project" value="LOCAL" />
       <updated>1594574386793</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="all works after refactore action type">
+      <created>1594695978673</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1594695978674</updated>
+    </task>
+    <task id="LOCAL-00053" summary="all works after refactore action type">
+      <created>1594696049981</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1594696049981</updated>
+    </task>
+    <task id="LOCAL-00054" summary="all works after refactore action type">
+      <created>1594696222946</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1594696222946</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="STORE_should_manage_fetch_errors_well_ - 2020.07.13 at 22h 55m 08s.xml">
-      <configuration name="STORE.should manage fetch errors well " configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="STORE_should_manage_errors_from_fetch_reddit_posts_asynchronously_ - 2020.07.28 at 21h 53m 00s.xml">
+      <configuration name="STORE.should manage errors from fetch reddit posts asynchronously " configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="STORE_should_manage_fetch_errors_well_ - 2020.07.13 at 22h 55m 23s.xml">
-      <configuration name="STORE.should manage fetch errors well " configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="STORE_should_manage_errors_from_fetch_reddit_posts_asynchronously_ - 2020.07.28 at 21h 53m 12s.xml">
+      <configuration name="STORE.should manage errors from fetch reddit posts asynchronously " configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="STORE_should_manage_fetch_errors_well_ - 2020.07.13 at 22h 55m 33s.xml">
-      <configuration name="STORE.should manage fetch errors well " configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="STORE_should_manage_errors_from_fetch_reddit_posts_asynchronously_ - 2020.07.28 at 21h 53m 39s.xml">
+      <configuration name="STORE.should manage errors from fetch reddit posts asynchronously " configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="STORE_should_manage_fetch_errors_well_ - 2020.07.13 at 22h 55m 53s.xml">
-      <configuration name="STORE.should manage fetch errors well " configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="STORE_should_manage_errors_from_fetch_reddit_posts_asynchronously_ - 2020.07.28 at 21h 57m 11s.xml">
+      <configuration name="STORE.should manage errors from fetch reddit posts asynchronously " configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="STORE_should_manage_fetch_errors_well_ - 2020.07.13 at 22h 56m 08s.xml">
-      <configuration name="STORE.should manage fetch errors well " configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="STORE_should_manage_errors_from_fetch_reddit_posts_asynchronously_ - 2020.07.28 at 21h 57m 14s.xml">
+      <configuration name="STORE.should manage errors from fetch reddit posts asynchronously " configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="STORE_should_manage_fetch_errors_well_ - 2020.07.13 at 22h 56m 43s.xml">
-      <configuration name="STORE.should manage fetch errors well " configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="STORE_should_manage_errors_from_fetch_reddit_posts_asynchronously_ - 2020.07.28 at 21h 58m 21s.xml">
+      <configuration name="STORE.should manage errors from fetch reddit posts asynchronously " configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="STORE_should_manage_fetch_errors_well_ - 2020.07.13 at 22h 56m 59s.xml">
-      <configuration name="STORE.should manage fetch errors well " configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="STORE_should_manage_errors_from_fetch_reddit_posts_asynchronously_ - 2020.07.28 at 21h 58m 24s.xml">
+      <configuration name="STORE.should manage errors from fetch reddit posts asynchronously " configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="STORE_should_manage_fetch_errors_well_ - 2020.07.13 at 22h 57m 29s.xml">
-      <configuration name="STORE.should manage fetch errors well " configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="STORE_should_manage_errors_from_fetch_reddit_posts_asynchronously_ - 2020.07.28 at 21h 59m 26s.xml">
+      <configuration name="STORE.should manage errors from fetch reddit posts asynchronously " configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="basics_redux_todo_store_test_js - 2020.07.13 at 22h 58m 02s.xml">
-      <configuration name="basics_redux_todo_store.test.js" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="All_Tests - 2020.07.28 at 22h 00m 38s.xml">
+      <configuration name="All Tests" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="basics_redux_todo_store_test_js - 2020.07.13 at 22h 58m 53s.xml">
+    <history-entry file="basics_redux_todo_store_test_js - 2020.07.28 at 22h 01m 02s.xml">
       <configuration name="basics_redux_todo_store.test.js" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="231853000" />
+    <option name="totallyTimeSpent" value="240462000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="715" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1280" height="726" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8038585" visible="true" weight="0.34688994" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8038585" weight="0.34688994" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" sideWeight="0.19614148" side_tool="true" weight="0.3474441" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49520767" weight="0.64451826" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.48402557" visible="true" weight="0.48675495" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.48815167" weight="0.40397352" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49520767" weight="0.6439024" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.48402557" visible="true" weight="0.4796748" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.48815167" weight="0.4878049" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -758,19 +773,19 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8038585" weight="0.3474441" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8038585" visible="true" weight="0.34688994" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" sideWeight="0.19614148" side_tool="true" weight="0.3474441" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49520767" weight="0.40863788" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48402557" weight="0.43521595" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.48815167" visible="true" weight="0.4053156" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49520767" weight="0.6439024" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48402557" weight="0.41788617" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.48815167" visible="true" weight="0.4878049" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49916106" weight="0.32846716" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49916106" weight="0.2200282" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.51597446" side_tool="true" weight="0.4833887" />
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.47364217" weight="0.17275748" />
       <window_info anchor="bottom" id="TypeScript" order="11" />
@@ -828,14 +843,87 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/ReduxSandbox/basics_redux_todo_store.test.js</url>
-          <line>25</line>
-          <option name="timeStamp" value="66" />
+          <line>46</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/ReduxSandbox/basics_redux_todo_store.test.js</url>
+          <line>40</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="76" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/ReduxSandbox/basics_redux_todo_lib.js</url>
-          <line>146</line>
+          <line>156</line>
           <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="68" />
+          <option name="timeStamp" value="78" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/ReduxSandbox/basics_redux_todo_lib.js</url>
+          <line>163</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="79" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/ReduxSandbox/basics_redux_todo_lib.js</url>
+          <line>153</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="80" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/ReduxSandbox/basics_redux_todo_lib.js</url>
+          <line>157</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="81" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/ReduxSandbox/basics_redux_todo_lib.js</url>
+          <line>161</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="82" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/ReduxSandbox/basics_redux_todo_lib.js</url>
+          <line>160</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="83" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/ReduxSandbox/basics_redux_todo_lib.js</url>
+          <line>145</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="84" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/ReduxSandbox/basics_redux_todo_lib.js</url>
+          <line>147</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="85" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/ReduxSandbox/basics_redux_todo_lib.js</url>
+          <line>139</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="86" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/ReduxSandbox/basics_redux_todo_lib.js</url>
+          <line>48</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="87" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/ReduxSandbox/basics_redux_todo_lib.js</url>
+          <line>49</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="88" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/ReduxSandbox/basics_redux_todo_lib.js</url>
+          <line>51</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="89" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -1175,17 +1263,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ReduxSandbox/basics_redux_todo_store.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-468" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ReduxSandbox/basics_redux_todo_lib.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="142" column="38" lean-forward="true" selection-start-line="142" selection-start-column="38" selection-end-line="142" selection-end-column="38" />
+        <state relative-caret-position="210">
+          <caret line="142" column="10" selection-start-line="142" selection-start-column="10" selection-end-line="142" selection-end-column="10" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ReduxSandbox/basics_redux_todo_store.test.js">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
