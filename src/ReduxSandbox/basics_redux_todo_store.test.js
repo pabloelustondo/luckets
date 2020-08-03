@@ -1,4 +1,6 @@
 const { STORE, ASYNC_ACTION, ACTION, CONSTANTS } = require('./basics_redux_todo_lib');
+const sinon = require('sinon');
+
 
 describe('STORE', () => {
 
@@ -11,6 +13,12 @@ describe('STORE', () => {
     beforeEach(() => {
 
     });
+
+    afterEach(() => {
+        // Restore the default sandbox here
+        sinon.restore();
+    });
+
 
     it('should add a todo', () => {
       //  store.dispatch(store.addTodo({id:1, name:'mind', description:'plan day'}) );

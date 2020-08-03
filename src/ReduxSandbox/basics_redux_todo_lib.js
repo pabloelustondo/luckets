@@ -4,43 +4,16 @@ const { createStore, applyMiddleware } = require('redux');
 const loggerMiddleware = createLogger();
 const thunkMiddleware = require( 'redux-thunk').default;
 
-const ACTION_TYPE = {};
-ACTION_TYPE.UPDATE_TODO = "UPDATE_TODO";
-ACTION_TYPE.DELETE_TODO = "DELETE_TODO";
-ACTION_TYPE.FETCH_POSTS = "FETCH_POSTS";
-ACTION_TYPE.FETCH_POSTS_SUCCESS = "FETCH_POSTS_SUCCESS";
-ACTION_TYPE.FETCH_POSTS_ERROR = "FETCH_POSTS_ERROR";
-
-const CONSTANTS = {};
-CONSTANTS.fetching="Fetching";
-CONSTANTS.fetchSuccess="FetchSuccess";
-CONSTANTS.fetchError="FetchError";
-
-
-
+const K = {};
+K.fetching="Fetching";
+K.fetchSuccess="FetchSuccess";
+K.fetchError="FetchError";
 
 
 const INITIAL_STATE = {
     todos: [],
     posts: [],
     reddit: null
-}
-
-const REDUCER = {};
-const ACTION = {};
-const ASYNC_ACTION = {};
-
-
-ACTION.fetchPostsError = ( error ) => {
-    return {
-        type: ACTION_TYPE.FETCH_POSTS_ERROR,
-        reddit: { status: CONSTANTS.fetchError, error: error }
-    }
-}
-REDUCER[ACTION_TYPE.FETCH_POSTS_ERROR] = (state, action) => {
-    const newReddit = {...state.reddit, status: action.reddit.status, error: action.reddit.error}
-    const newState = {...state, reddit: newReddit };
-    return newState;
 }
 
 class STORE {
@@ -115,7 +88,7 @@ class STORE {
     fetchPosts = ( redditId ) => {
         return this.dispatch({
             type: 'fetchPosts',
-            reddit: { redditId: redditId, status: CONSTANTS.fetching }
+            reddit: { redditId: redditId, status: K.fetching }
         })
     }
     fetchPostsReducer = (state, action) => {
@@ -125,7 +98,7 @@ class STORE {
     fetchPostsSuccess = ( reditt, posts ) => {
         return this.dispatch({
             type: 'fetchPostsSuccess',
-            reddit: { status: CONSTANTS.fetchSuccess },
+            reddit: { status: K.fetchSuccess },
             posts: posts
         })
     }
@@ -139,7 +112,7 @@ class STORE {
     fetchPostsError = ( error ) => {
         return this.dispatch({
             type: 'fetchPostsError',
-            reddit: { status: CONSTANTS.fetchError, error: error }
+            reddit: { status: K.fetchError, error: error }
         })
     }
     fetchPostsErrorReducer = (state, action) => {
@@ -170,4 +143,4 @@ class STORE {
 }
 
 
-module.exports= { STORE, ASYNC_ACTION, CONSTANTS, ACTION, INITIAL_STATE };
+module.exports= { STORE, CONSTANTS: K };
