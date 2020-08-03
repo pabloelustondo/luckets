@@ -19,7 +19,7 @@ const INITIAL_STATE = {
 class STORE {
 
     STORE_REDUCER = (state = INITIAL_STATE, action) => {
-        if (['addTodo','updateTodo','deleteTodo','fetchPosts','fetchPostsSuccess','fetchPostsError'].includes(action.type) ){
+        if (Object.keys(this).includes(action.type) ){
             return this[action.type + "Reducer"](state,action);
         }else {
             return state;
