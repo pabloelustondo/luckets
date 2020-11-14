@@ -1,4 +1,4 @@
-const fetch = require('cross-fetch')
+const fetch = require('cross-fetch');
 const { createLogger } = require('redux-logger');
 const { createStore, applyMiddleware } = require('redux');
 const loggerMiddleware = createLogger();
@@ -127,10 +127,11 @@ class STORE {
             this.fetchPosts(redditId);
             return this.fetch(`https://www.reddit.com/r/${redditId}.json`)
                 .then(
-                    response => response.json(),
+                    response =>   response.json(),
                     error =>  this.fetchPostsError(error)
                 )
                 .then(fetchResult =>{
+                    console.log(JSON.stringify(fetchResult,null,2));
                     if (fetchResult.error){
                         this.fetchPostsError(fetchResult.error);
                     }else{

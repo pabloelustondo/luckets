@@ -1,5 +1,6 @@
 const { STORE, ASYNC_ACTION, ACTION, CONSTANTS } = require('./basics_redux_todo_lib');
 const sinon = require('sinon');
+const fetchMock = require('fetch-mock');
 
 
 describe('STORE', () => {
@@ -49,9 +50,34 @@ describe('STORE', () => {
         expect(newState.posts.length).toBe(27);
     })
 
+    it('should fetch reddit posts asynchronously ', async () => {
+        const redditId = `polandball`;
+        fetchMock.mock(`https://www.reddit.com/r/${redditId}.json`,{});
+        await store.fetchPostsAsync("polandball");
+        const newState = store.getState();
+        expect(newState.posts.length).toBe(27);
+    })
+
     it('should manage errors from fetch reddit posts asynchronously ', async () => {
         await store.fetchPostsAsync("^&^&^&^&^&^&^&");
         const newState = store.getState();
         expect(newState.reddit.status).toBe(CONSTANTS.fetchError);
     })
+
+    it('fetches using mock ', async () => {
+        fetchMock.mock('http://example.com', {status:200, body:{name:'john'}});
+        const res = await fetch('http://example.com');
+        fetchMock.restore();
+    })
+
+    it('should fetch reddit posts asynchronously ', async () => {
+        const redditId = `polandball`;
+        fetchMock.mock(`https://www.reddit.com/r/${redditId}.json`, {status:200, body:{name:'john'}});
+        store.fetch = fetch;
+        await store.fetchPostsAsync("polandball");
+        const newState = store.getState();
+        expect(newState.posts.length).toBe(27);
+    })
+
+
 })

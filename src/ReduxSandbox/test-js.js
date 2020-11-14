@@ -15,4 +15,3 @@ const x = new xxx();
 
 console.log( "p" in x );
 
-console.log( "p" of ["p"] );
