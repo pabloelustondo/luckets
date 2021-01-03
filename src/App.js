@@ -91,13 +91,13 @@ class App extends Component {
 
     //TESTING CODE TO TRY TO REDUX STORE
     console.log("SUBSCRIBING TO STORE");
-    store.subscribe( () =>
-        {
-        console.log("NEW STORE DATA");
-        console.log(store.getState());
-        });
+//    store.subscribe( () =>
+//        {
+//        console.log("NEW STORE DATA");
+//        console.log(store.getState());
+//        });
 
-    setInterval(() => store.dispatch({type:'REDUCER', reducer:REDUCER.dummy}) , 1000);
+  //  setInterval(() => store.dispatch({type:'REDUCER', reducer:REDUCER.dummy}) , 1000);
 
     //
 
@@ -124,7 +124,6 @@ class App extends Component {
   };
 
   componentWillMount(){
-    debugger;
     document.title = "Luckets"
   }
 

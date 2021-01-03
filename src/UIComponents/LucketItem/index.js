@@ -52,7 +52,7 @@ const LucketItem = props => {
                         }}
                     />
                     <LucketTitle
-                        id={props.lucket.name}
+                        id={props.lucket.name || "---" }
                         path={path}
                         focus={props.focus}
                         lucket={props.lucket}

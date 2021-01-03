@@ -156,6 +156,9 @@ export const calculatePoints = (luckets, lucket, timeFrame) => {
   const statusOrder = {'red':-2, 'yellow':-1, 'white':0, 'green':1, 'blue':2};
 
   const result = {...lucket};
+  if (!result.actionStatus){
+    result.actionStatus = {};
+  }
   result.totalActionPoints = (result.actionStatus[timeFrame] === "white")?0:result.points;
   result.doneActionPoints = (result.actionStatus[timeFrame] === "blue")?result.points:0;
   result.childrenActionStatus = 'white'; //if no children we assume white

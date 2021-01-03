@@ -42,7 +42,6 @@ REDUCER.setState = (state, action) => {
  */
 
 function reducer(state = initialState, action) {
-    debugger;
     if (action.type === "REDUCER"){
         return action.reducer(state);
     } else {
