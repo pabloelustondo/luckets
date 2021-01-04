@@ -8,6 +8,7 @@ import { patchData, postData, postHistory, patchAllLuckets } from "../../Data/Da
 import LucketCategoryView from "../../UIComponents/LucketCategoryView"
 
 import {
+  log,
   fixActionStatus,
   getRootLucket,
   getChildrenLuckets,
@@ -61,13 +62,20 @@ class LucketsList extends Component {
   };
 
   updateLucket = lucket => {
-    let newLuckets = this.props.luckets.map(l => {
+    log("UPDATE LUCKET", lucket);
+    log("UPDATE LUCKET NUMBER OF EXISTING LUCKETS", this.props.luckets.length);
+    let allLuckets = this.props.luckets.map(l => {
       if (l.id === lucket.id) {
         return lucket;
       } else {
         return l;
       }
     });
+
+    const newLuckets = allLuckets.filter( l => l.id );
+
+    log("UPDATE LUCKET NUMBER OF LUCKETS WITH ID", newLuckets.length );
+
     if (this.state.focusLucket && this.state.focusLucket.id === lucket.id) {
       this.setFocus(lucket);
     } //this is a hack... need to refactor an use an ID for focius lucket
@@ -102,6 +110,9 @@ class LucketsList extends Component {
   };
 
   render() {
+    const luckets = this.props.luckets.filter( l => true);
+    log("LUCKETS LIST NUMBER TO RENDER", luckets.length);
+
 
     //fix luckets if wrong date this is temporary code
 
@@ -140,6 +151,10 @@ class LucketsList extends Component {
     } else {
       lucketCategories = categorize(__childrenLucket);
     }
+
+    const lucketsCat = lucketCategories.filter( l => true);
+    log("LUCKETS LIST CCTEGORIES ", lucketsCat);
+
     return (
       <div className="LucketsList">
         <Header

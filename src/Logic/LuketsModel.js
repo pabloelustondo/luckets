@@ -3,7 +3,34 @@ import uuidv1 from "uuid/v1";
 
 
 export const getRootLucket = luckets => {
-  return luckets.find(l => l.parent === "");
+ //temporary:
+  const rootLucket = {
+        "actionPlan":"Live",
+        "actionStatus":{
+          "Day":"white",
+          "Monthly":"white",
+          "Quarter":"white",
+          "Week":"white",
+          "Year":"white"
+        },
+        "category":"A",
+        "childrenActionStatus":"white",
+        "childrenStatus":"white",
+        "doneActionPoints":0,
+        "icon":"reading.svg",
+        "id":"Life-Lucket",
+        "name":"Life",
+        "order":1,
+        "parent":"",
+        "points":1,
+        "status":"white",
+        "time":{
+          "MO":true
+        },
+        "totalActionPoints":0
+      };
+
+      return rootLucket;
 };
 
 export const getParentLucket = (luckets, lucket) => {
@@ -329,6 +356,11 @@ export const fixActionStatus = (luckets) => {
   }
 }
 
+export const log = ( message, object ) => {
+  console.log(  "++++++++++++++++  BEGIN " + message +"  +++");
+  console.log(  JSON.stringify(object, null,2 ));
+  console.log(  "---------------- END  " + message + "  +++");
+}
 
 export const FUNCS = {};
 

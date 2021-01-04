@@ -12,6 +12,7 @@ import {
 } from "./Data/DataService";
 
 import {
+  log,
 cleanActionStatus
 } from "./Logic/LuketsModel";
 
@@ -65,6 +66,7 @@ class App extends Component {
   };
 
   setLuckets = luckets => {
+    log("SET LUCKETS", luckets);
     this.setState({ luckets: luckets });
   };
 
@@ -128,6 +130,9 @@ class App extends Component {
   }
 
   render() {
+    if (!this.state.luckets) return null;
+    const luckets = this.state.luckets.filter( l => true);
+    log("APPS JS NUMBER OF L TO RENDER", luckets.length);
     return (
       <div className="App">
         {this.state.signedIn ? (
