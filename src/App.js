@@ -130,9 +130,6 @@ class App extends Component {
   }
 
   render() {
-    if (!this.state.luckets) return null;
-    const luckets = this.state.luckets.filter( l => true);
-    log("APPS JS NUMBER OF L TO RENDER", luckets.length);
     return (
       <div className="App">
         {this.state.signedIn ? (
@@ -143,7 +140,7 @@ class App extends Component {
             timeFrame={this.state.timeFrame}
             userInfo={this.state.userInfo}
             user={this.state.user}
-            luckets={this.state.luckets}
+            luckets={this.state.luckets || []}
             setLuckets={this.setLuckets}
             setOpenDay={this.setOpenDay}
             signOut={this.signOut}
